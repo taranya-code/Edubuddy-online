@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EduBuddy — AI Voice Tutor</title>
+<meta name="description" content="EduBuddy: a multilingual (English, Hindi, Tamil) voice tutor that answers from your textbooks." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+<link rel="stylesheet" href="styles.css" />
+<script>
+  try { var t = localStorage.getItem("edubuddy-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+
+<header>
+  <h1>🎓 EduBuddy</h1>
+  <span class="tag">online</span>
+  <select id="lang" title="Reply language">
+    <option value="auto">🌐 Auto-detect</option>
+    <option value="en">English</option>
+    <option value="hi">हिंदी</option>
+    <option value="ta">தமிழ்</option>
+  </select>
+  <label class="toggle"><input type="checkbox" id="continuous" /> Continuous</label>
+  <label class="toggle"><input type="checkbox" id="speakBack" checked /> Speak replies</label>
+  <div class="spacer"></div>
+  <div id="status"><span class="dot" id="dot"></span><span id="statusText">starting…</span></div>
+  <button id="soundFix" hidden title="The browser blocked playback — click to allow it">🔇 Enable sound</button>
+  <button id="themeBtn" title="Switch light / dark theme" aria-label="Switch light or dark theme">🌙</button>
+  <button id="clear" title="Reset the conversation">Clear</button>
+</header>
+
+<nav id="tabs">
+  <button class="tab active" data-section="ask">Ask</button>
+  <button class="tab" data-section="library">Library</button>
+  <button class="tab" data-section="study">Study</button>
+  <button class="tab" data-section="books">Books</button>
+</nav>
+
+<div id="chat"></div>
+
+<section id="librarypane" class="pane" hidden>
+  <div class="toolbar">
+    <div class="seg" id="libLang" role="group" aria-label="Language"></div>
+    <select id="libBook" aria-label="Book"></select>
+    <select id="libChapter" aria-label="Chapter"></select>
+    <input id="libSearch" type="search" placeholder="Search questions…" autocomplete="off" />
+  </div>
+  <div class="subbar">
+    <span id="libSummary"></span>
+    <span class="spacer"></span>
+    <button id="expandAll" class="ghost">Expand all</button>
+    <button id="collapseAll" class="ghost">Collapse all</button>
+    <button id="playAll" class="btn-accent">🔊 Read aloud</button>
+    <button id="stopAll" class="btn-accent" hidden>■ Stop</button>
+  </div>
+  <div id="liblist"></div>
+</section>
+
+<section id="studypane" class="pane" hidden>
+  <div id="studySetup" class="card setup">
+    <h2>Practise</h2>
+    <p class="muted">Pick what to revise. You'll answer one question at a time, by typing or speaking, and see the right answer after each one.</p>
+    <div class="field"><label>Language</label><div class="seg" id="studyLang" role="group" aria-label="Language"></div></div>
+    <div class="field"><label for="studyBook">Book</label><select id="studyBook"></select></div>
+    <div class="field"><label for="studyChapter">Chapter</label><select id="studyChapter"></select></div>
+    <div class="field row">
+      <div><label for="studyCount">Questions</label>
+        <select id="studyCount"><option value="10">10</option><option value="20" selected>20</option><option value="all">All</option></select></div>
+      <label class="toggle"><input type="checkbox" id="studyShuffle" checked /> Shuffle</label>
+    </div>
+    <div class="avail" id="studyAvail"></div>
+    <button id="studyStart" class="btn-accent big">Start →</button>
+  </div>
+
+  <div id="studyQuiz" hidden>
+    <div class="quizhead">
+      <span id="studyProgress"></span><span class="spacer"></span><span id="studyScoreNow" class="pill"></span>
+      <button id="studyQuit" class="ghost">End</button>
+    </div>
+    <div class="bar"><div id="studyBar"></div></div>
+    <div class="studyq"><div class="tagline" id="studyTag"></div><div id="studyQ"></div></div>
+    <div class="answerrow">
+      <input id="studyInput" placeholder="Type your answer, or tap the mic…" autocomplete="off" />
+      <button id="studyMic" title="Speak your answer">🎤</button>
+      <button id="studyCheck" class="btn-accent">Check</button>
+      <button id="studyReveal" class="ghost" title="Show the answer (counts as missed)">Show answer</button>
+      <button id="studyNext" class="btn-accent" hidden>Next →</button>
+    </div>
+    <div id="studyVerdict"></div>
+  </div>
+
+  <div id="studyResult" class="card result" hidden>
+    <div class="ring" id="resultRing"><span id="resultPct"></span></div>
+    <div class="rscore" id="resultScore"></div>
+    <div class="muted" id="resultMsg"></div>
+    <div class="ractions">
+      <button id="retryMissed" class="btn-accent">Retry missed</button>
+      <button id="newSession">New session</button>
+    </div>
+    <div id="missedList"></div>
+  </div>
+</section>
+
+<section id="bookspane" class="pane" hidden>
+  <label class="drop" id="drop">
+    <input type="file" id="pdfInput" accept="application/pdf,.pdf" multiple hidden />
+    📚 <b>Add a textbook PDF</b><br>Click or drop files here. They are read in your browser and never uploaded.
+  </label>
+  <div id="booklist"></div>
+  <div class="note">
+    EduBuddy answers <b>Ask</b> questions from these books and shows the page it used.
+    With no books added it answers from general knowledge, without citations.<br>
+    To ship books with the site, put the PDFs in <code>public/books/</code> and list them in
+    <code>public/books/manifest.json</code>.
+  </div>
+</section>
+
+<footer>
+  <button id="mic" title="Speak a question">🎤</button>
+  <div id="level"><div id="levelbar"></div></div>
+  <input id="text" placeholder="Type a question, or tap the mic…" autocomplete="off" />
+  <button id="send">Send</button>
+  <div class="hint">Silence for ~1.2 s ends your turn. Continuous mode re-opens the mic after each answer.</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+  if (window.pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc =
+    "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+</script>
+<script src="rag.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
