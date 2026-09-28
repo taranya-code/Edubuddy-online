@@ -1,0 +1,5935 @@
+{
+ "_readme": [
+  "Curated questions and answers for the Library and Study tabs.",
+  "",
+  "Source: the three Q&A study guides supplied by the project team.",
+  "  beyond_earth_qa  Beyond Earth, Curiosity Science Grade 6, Chapter 12  (15 Q)",
+  "  hindi_qa         पाठ 2: न्याय की कुर्सी, वीणा कक्षा 5 NCERT            (11 Q)",
+  "  tamil_qa         அறிவியல் 3-ஆம் வகுப்பு பருவம் 1                      (13 Q)",
+  "",
+  "The Hindi and Tamil PDFs have a broken font encoding — their text layer",
+  "extracts as mojibake ('कु<र्सी', 'வி0டை'). This content was transcribed from",
+  "the rendered pages instead, so it is correct here even though copying from",
+  "the PDFs is not.",
+  "",
+  "Fields:",
+  "  id        unique. Convention: en-1, hi-1, ta-1",
+  "  lang      en | hi | ta  -- decides the voice and the language filter",
+  "  book      shown on the citation chip and in the book filter",
+  "  page      page of the Q&A guide this came from",
+  "  question  shown to the student",
+  "  answer    shown in Library, revealed in Study after marking",
+  "  keywords  what a student's answer must contain to be marked correct.",
+  "            A keyword may be a LIST of alternatives -- any one counts.",
+  "",
+  "A student passes at 60% of keywords (config.LIBRARY_PASS_RATIO).",
+  "After editing:  python library.py --validate",
+  "",
+  "Added 2026-09-28 from the team's Class 10 Q&A guides (378 entries):",
+  "  Science Class 10            (English, 13 chapters, 134 Q)",
+  "  हिन्दी 'ब' कक्षा 10          (Hindi, 28 chapters, 177 Q)",
+  "  அறிவியல் 10-ஆம் வகுப்பு     (Tamil, 13 chapters, 67 Q)",
+  "  For these, 'page' is the chapter number and 'chapter' is its name.",
+  "  Their keywords were picked automatically from each answer (rarest words) -- review and edit freely."
+ ],
+ "questions": [
+  {
+   "id": "en-1",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 1,
+   "question": "What is a constellation, and how many official constellations are recognized today?",
+   "answer": "A constellation is a defined region of the sky containing groups of stars that appear to form recognizable patterns. The International Astronomical Union officially divided the whole celestial sphere into 88 distinct constellations in the early 20th century.",
+   "keywords": [
+    "88",
+    [
+     "region",
+     "pattern"
+    ]
+   ]
+  },
+  {
+   "id": "en-2",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 1,
+   "question": "Why is the Pole Star crucial for celestial navigation?",
+   "answer": "The Pole Star appears almost stationary in the sky, directly above Earth's true north rotational axis. So observers in the Northern Hemisphere can find true north at night without a magnetic compass.",
+   "keywords": [
+    [
+     "north"
+    ],
+    [
+     "stationary",
+     "fixed"
+    ]
+   ]
+  },
+  {
+   "id": "en-3",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 1,
+   "question": "How do you locate the Pole Star using the Big Dipper?",
+   "answer": "Find the ladle-shaped Big Dipper in the northern sky. Locate the two pointer stars on the outer edge of the cup, draw an imaginary line through them northward, and extend it about five times the distance between them. That line leads to the Pole Star.",
+   "keywords": [
+    [
+     "pointer"
+    ],
+    [
+     "five times",
+     "5 times"
+    ]
+   ]
+  },
+  {
+   "id": "en-4",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 1,
+   "question": "What is the brightest star in the night sky, and how can you find it using Orion?",
+   "answer": "Sirius, in the constellation Canis Major, is the brightest star in the night sky. Find Orion, identify the three bright stars of Orion's Belt, and extend an imaginary line eastward through them. It leads directly to Sirius.",
+   "keywords": [
+    "sirius",
+    [
+     "orion",
+     "belt"
+    ]
+   ]
+  },
+  {
+   "id": "en-5",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 1,
+   "question": "Why do stars twinkle while planets shine steadily?",
+   "answer": "Stars are so far away that they act as pinpoint sources of light, and Earth's turbulent atmosphere refracts their rays continuously, making them twinkle. Planets are much closer and appear as tiny disks, so the disturbance averages out across many points and the light stays steady.",
+   "keywords": [
+    [
+     "atmosphere"
+    ],
+    [
+     "refract",
+     "twinkl"
+    ]
+   ]
+  },
+  {
+   "id": "en-6",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 2,
+   "question": "What is light pollution, and what is done to reduce it for astronomy?",
+   "answer": "Light pollution is excessive or misdirected artificial light at night from cities, streetlights and buildings, which hides faint objects in the sky. Governments set up Dark Sky Reserves, such as the Hanle Dark Sky Reserve in Ladakh, where outdoor lighting is strictly managed.",
+   "keywords": [
+    [
+     "artificial light"
+    ],
+    [
+     "dark sky",
+     "hanle"
+    ]
+   ]
+  },
+  {
+   "id": "en-7",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 2,
+   "question": "What is an Astronomical Unit, and why is it useful?",
+   "answer": "An Astronomical Unit is the approximate average distance from the centre of the Earth to the centre of the Sun. It is roughly 150 million kilometres, and it is a convenient way to express distances between planets in the Solar System.",
+   "keywords": [
+    [
+     "150 million",
+     "150"
+    ],
+    [
+     "sun"
+    ]
+   ]
+  },
+  {
+   "id": "en-8",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 2,
+   "question": "List the eight planets in order from the Sun, and say how the inner planets differ from the outer ones.",
+   "answer": "In order from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. The inner planets are closer to the Sun, smaller, and have dense solid rocky surfaces. The outer planets are massive gas and ice giants made mostly of hydrogen, helium and volatile ices, with ring systems.",
+   "keywords": [
+    "mercury",
+    "neptune",
+    [
+     "inner"
+    ],
+    [
+     "outer"
+    ]
+   ]
+  },
+  {
+   "id": "en-9",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 2,
+   "question": "Why is Venus hotter than Mercury even though Mercury is closer to the Sun?",
+   "answer": "Mercury receives more direct sunlight but has virtually no atmosphere to hold the heat. Venus has a very thick atmosphere rich in greenhouse gases that traps heat, pushing its surface temperature higher than anywhere on Mercury.",
+   "keywords": [
+    "venus",
+    [
+     "atmosphere"
+    ],
+    [
+     "greenhouse",
+     "trap"
+    ]
+   ]
+  },
+  {
+   "id": "en-10",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 2,
+   "question": "Why was Pluto reclassified as a dwarf planet in 2006?",
+   "answer": "Pluto is smaller than Earth's Moon and shares its orbital neighbourhood beyond Neptune with other icy bodies in the Kuiper Belt. In 2006 the IAU decided a planet must orbit the Sun, be spherical under its own gravity, and have cleared the neighbourhood around its orbit. Pluto has not cleared its path, so it became a dwarf planet.",
+   "keywords": [
+    "pluto",
+    [
+     "cleared"
+    ],
+    [
+     "dwarf"
+    ]
+   ]
+  },
+  {
+   "id": "en-11",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 3,
+   "question": "What causes impact craters on the Moon, and why do they last so long?",
+   "answer": "Craters are bowl-shaped hollows formed when fast-moving meteoroids and asteroids strike the lunar surface. The Moon has no atmosphere, no liquid water, no active tectonics and no weather, so there is no wind or water erosion to wear them away, and they stay unchanged for millions of years.",
+   "keywords": [
+    [
+     "meteoroid",
+     "asteroid"
+    ],
+    [
+     "atmosphere"
+    ],
+    [
+     "erosion"
+    ]
+   ]
+  },
+  {
+   "id": "en-12",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 3,
+   "question": "What is the Asteroid Belt and where is it?",
+   "answer": "The Asteroid Belt lies between the orbits of Mars and Jupiter. It holds millions of irregularly shaped rocky and metallic remnants left over from the early formation of the Solar System.",
+   "keywords": [
+    "mars",
+    "jupiter"
+   ]
+  },
+  {
+   "id": "en-13",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 3,
+   "question": "What is a comet, and why does its tail appear near the Sun?",
+   "answer": "A comet is a small body of rock, dust and frozen gases from the cold outer Solar System. When its orbit brings it close to the Sun, solar radiation heats it and vaporises its ices, releasing gas and dust that form a glowing tail streaming away from the Sun.",
+   "keywords": [
+    [
+     "frozen",
+     "ice"
+    ],
+    [
+     "sun"
+    ],
+    [
+     "tail"
+    ]
+   ]
+  },
+  {
+   "id": "en-14",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 3,
+   "question": "What is the Milky Way Galaxy, and what lies beyond it?",
+   "answer": "The Milky Way is our home barred spiral galaxy, containing hundreds of billions of stars, planetary systems including our own, dust and gas. Beyond it lies the observable Universe, with hundreds of billions of other galaxies.",
+   "keywords": [
+    [
+     "spiral"
+    ],
+    [
+     "galax"
+    ]
+   ]
+  },
+  {
+   "id": "en-15",
+   "lang": "en",
+   "book": "beyond_earth_qa",
+   "page": 3,
+   "question": "Summarise India's Chandrayaan missions and their milestones.",
+   "answer": "Chandrayaan-1 in 2008 confirmed water molecules on the Moon. Chandrayaan-2 in 2019 placed an orbiter in lunar orbit. On 23 August 2023 Chandrayaan-3 soft-landed its Vikram lander and Pragyan rover near the lunar south pole, making India the first nation to land in that region. August 23 is now National Space Day.",
+   "keywords": [
+    "chandrayaan",
+    [
+     "south pole",
+     "water"
+    ]
+   ]
+  },
+  {
+   "id": "hi-1",
+   "lang": "hi",
+   "book": "hindi_qa",
+   "page": 1,
+   "question": "लड़कों को टीले पर क्या मिला और उन्होंने कौन-सा खेल शुरू किया?",
+   "answer": "टीले पर खेलते समय एक लड़के को ठोकर लगी, जिससे उसे वहाँ एक बड़ा और चिकना पत्थर दिखाई दिया। उसने उसे अपना सिंहासन घोषित किया और स्वयं राजा बनकर बैठ गया। उन्होंने राजा और प्रजा यानी दरबारी का खेल खेलना शुरू किया।",
+   "keywords": [
+    "पत्थर",
+    "सिंहासन",
+    [
+     "राजा",
+     "दरबारी"
+    ]
+   ]
+  },
+  {
+   "id": "hi-2",
+   "lang": "hi",
+   "book": "hindi_qa",
+   "page": 1,
+   "question": "टीले वाले लड़के के न्याय की चर्चा पूरे नगर में कैसे फैल गई?",
+   "answer": "जब दो किसानों के बीच ज़मीन को लेकर गहरा विवाद हुआ, तो वे राजा के दरबार में जाने के बजाय टीले वाले लड़के के पास आए। लड़के ने दोनों पक्षों की बात सुनकर ऐसा निष्पक्ष और सटीक फैसला दिया कि सब दंग रह गए। इसके बाद नगर के सभी लोग अपने विवाद सुलझाने उसी लड़के के पास आने लगे।",
+   "keywords": [
+    "किसान",
+    [
+     "ज़मीन",
+     "जमीन"
+    ],
+    "फैसला"
+   ]
+  },
+  {
+   "id": "hi-3",
+   "lang": "hi",
+   "book": "hindi_qa",
+   "page": 1,
+   "question": "टीले की खुदाई करने पर क्या निकला और विद्वानों ने उसके बारे में क्या बताया?",
+   "answer": "टीले की खुदाई करने पर एक अत्यंत सुंदर और नक्काशीदार सिंहासन निकला, जिसके चारों पायों पर चार देवदूतों की मूर्तियाँ बनी हुई थीं। विद्वान पंडितों ने बताया कि यह महाराजा विक्रमादित्य का सदियों पुराना सिंहासन है।",
+   "keywords": [
+    "सिंहासन",
+    "देवदूत",
+    "विक्रमादित्य"
+   ]
+  },
+  {
+   "id": "hi-4",
+   "lang": "hi",
+   "book": "hindi_qa",
+   "page": 1,
+   "question": "राजा जब पहली बार सिंहासन पर बैठने लगा, तो पहली मूर्ति ने क्या सवाल पूछा और राजा ने क्या स्वीकार किया?",
+   "answer": "पहली मूर्ति ने पूछा कि क्या तुम इस सिंहासन पर बैठने योग्य हो, क्या तुम्हें पूरा विश्वास है कि तुमने कभी चोरी नहीं की है। राजा ने लज्जा से सिर झुकाकर स्वीकार किया कि हाल ही में उसने क्रोधवश अपने एक दरबारी की ज़मीन पर अनुचित कब्जा कर लिया था।",
+   "keywords": [
+    "चोरी",
+    [
+     "ज़मीन",
+     "जमीन"
+    ],
+    [
+     "कब्जा",
+     "कब्ज़ा"
+    ]
+   ]
+  },
+  {
+   "id": "hi-5",
+   "lang": "hi",
+   "book": "hindi_qa",
+   "page": 1,
+   "question": "दूसरी और तीसरी मूर्ति ने राजा से कौन-से प्रश्न पूछे?",
+   "answer": "दूसरी मूर्ति ने पूछा कि क्या तुम विश्वास के साथ कह सकते हो कि तुमने कभी झूठ नहीं बोला। राजा ने माना कि उसने कई बार मुसीबतों से बचने के लिए झूठ बोला था। तीसरी मूर्ति ने पूछा कि बैठने से पहले यह बताओ कि क्या तुमने कभी किसी को चोट नहीं पहुँचाई है।",
+   "keywords": [
+    "झूठ",
+    "चोट"
+   ]
+  },
+  {
+   "id": "hi-6",
+   "lang": "hi",
+   "book": "hindi_qa",
+   "page": 2,
+   "question": "भोले-भाले चरवाहे लड़के उस सिंहासन पर आसानी से बैठ जाते थे, लेकिन राजा उपवास के बाद भी क्यों नहीं बैठ पाया?",
+   "answer": "लड़के मन से पवित्र, निष्कपट और भोले-भाले थे; उनके हृदय में कोई कलुष, स्वार्थ या अहंकार नहीं था। इसके विपरीत राजा के मन में लोभ, झूठ, क्रोध और अपने पद व शक्ति का भारी अहंकार भरा हुआ था। न्याय के पवित्र आसन पर बैठने के लिए बाह्य तपस्या नहीं, बल्कि आंतरिक निष्पापता और शुद्ध चरित्र आवश्यक है।",
+   "keywords": [
+    [
+     "पवित्र",
+     "निष्कपट"
+    ],
+    "अहंकार"
+   ]
+  },
+  {
+   "id": "hi-7",
+   "lang": "hi",
+   "book": "hindi_qa",
+   "page": 2,
+   "question": "कहानी के अंत में चौथी मूर्ति ने क्या किया और क्यों?",
+   "answer": "चौथी मूर्ति ने जब राजा को अपनी पात्रता का आत्म-मूल्यांकन करने को कहा, तो राजा ने अहंकार में आकर सोचा कि धनवान और बलवान होने के कारण वह योग्य है और आगे बढ़ा। राजा के मन में छिपे इसी अहंकार को देखकर चौथी मूर्ति पूरे सिंहासन समेत पंख फैलाकर आकाश में उड़ गई।",
+   "keywords": [
+    "चौथी",
+    "उड़",
+    "अहंकार"
+   ]
+  },
+  {
+   "id": "hi-8",
+   "lang": "hi",
+   "book": "hindi_qa",
+   "page": 2,
+   "question": "विराम चिह्न किसे कहते हैं और इनका भाषा में क्या महत्व है?",
+   "answer": "लिखते समय भावों और विचारों के अनुसार जहाँ रुकना या ठहराव लेना होता है, वहाँ लगाए जाने वाले विशेष चिह्नों को विराम चिह्न कहते हैं, जैसे पूर्णविराम, अल्पविराम और उद्धरण चिह्न। इनके सही प्रयोग से वाक्य का अर्थ और भाव स्पष्ट हो जाता है।",
+   "keywords": [
+    "विराम चिह्न",
+    [
+     "रुकना",
+     "ठहराव"
+    ]
+   ]
+  },
+  {
+   "id": "hi-9",
+   "lang": "hi",
+   "book": "hindi_qa",
+   "page": 2,
+   "question": "इन वाक्यों में से विशेषण शब्द छाँटिए: उज्जैन की प्राचीन और ऐतिहासिक नगरी के बाहर एक लंबा-चौड़ा मैदान था।",
+   "answer": "इस वाक्य के विशेषण हैं: प्राचीन, ऐतिहासिक और लंबा-चौड़ा। अन्य उदाहरण: इतनी छोटी उम्र में इतनी बुद्धि का होना आश्चर्य की बात है, में छोटी; राजा ने देखा कि वह बहुत ही सुंदर सिंहासन था, में सुंदर।",
+   "keywords": [
+    "प्राचीन",
+    "ऐतिहासिक",
+    [
+     "लंबा",
+     "चौड़ा"
+    ]
+   ]
+  },
+  {
+   "id": "hi-10",
+   "lang": "hi",
+   "book": "hindi_qa",
+   "page": 2,
+   "question": "यह कहानी किस प्राचीन भारतीय कथा-संग्रह पर आधारित है और इसकी क्या विशेषता है?",
+   "answer": "यह कहानी प्राचीन पुस्तक सिंहासन बत्तीसी पर आधारित है। इस कथा-संग्रह में राजा भोज को भूमि से राजा विक्रमादित्य का सिंहासन मिलता है, जिसमें बत्तीस पुतलियाँ जड़ी होती हैं। प्रत्येक पुतली राजा भोज को विक्रमादित्य के न्याय, त्याग और विवेक की एक कथा सुनाती है।",
+   "keywords": [
+    "बत्तीसी",
+    [
+     "बत्तीस"
+    ],
+    "विक्रमादित्य"
+   ]
+  },
+  {
+   "id": "hi-11",
+   "lang": "hi",
+   "book": "hindi_qa",
+   "page": 3,
+   "question": "पाठ की इन लोक पहेलियों के उत्तर दीजिए: न तो खाय न तो पीवैह, संग मा रेंगत है।",
+   "answer": "इसका उत्तर परछाईं यानी छाया है। अन्य पहेलियाँ: एक जानवर ऐसो, जिकी दूम पे पैसो का उत्तर मोर है; हरो माथणो, लाल पेट का उत्तर तरबूज है; एक लकड़ी की ऐसी कहानी, ऊमें लुको है मीठो पानी का उत्तर गन्ना है; एक दिया, सबतर उंजियार का उत्तर सूर्य है।",
+   "keywords": [
+    "परछा",
+    "मोर",
+    "तरबूज"
+   ]
+  },
+  {
+   "id": "ta-1",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 1,
+   "question": "கிருமிகள் என்பவை யாவை? அவை உடலுக்குள் செல்லாமல் தடுக்க நாம் என்ன செய்ய வேண்டும்?",
+   "answer": "கிருமிகள் என்பவை நமது உடல்நலத்தைப் பாதிக்கும் மிக நுண்ணிய உயிரிகள் ஆகும். இவை நகங்களின் அடியிலும், விரல்களுக்கு இடையிலும், அசுத்தமான இடங்களிலும் காணப்படும். உணவுக்கு முன்னும் பின்னும், கழிவறையைப் பயன்படுத்திய பிறகும் சோப்பு போட்டு முறையாகக் கைகளைக் கழுவ வேண்டும்.",
+   "keywords": [
+    "கிருமி",
+    "சோப்பு",
+    [
+     "கழுவ",
+     "கைகள"
+    ]
+   ]
+  },
+  {
+   "id": "ta-2",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 1,
+   "question": "திறந்தவெளியில் மலம் கழிப்பதால் ஏற்படும் பாதிப்புகள் யாவை?",
+   "answer": "திறந்தவெளியில் மலம் கழிப்பதால் காலரா, வயிற்றுப்போக்கு போன்ற நீரின் வழியாகவும் பூச்சிகள் வழியாகவும் பரவும் நோய்கள் ஏற்படுகின்றன. நிலத்தடி நீர் மாசடைகிறது. மேலும் குழந்தைகளுக்குக் குடற்புழுக்கள் உருவாகி இரத்தசோகை ஏற்படுகிறது.",
+   "keywords": [
+    "காலரா",
+    "குடற்புழு",
+    "இரத்தசோகை"
+   ]
+  },
+  {
+   "id": "ta-3",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 1,
+   "question": "நல்ல தொடுதல் மற்றும் தீய தொடுதல் என்றால் என்ன? தீய தொடுதலை உணர்ந்தால் என்ன செய்ய வேண்டும்?",
+   "answer": "அன்பையும் பாதுகாப்பையும் தரும் தொடுதல் நல்ல தொடுதல் ஆகும். கோபம், பயம், எரிச்சல் அல்லது சங்கடத்தை ஏற்படுத்தும் தொடுதல் தீய தொடுதல் ஆகும். யாராவது தகாத முறையில் தொட முயன்றால் உடனடியாக தொடாதே என்று உரக்கக் கூற வேண்டும், அந்த இடத்தை விட்டு ஓடிவிட வேண்டும், உதவி கிடைக்கும் வரை நம்பகமான பெரியவர்களிடம் சொல்லிக்கொண்டே இருக்க வேண்டும். உதவி எண் 1098.",
+   "keywords": [
+    "தொடாதே",
+    "1098"
+   ]
+  },
+  {
+   "id": "ta-4",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 1,
+   "question": "புலனுறுப்புகளைப் பாதுகாக்கும் சில முக்கிய வழிமுறைகளைக் கூறுக.",
+   "answer": "கண்கள்: போதிய வெளிச்சத்தில் படிக்க வேண்டும், திரைகளை குறைந்தபட்சம் 6 அடி தொலைவில் இருந்து பார்க்க வேண்டும். காதுகள்: கூர்மையான பொருள்களைப் பயன்படுத்தக் கூடாது, 85 டெசிபலுக்கு அதிகமான உரத்த ஒலியைத் தவிர்க்க வேண்டும். நாக்கு மற்றும் தோல்: தினமும் நாக்கு வழிப்பான் கொண்டு நாக்கைச் சுத்தம் செய்ய வேண்டும்.",
+   "keywords": [
+    [
+     "6 அடி",
+     "6"
+    ],
+    "85",
+    "நாக்"
+   ]
+  },
+  {
+   "id": "ta-5",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 2,
+   "question": "மாற்றுத்திறனாளிகள் எனப்படுவோர் யார்? அவர்களுக்கு நாம் எவ்வாறு உதவலாம்?",
+   "answer": "ஒன்று அல்லது அதற்கு மேற்பட்ட புலனுறுப்புகளையோ, உடல் இயக்கத்தையோ முழுமையாகப் பயன்படுத்த இயலாதவர்கள் மாற்றுத்திறனாளிகள் எனப்படுவர். அவர்களுக்குப் பரிதாபம் காட்டாமல், இயல்பான மனிதர்களாக நடத்த வேண்டும். சாலையைக் கடக்க உதவுதல், கதவைத் திறந்துவிடுதல், பேருந்தில் இடம் அளித்தல் போன்ற உதவிகளைச் செய்யலாம். பார்வையற்றோர் படிக்க பிரெய்லி முறை பயன்படுகிறது.",
+   "keywords": [
+    "மாற்றுத்திறனாளி",
+    "பிரெய்லி"
+   ]
+  },
+  {
+   "id": "ta-6",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 2,
+   "question": "பருப்பொருள் என்றால் என்ன? அதன் மூன்று நிலைகள் யாவை?",
+   "answer": "நிறை மற்றும் இடத்தை அடைத்துக்கொள்ளும் தன்மை கொண்ட எந்தவொரு பொருளும் பருப்பொருள் எனப்படும். பருப்பொருள்கள் மூன்று நிலைகளில் உள்ளன: திடம், திரவம் மற்றும் வாயு.",
+   "keywords": [
+    "திடம்",
+    "திரவம்",
+    "வாயு"
+   ]
+  },
+  {
+   "id": "ta-7",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 2,
+   "question": "திடம், திரவம், வாயு ஆகியவற்றின் பண்புகளை ஒப்பிடுக.",
+   "answer": "திடப்பொருள்: குறிப்பிட்ட வடிவம் மற்றும் கனஅளவு உண்டு, கடினமானது, துகள்கள் மிக நெருக்கமாக அமைந்திருக்கும். திரவப்பொருள்: குறிப்பிட்ட வடிவம் இல்லை, கனஅளவு உண்டு, எளிதில் பாயும். வாயுப்பொருள்: குறிப்பிட்ட வடிவமும் கனஅளவும் இல்லை, துகள்கள் மிகத் தளர்வாக இருப்பதால் அனைத்துத் திசைகளிலும் வேகமாகப் பரவும்.",
+   "keywords": [
+    "திடப்பொருள்",
+    "திரவப்பொருள்",
+    "வாயுப்பொருள்"
+   ]
+  },
+  {
+   "id": "ta-8",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 2,
+   "question": "பருப்பொருளின் நிலைமாற்றங்களை வரையறுக்க: உருகுதல், ஆவியாதல், உறைதல், சுருங்குதல்.",
+   "answer": "உருகுதல்: திடப்பொருளை வெப்பப்படுத்தும் போது திரவமாக மாறுவது. ஆவியாதல்: திரவப்பொருளை வெப்பப்படுத்தும் போது வாயுவாக மாறுவது. உறைதல்: திரவத்தைக் குளிர்விக்கும் போது திடப்பொருளாக மாறுவது. சுருங்குதல்: வாயு நிலையிலுள்ள பொருளைக் குளிர்விக்கும் போது திரவமாக மாறுவது.",
+   "keywords": [
+    "உருகுதல்",
+    "ஆவியாதல்",
+    "உறைதல்"
+   ]
+  },
+  {
+   "id": "ta-9",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 2,
+   "question": "விசை என்றால் என்ன? அதன் முதன்மைச் செயல்கள் யாவை?",
+   "answer": "ஒரு பொருளின் இடத்தை மாற்றவோ, நகரும் பொருளை நிறுத்தவோ அல்லது அதன் உருவத்தை மாற்றவோ செய்யப்படும் தள்ளுதல் அல்லது இழுத்தல் செயலே விசை எனப்படும். தள்ளுதல் என்பது பொருள் நகரும் திசையிலேயே விசை செயல்படுவது. இழுத்தல் என்பது பொருள் நகரும் திசைக்கு எதிர் திசையில் விசை செயல்படுவது.",
+   "keywords": [
+    "தள்ளுதல்",
+    "இழுத்தல்"
+   ]
+  },
+  {
+   "id": "ta-10",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 3,
+   "question": "விசையின் வகைகள் யாவை?",
+   "answer": "விசை இரண்டு வகைப்படும். தொடு விசை என்பது பொருளைத் தொடுவதன் மூலம் செயல்படும் விசை, எடுத்துக்காட்டாக தசைநார் விசை, எந்திர விசை, உராய்வு விசை. தொடா விசை என்பது தொடாமலேயே செயல்படும் விசை, எடுத்துக்காட்டாக புவியீர்ப்பு விசை மற்றும் காந்த விசை.",
+   "keywords": [
+    "தொடு விசை",
+    "தொடா விசை",
+    [
+     "புவியீர்ப்பு",
+     "காந்த"
+    ]
+   ]
+  },
+  {
+   "id": "ta-11",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 3,
+   "question": "நீரைக் கொதிக்க வைத்தல் என்றால் என்ன? நீரின் கொதிநிலை எவ்வளவு?",
+   "answer": "ஒரு திரவத்தை வாயு நிலைக்குச் செல்லும் அளவிற்கு வெப்பப்படுத்துவதே கொதிக்க வைத்தல் ஆகும். நீரின் கொதிநிலை 100 டிகிரி செல்சியஸ் ஆகும். நீரைக் கொதிக்க வைத்துக் குடிப்பதால் அதிலுள்ள கிருமிகள் அழிகின்றன, செரிமானம் எளிதாகிறது, நீர்வழி நோய்கள் தடுக்கப்படுகின்றன.",
+   "keywords": [
+    "100",
+    [
+     "கொதி"
+    ]
+   ]
+  },
+  {
+   "id": "ta-12",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 3,
+   "question": "அழுத்த சமையற்கலனின் நன்மைகள் யாவை?",
+   "answer": "அழுத்த சமையற்கலன் உணவைச் சாதாரண பாத்திரங்களை விட 4 மடங்கு வேகமாகச் சமைக்கிறது. இதனால் சமையல் நேரம் குறைகிறது, எரிபொருள் மிச்சமாகி ஆற்றல் சேமிக்கப்படுகிறது, உணவிலுள்ள ஊட்டச்சத்துக்கள் வீணாகாமல் தக்கவைக்கப்படுகின்றன.",
+   "keywords": [
+    [
+     "4 மடங்கு",
+     "4"
+    ],
+    "வேகமாக"
+   ]
+  },
+  {
+   "id": "ta-13",
+   "lang": "ta",
+   "book": "tamil_qa",
+   "page": 3,
+   "question": "சமையலறை மருத்துவப் பொருள்களும் அவற்றின் மருத்துவக் குணங்களும் யாவை?",
+   "answer": "பூண்டு இரத்த அழுத்தத்தைச் சீராக்கும், சளியைக் குணப்படுத்தும். பெருங்காயம் செரிமானத்தை அதிகரிக்கும். இஞ்சி செரிமானத்தை ஊக்குவிக்கும், குமட்டல் உணர்வை நீக்கும். மஞ்சள் சிறந்த இயற்கை கிருமிநாசினி. கருப்பு மிளகு சளி மற்றும் இருமலுக்குச் சிறந்த நிவாரணி. இலவங்கம் பல் வலியைப் போக்க உதவும்.",
+   "keywords": [
+    "பூண்டு",
+    "இஞ்சி",
+    "மஞ்சள்"
+   ]
+  },
+  {
+   "id": "en-sci10-1",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 1,
+   "chapter": "Chemical Reactions and Equations",
+   "question": "What is a chemical reaction?",
+   "answer": "A process in which the original substance(s) loses its nature and identity and forms new substance(s) with different properties, due to breaking and forming of chemical bonds.",
+   "keywords": [
+    "substance",
+    "original",
+    "identity"
+   ]
+  },
+  {
+   "id": "en-sci10-2",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 1,
+   "chapter": "Chemical Reactions and Equations",
+   "question": "List five observations that indicate a chemical reaction has occurred.",
+   "answer": "Change in state, change in colour, evolution of gas, change in temperature, and formation of a precipitate.",
+   "keywords": [
+    "precipitate",
+    "evolution",
+    "temperature"
+   ]
+  },
+  {
+   "id": "en-sci10-3",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 1,
+   "chapter": "Chemical Reactions and Equations",
+   "question": "What is a balanced chemical equation and why is it balanced?",
+   "answer": "An equation in which the number of atoms of each element is equal on both sides. It is balanced according to the Law of Conservation of Mass.",
+   "keywords": [
+    "conservation",
+    "according",
+    "equal"
+   ]
+  },
+  {
+   "id": "en-sci10-4",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 1,
+   "chapter": "Chemical Reactions and Equations",
+   "question": "Define combination, decomposition, displacement and double displacement reactions with one example each.",
+   "answer": "Combination: two or more reactants form one product, e.g., CaO + H2O → Ca(OH)2. Decomposition: a compound splits into simpler substances, e.g., CaCO3 → CaO + CO2. Displacement: a more reactive element displaces a less reactive one, e.g., Fe + CuSO4 → FeSO4 + Cu. Double displacement: exchange of ions between two compounds, e.g., Na2SO4 + BaCl2 → BaSO4 + 2NaCl.",
+   "keywords": [
+    "reactant",
+    "displace",
+    "exchange"
+   ]
+  },
+  {
+   "id": "en-sci10-5",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 1,
+   "chapter": "Chemical Reactions and Equations",
+   "question": "What are the three types of thermal/other decomposition reactions? Give the mnemonic.",
+   "answer": "Thermal (heat), Electrolytic (electricity), Photolytic (sunlight) decomposition — mnemonic 'PET'.",
+   "keywords": [
+    "electrolytic",
+    "photolytic",
+    "sunlight"
+   ]
+  },
+  {
+   "id": "en-sci10-6",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 1,
+   "chapter": "Chemical Reactions and Equations",
+   "question": "Differentiate between oxidation and reduction, and give the mnemonic used to remember them.",
+   "answer": "Oxidation is gain of oxygen or loss of hydrogen/electrons; Reduction is gain of hydrogen/electrons or loss of oxygen. Mnemonic: OIL RIG — Oxidation Is Loss of electrons, Reduction Is Gain of electrons.",
+   "keywords": [
+    "electron",
+    "gain",
+    "hydrogen"
+   ]
+  },
+  {
+   "id": "en-sci10-7",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 1,
+   "chapter": "Chemical Reactions and Equations",
+   "question": "What is a redox reaction? Give an example.",
+   "answer": "A reaction in which oxidation and reduction occur simultaneously, i.e., one reactant is oxidised while another is reduced, e.g., CuO + H2 → Cu + H2O (CuO is reduced, H2 is oxidised).",
+   "keywords": [
+    "simultaneously",
+    "reactant",
+    "oxidised"
+   ]
+  },
+  {
+   "id": "en-sci10-8",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 1,
+   "chapter": "Chemical Reactions and Equations",
+   "question": "Differentiate between exothermic and endothermic reactions with examples.",
+   "answer": "Exothermic reactions release heat, e.g., burning of natural gas, respiration. Endothermic reactions absorb heat, e.g., NH4Cl(s) + H2O(l) → NH4Cl(aq) with heat absorbed.",
+   "keywords": [
+    "absorbed",
+    "release",
+    "respiration"
+   ]
+  },
+  {
+   "id": "en-sci10-9",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 1,
+   "chapter": "Chemical Reactions and Equations",
+   "question": "Why should the coefficients of a chemical equation be adjusted rather than the formulae?",
+   "answer": "Changing the formulae would change the chemical nature of the substances; only the number of molecules (coefficients) can be adjusted to balance atoms.",
+   "keywords": [
+    "changing",
+    "molecule",
+    "balance"
+   ]
+  },
+  {
+   "id": "en-sci10-10",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 1,
+   "chapter": "Chemical Reactions and Equations",
+   "question": "Give the mnemonic for the five main types of chemical reactions.",
+   "answer": "ROC.D3 — Reduction/oxidation, Combination, Decomposition, Displacement, Double Displacement.",
+   "keywords": [
+    "combination",
+    "displacement",
+    "decomposition"
+   ]
+  },
+  {
+   "id": "en-sci10-11",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "What ions do acids and bases furnish in aqueous solution?",
+   "answer": "Acids furnish H+ ions; bases furnish OH- ions in aqueous solution.",
+   "keywords": [
+    "furnish",
+    "aqueou",
+    "solution"
+   ]
+  },
+  {
+   "id": "en-sci10-12",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "Differentiate between strong and weak acids/bases.",
+   "answer": "Strong acids/bases dissociate completely into ions in water (e.g., HCl, NaOH); weak acids/bases dissociate only partially (e.g., acetic acid, NH4OH).",
+   "keywords": [
+    "dissociate",
+    "completely",
+    "partially"
+   ]
+  },
+  {
+   "id": "en-sci10-13",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "Name the three types of indicators with one example each.",
+   "answer": "Natural indicators (litmus, turmeric, China rose), synthetic indicators (phenolphthalein, methyl orange), and olfactory indicators (onion, vanilla extract, clove oil).",
+   "keywords": [
+    "phenolphthalein",
+    "synthetic",
+    "olfactory"
+   ]
+  },
+  {
+   "id": "en-sci10-14",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "What happens when a metal reacts with an acid? Give the test for the gas produced.",
+   "answer": "Acid + Metal → Salt + Hydrogen gas. The gas is tested by bringing a burning candle near it; it burns with a pop sound.",
+   "keywords": [
+    "bringing",
+    "candle",
+    "burning"
+   ]
+  },
+  {
+   "id": "en-sci10-15",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "What happens when a metal carbonate/bicarbonate reacts with an acid?",
+   "answer": "Metal Carbonate/Hydrogen Carbonate + Acid → Salt + CO2 + H2O; CO2 is tested by passing it through lime water, which turns milky.",
+   "keywords": [
+    "passing",
+    "milky",
+    "tested"
+   ]
+  },
+  {
+   "id": "en-sci10-16",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "What is a neutralisation reaction? Give an example.",
+   "answer": "The reaction between an acid and a base to form salt and water, e.g., NaOH(aq) + HCl(aq) → NaCl(aq) + H2O(l).",
+   "keywords": [
+    "base",
+    "between",
+    "naoh"
+   ]
+  },
+  {
+   "id": "en-sci10-17",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "What is pH and what does it measure?",
+   "answer": "pH is a scale (0–14) that measures the concentration of H+ ions in a solution; pH < 7 is acidic, pH = 7 is neutral, pH > 7 is basic.",
+   "keywords": [
+    "measure",
+    "concentration",
+    "scale"
+   ]
+  },
+  {
+   "id": "en-sci10-18",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "State two important applications of pH in everyday life.",
+   "answer": "The human body works within a pH range of 7–7.8, and disruption causes discomfort (e.g., tooth decay below pH 5.5); acid rain (pH < 5.6) harms aquatic life and plants.",
+   "keywords": [
+    "disruption",
+    "discomfort",
+    "aquatic"
+   ]
+  },
+  {
+   "id": "en-sci10-19",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "List the types of salts based on the acid and base used, with an example each.",
+   "answer": "Neutral salts (strong acid + strong base, e.g., NaCl), acidic salts (strong acid + weak base, e.g., NH4Cl), and basic salts (strong base + weak acid, e.g., Na2CO3).",
+   "keywords": [
+    "na2co3",
+    "strong",
+    "nh4cl"
+   ]
+  },
+  {
+   "id": "en-sci10-20",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "What is the chlor-alkali process and what are its three products?",
+   "answer": "Electrolysis of a concentrated NaCl solution, producing NaOH, chlorine gas, and hydrogen gas.",
+   "keywords": [
+    "electrolysi",
+    "producing",
+    "concentrated"
+   ]
+  },
+  {
+   "id": "en-sci10-21",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "How is bleaching powder prepared and what is it used for?",
+   "answer": "Prepared by the action of chlorine on dry slaked lime: Cl2 + Ca(OH)2 → CaOCl2 + H2O. Used for bleaching, disinfecting water, and as an oxidising agent.",
+   "keywords": [
+    "disinfecting",
+    "oxidising",
+    "slaked"
+   ]
+  },
+  {
+   "id": "en-sci10-22",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "What is water of crystallisation? Give an example.",
+   "answer": "The fixed number of water molecules present in one formula unit of a salt, e.g., CuSO4.5H2O (copper sulphate pentahydrate) has 5 water molecules.",
+   "keywords": [
+    "pentahydrate",
+    "present",
+    "sulphate"
+   ]
+  },
+  {
+   "id": "en-sci10-23",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 2,
+   "chapter": "Acids, Bases and Salts",
+   "question": "What is Plaster of Paris and how is it prepared?",
+   "answer": "Calcium sulphate hemihydrate (CaSO4.½H2O), prepared by heating gypsum (CaSO4.2H2O) at 373 K; it is used to support fractured bones.",
+   "keywords": [
+    "hemihydrate",
+    "fractured",
+    "heating"
+   ]
+  },
+  {
+   "id": "en-sci10-24",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "List three physical properties that distinguish metals from non-metals.",
+   "answer": "Metals are lustrous, malleable, ductile and good conductors of heat/electricity; non-metals are generally non-lustrous, brittle and poor conductors (exceptions: mercury is liquid, iodine is lustrous, graphite conducts electricity).",
+   "keywords": [
+    "conductor",
+    "non-lustrou",
+    "exception"
+   ]
+  },
+  {
+   "id": "en-sci10-25",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "What happens when sodium and potassium are exposed to air? How are they stored?",
+   "answer": "They react vigorously with oxygen and catch fire if kept in the open, so they are stored immersed in kerosene.",
+   "keywords": [
+    "vigorously",
+    "immersed",
+    "kerosene"
+   ]
+  },
+  {
+   "id": "en-sci10-26",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "What is an amphoteric oxide? Give an example.",
+   "answer": "A metal oxide that reacts with both acids and bases to produce salt and water, e.g., Al2O3 reacts with HCl to give AlCl3, and with NaOH to give NaAlO2.",
+   "keywords": [
+    "react",
+    "naalo2",
+    "produce"
+   ]
+  },
+  {
+   "id": "en-sci10-27",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "Arrange the reactivity series of metals from most to least reactive (mnemonic).",
+   "answer": "K, Na, Ba, Ca, Mg, Al, Zn, Fe, Ni, Sn, Pb, H, Cu, Hg, Ag, Au, Pt — mnemonic: 'Popular Scientists Can Make A Zoo In The Low Humid Country More Satisfactorily'.",
+   "keywords": [
+    "scientist",
+    "satisfactorily",
+    "popular"
+   ]
+  },
+  {
+   "id": "en-sci10-28",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "What is aqua regia and what can it dissolve?",
+   "answer": "A mixture of concentrated HCl and HNO3 in a 3:1 ratio; it can dissolve noble metals like gold and platinum.",
+   "keywords": [
+    "platinum",
+    "mixture",
+    "concentrated"
+   ]
+  },
+  {
+   "id": "en-sci10-29",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "Explain the formation of an ionic compound with the example of NaCl.",
+   "answer": "Sodium (2,8,1) loses one electron to form Na+, chlorine (2,8,7) gains one electron to form Cl-; the oppositely charged ions attract each other to form the ionic compound NaCl.",
+   "keywords": [
+    "oppositely",
+    "electron",
+    "charged"
+   ]
+  },
+  {
+   "id": "en-sci10-30",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "List four properties of ionic compounds.",
+   "answer": "They are solid and hard, have high melting/boiling points, are generally soluble in water but insoluble in organic solvents, and conduct electricity in molten/aqueous state but not in solid state.",
+   "keywords": [
+    "solvent",
+    "melting",
+    "boiling"
+   ]
+  },
+  {
+   "id": "en-sci10-31",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "Differentiate between a mineral and an ore.",
+   "answer": "Minerals are elements/compounds occurring naturally in the earth's crust; ores are minerals that contain a high percentage of a metal from which it can be profitably extracted. All ores are minerals but not all minerals are ores.",
+   "keywords": [
+    "percentage",
+    "profitably",
+    "naturally"
+   ]
+  },
+  {
+   "id": "en-sci10-32",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "What are the three broad categories of metals based on reactivity, and how are they found/extracted?",
+   "answer": "Least reactive metals (Au, Ag, Cu) occur free in nature; moderately reactive metals (Zn, Fe, Pb) occur as oxides/sulphides/carbonates and are extracted by roasting/calcination followed by reduction; highly reactive metals (K, Na, Ca, Mg, Al) are extracted by electrolysis of molten ores.",
+   "keywords": [
+    "moderately",
+    "carbonate",
+    "calcination"
+   ]
+  },
+  {
+   "id": "en-sci10-33",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "What is corrosion? Name one method of prevention.",
+   "answer": "The deterioration of a metal due to reaction with its environment (e.g., rusting of iron). It can be prevented by painting, oiling, greasing, galvanising, or alloying.",
+   "keywords": [
+    "deterioration",
+    "galvanising",
+    "prevented"
+   ]
+  },
+  {
+   "id": "en-sci10-34",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "What is galvanisation?",
+   "answer": "The process of coating iron with a layer of zinc to protect it from rusting.",
+   "keywords": [
+    "coating",
+    "protect",
+    "process"
+   ]
+  },
+  {
+   "id": "en-sci10-35",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 3,
+   "chapter": "Metals and Non-Metals",
+   "question": "Name the alloys formed and their constituents: stainless steel, brass, bronze, solder.",
+   "answer": "Stainless steel: iron, carbon, nickel, chromium. Brass: copper and zinc. Bronze: copper and tin. Solder: lead and tin.",
+   "keywords": [
+    "chromium",
+    "nickel",
+    "lead"
+   ]
+  },
+  {
+   "id": "en-sci10-36",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "Why does carbon form covalent bonds instead of ionic bonds?",
+   "answer": "Carbon has 4 valence electrons (tetravalent); gaining or losing 4 electrons to form ions requires too much energy, so it shares electrons to form covalent bonds instead.",
+   "keywords": [
+    "tetravalent",
+    "require",
+    "valence"
+   ]
+  },
+  {
+   "id": "en-sci10-37",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "What are the two properties of carbon that allow it to form a very large number of compounds?",
+   "answer": "Catenation (ability to form long chains/rings of carbon atoms) and tetravalency (four bonding electrons available).",
+   "keywords": [
+    "catenation",
+    "tetravalency",
+    "available"
+   ]
+  },
+  {
+   "id": "en-sci10-38",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "Define catenation.",
+   "answer": "The unique ability of an element (especially carbon) to form long chains, branches, and rings by bonding with atoms of the same element.",
+   "keywords": [
+    "especially",
+    "branche",
+    "unique"
+   ]
+  },
+  {
+   "id": "en-sci10-39",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "Differentiate between saturated and unsaturated hydrocarbons with their general formulae.",
+   "answer": "Saturated hydrocarbons (alkanes, CnH2n+2) have only single bonds between carbon atoms; unsaturated hydrocarbons have double bonds (alkenes, CnH2n) or triple bonds (alkynes, CnH2n-2).",
+   "keywords": [
+    "alkane",
+    "cnh2n+2",
+    "alkene"
+   ]
+  },
+  {
+   "id": "en-sci10-40",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "What is a homologous series? State one property.",
+   "answer": "A series of organic compounds in which each successive member differs from the previous one by a -CH2 unit (14 a.m.u.); all members share the same functional group and similar chemical properties.",
+   "keywords": [
+    "functional",
+    "previou",
+    "successive"
+   ]
+  },
+  {
+   "id": "en-sci10-41",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "Name four important functional groups found in carbon compounds along with their formulae.",
+   "answer": "Alcohol (-OH), Aldehyde (-CHO), Ketone (>C=O), Carboxylic acid (-COOH).",
+   "keywords": [
+    "carboxylic",
+    "aldehyde",
+    "ketone"
+   ]
+  },
+  {
+   "id": "en-sci10-42",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "What is the difference between saturated and unsaturated hydrocarbon combustion flames?",
+   "answer": "Saturated hydrocarbons burn with a clean blue, non-sooty flame; unsaturated hydrocarbons burn with a yellow, sooty flame due to incomplete oxidation of the higher carbon content.",
+   "keywords": [
+    "incomplete",
+    "non-sooty",
+    "hydrocarbon"
+   ]
+  },
+  {
+   "id": "en-sci10-43",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "Define esterification with an equation.",
+   "answer": "The reaction of an acid with an alcohol in the presence of concentrated H2SO4 to form a sweet-smelling ester: CH3COOH + C2H5OH → CH3COOC2H5 + H2O.",
+   "keywords": [
+    "sweet-smelling",
+    "ch3cooc2h5",
+    "ch3cooh"
+   ]
+  },
+  {
+   "id": "en-sci10-44",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "What is saponification?",
+   "answer": "The alkaline hydrolysis of an ester (fat) to give soap (sodium/potassium salt of a fatty acid) and glycerol/alcohol.",
+   "keywords": [
+    "hydrolysi",
+    "potassium",
+    "glycerol"
+   ]
+  },
+  {
+   "id": "en-sci10-45",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "How does soap clean dirt? What is a micelle?",
+   "answer": "Soap has a hydrophilic (ionic) head and hydrophobic (hydrocarbon) tail. The hydrophobic end attaches to oily dirt while the ionic end stays in water, forming a radial cluster called a micelle, which lifts the dirt away.",
+   "keywords": [
+    "hydrophilic",
+    "hydrophobic",
+    "hydrocarbon"
+   ]
+  },
+  {
+   "id": "en-sci10-46",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "Why are detergents effective in hard water while soaps are not?",
+   "answer": "The calcium and magnesium salts in hard water react with soap to form an insoluble scum, reducing cleaning; detergents do not form scum with hard water, so they remain effective.",
+   "keywords": [
+    "magnesium",
+    "reducing",
+    "cleaning"
+   ]
+  },
+  {
+   "id": "en-sci10-47",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 4,
+   "chapter": "Carbon and its Compounds",
+   "question": "Write the reactions of ethanol with sodium and with sodium hydroxide/oxidising agents.",
+   "answer": "With sodium: 2CH3CH2OH + 2Na → 2CH3CH2ONa + H2. Oxidation with alkaline KMnO4 or acidic K2Cr2O7 converts ethanol to ethanoic acid (acetic acid).",
+   "keywords": [
+    "2ch3ch2ona",
+    "2ch3ch2oh",
+    "convert"
+   ]
+  },
+  {
+   "id": "en-sci10-48",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 5,
+   "chapter": "Life Processes",
+   "question": "Define autotrophic and heterotrophic nutrition with examples.",
+   "answer": "Autotrophic nutrition: organism makes its own food via photosynthesis, e.g., green plants. Heterotrophic nutrition: organism obtains food from another organism, e.g., animals and fungi (holozoic, saprophytic, or parasitic).",
+   "keywords": [
+    "saprophytic",
+    "parasitic",
+    "organism"
+   ]
+  },
+  {
+   "id": "en-sci10-49",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 5,
+   "chapter": "Life Processes",
+   "question": "What are the main events of photosynthesis?",
+   "answer": "Absorption of light energy by chlorophyll, conversion of light energy to chemical energy and splitting of water into hydrogen and oxygen, and reduction of CO2 to carbohydrates.",
+   "keywords": [
+    "absorption",
+    "chlorophyll",
+    "conversion"
+   ]
+  },
+  {
+   "id": "en-sci10-50",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 5,
+   "chapter": "Life Processes",
+   "question": "Describe the pathway of human digestion from mouth to anus (mnemonic given).",
+   "answer": "Mouth → Oesophagus → Stomach → Small Intestine (Duodenum, Jejunum, Ileum) → Large Intestine → Anus. Mnemonic: 'Kate MOSS is a DJ In LA'.",
+   "keywords": [
+    "oesophagu",
+    "intestine",
+    "duodenum"
+   ]
+  },
+  {
+   "id": "en-sci10-51",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 5,
+   "chapter": "Life Processes",
+   "question": "What is the difference between aerobic and anaerobic respiration?",
+   "answer": "Aerobic respiration occurs in the presence of oxygen in mitochondria, producing CO2 and H2O with more energy released. Anaerobic respiration occurs without oxygen in the cytoplasm, producing alcohol or lactic acid with less energy released.",
+   "keywords": [
+    "mitochondria",
+    "producing",
+    "cytoplasm"
+   ]
+  },
+  {
+   "id": "en-sci10-52",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 5,
+   "chapter": "Life Processes",
+   "question": "Explain the breakdown of glucose by different pathways.",
+   "answer": "Glucose is first converted to pyruvic acid via glycolysis in the cytoplasm. In presence of oxygen, pyruvic acid is broken down in mitochondria to CO2 and water (aerobic). In absence of oxygen, it forms lactic acid in muscles, or ethanol and CO2 in yeast (anaerobic/fermentation).",
+   "keywords": [
+    "glycolysi",
+    "fermentation",
+    "converted"
+   ]
+  },
+  {
+   "id": "en-sci10-53",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 5,
+   "chapter": "Life Processes",
+   "question": "Differentiate between arteries and veins.",
+   "answer": "Arteries carry oxygenated blood from the heart to the body (except pulmonary artery), have thick elastic walls, and no valves. Veins carry deoxygenated blood to the heart (except pulmonary vein), have thin walls, and contain valves to prevent backflow.",
+   "keywords": [
+    "backflow",
+    "oxygenated",
+    "elastic"
+   ]
+  },
+  {
+   "id": "en-sci10-54",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 5,
+   "chapter": "Life Processes",
+   "question": "What is double circulation, and why does the human heart have four chambers?",
+   "answer": "Blood passes through the heart twice in one complete cycle of the body (pulmonary and systemic circulation). The four chambers keep oxygenated and deoxygenated blood separate for efficient oxygen supply.",
+   "keywords": [
+    "efficient",
+    "complete",
+    "systemic"
+   ]
+  },
+  {
+   "id": "en-sci10-55",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 5,
+   "chapter": "Life Processes",
+   "question": "Differentiate between xylem and phloem.",
+   "answer": "Xylem transports water and minerals from roots to the rest of the plant without using energy and becomes dead tissue at maturity. Phloem transports food from leaves to other parts using energy (ATP) and remains living tissue.",
+   "keywords": [
+    "transport",
+    "maturity",
+    "tissue"
+   ]
+  },
+  {
+   "id": "en-sci10-56",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 5,
+   "chapter": "Life Processes",
+   "question": "What is the difference between transpiration and translocation?",
+   "answer": "Transpiration is the loss of water vapour from aerial parts of the plant. Translocation is the transport of food from leaves to other parts of the plant via phloem.",
+   "keywords": [
+    "transport",
+    "vapour",
+    "aerial"
+   ]
+  },
+  {
+   "id": "en-sci10-57",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 5,
+   "chapter": "Life Processes",
+   "question": "Describe the structure and function of a nephron.",
+   "answer": "A nephron consists of a glomerulus (cluster of capillaries) surrounded by Bowman's capsule and a long tubule. It performs glomerular filtration, tubular reabsorption, and secretion to form urine.",
+   "keywords": [
+    "glomerulu",
+    "capillarie",
+    "surrounded"
+   ]
+  },
+  {
+   "id": "en-sci10-58",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 5,
+   "chapter": "Life Processes",
+   "question": "What are the three steps of urine formation?",
+   "answer": "Glomerular filtration (removal of wastes, glucose, water, amino acids into Bowman's capsule), tubular reabsorption (useful substances reabsorbed into blood), and secretion (urea, excess water and salts secreted into the tubule).",
+   "keywords": [
+    "reabsorbed",
+    "glomerular",
+    "filtration"
+   ]
+  },
+  {
+   "id": "en-sci10-59",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 6,
+   "chapter": "Control and Coordination in Animals and Plants",
+   "question": "Name the parts of a neuron and their functions.",
+   "answer": "Cyton/cell body (contains nucleus), dendrite (receives impulses), axon (transmits impulses to the next neuron), myelin sheath (insulating cover), and synapse (junction between two neurons where signal is chemically transmitted).",
+   "keywords": [
+    "insulating",
+    "chemically",
+    "transmitted"
+   ]
+  },
+  {
+   "id": "en-sci10-60",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 6,
+   "chapter": "Control and Coordination in Animals and Plants",
+   "question": "What is a reflex action and a reflex arc? Give an example.",
+   "answer": "A reflex action is a quick, involuntary response to a stimulus, e.g., withdrawing the hand from a hot object. A reflex arc is the pathway (receptor → sensory neuron → spinal cord → motor neuron → effector) through which the impulse travels, bypassing the brain for a faster response.",
+   "keywords": [
+    "withdrawing",
+    "bypassing",
+    "receptor"
+   ]
+  },
+  {
+   "id": "en-sci10-61",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 6,
+   "chapter": "Control and Coordination in Animals and Plants",
+   "question": "Differentiate between voluntary, involuntary and reflex actions.",
+   "answer": "Voluntary actions are controlled by the forebrain (e.g., walking, talking). Involuntary actions are controlled by the midbrain/hindbrain (e.g., heartbeat, digestion). Reflex actions are controlled by the spinal cord (e.g., knee jerk).",
+   "keywords": [
+    "controlled",
+    "heartbeat",
+    "digestion"
+   ]
+  },
+  {
+   "id": "en-sci10-62",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 6,
+   "chapter": "Control and Coordination in Animals and Plants",
+   "question": "What are the three parts of the human brain and their functions?",
+   "answer": "Forebrain (cerebrum) — thinking, voluntary actions, memory, sensory integration. Midbrain — controls involuntary actions. Hindbrain (cerebellum, medulla, pons) — posture/balance, involuntary actions like blood pressure and vomiting, and regulation of respiration.",
+   "keywords": [
+    "integration",
+    "cerebellum",
+    "regulation"
+   ]
+  },
+  {
+   "id": "en-sci10-63",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 6,
+   "chapter": "Control and Coordination in Animals and Plants",
+   "question": "What is a hormone? Name the target site and one function of insulin.",
+   "answer": "A hormone is a chemical messenger secreted in small amounts by ductless (endocrine) glands, acting on distant target organs. Insulin, secreted by the pancreas, lowers blood glucose by promoting glycogenesis and cellular glucose uptake, targeting the liver, muscles and tissues.",
+   "keywords": [
+    "glycogenesi",
+    "messenger",
+    "endocrine"
+   ]
+  },
+  {
+   "id": "en-sci10-64",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 6,
+   "chapter": "Control and Coordination in Animals and Plants",
+   "question": "Name the hormone disorders caused by growth hormone and iodine deficiency.",
+   "answer": "Deficiency of growth hormone causes dwarfism; excess causes gigantism. Deficiency of iodine causes goitre due to reduced thyroxine secretion.",
+   "keywords": [
+    "gigantism",
+    "thyroxine",
+    "dwarfism"
+   ]
+  },
+  {
+   "id": "en-sci10-65",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 6,
+   "chapter": "Control and Coordination in Animals and Plants",
+   "question": "What is tropic movement? Name and describe the four types.",
+   "answer": "Directional growth of a plant organ in response to an external stimulus. Phototropism (towards light), geotropism (towards gravity), chemotropism (towards chemicals), hydrotropism (towards water).",
+   "keywords": [
+    "directional",
+    "geotropism",
+    "chemotropism"
+   ]
+  },
+  {
+   "id": "en-sci10-66",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 6,
+   "chapter": "Control and Coordination in Animals and Plants",
+   "question": "Name the five main plant hormones and one function of each (mnemonic given).",
+   "answer": "Auxins (cell elongation, phototropism/gravitropism), Gibberellins (stem elongation, seed germination), Cytokinins (cell division), Abscisic acid (growth inhibitor, stress hormone), Ethylene (fruit ripening). Mnemonic: 'A CAGE'.",
+   "keywords": [
+    "gravitropism",
+    "gibberellin",
+    "germination"
+   ]
+  },
+  {
+   "id": "en-sci10-67",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 6,
+   "chapter": "Control and Coordination in Animals and Plants",
+   "question": "What is seismonasty? Give an example.",
+   "answer": "A growth-independent, directionless movement of plants in response to touch, e.g., the folding of leaves of the 'touch-me-not' (Mimosa) plant.",
+   "keywords": [
+    "growth-independent",
+    "directionless",
+    "touch-me-not"
+   ]
+  },
+  {
+   "id": "en-sci10-68",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 7,
+   "chapter": "Reproduction",
+   "question": "Differentiate between asexual and sexual reproduction.",
+   "answer": "Asexual reproduction involves a single parent, no gametes, and produces identical offspring. Sexual reproduction involves two parents (male and female), gametes are formed, and offspring show genetic variation.",
+   "keywords": [
+    "involve",
+    "gamete",
+    "offspring"
+   ]
+  },
+  {
+   "id": "en-sci10-69",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 7,
+   "chapter": "Reproduction",
+   "question": "Name six modes of asexual reproduction with one example each.",
+   "answer": "Binary fission (Amoeba), multiple fission (Plasmodium), fragmentation (Spirogyra), regeneration (Planaria, Hydra), budding (Hydra), spore formation (Rhizopus).",
+   "keywords": [
+    "plasmodium",
+    "fragmentation",
+    "regeneration"
+   ]
+  },
+  {
+   "id": "en-sci10-70",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 7,
+   "chapter": "Reproduction",
+   "question": "What is vegetative propagation? Name one natural and one artificial method.",
+   "answer": "Reproduction in which new plantlets develop from vegetative parts (stem, root, leaf) of a plant. Natural: by leaves in Bryophyllum. Artificial: grafting (mango), cutting (rose), layering (jasmine).",
+   "keywords": [
+    "bryophyllum",
+    "plantlet",
+    "grafting"
+   ]
+  },
+  {
+   "id": "en-sci10-71",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 7,
+   "chapter": "Reproduction",
+   "question": "What is pollination? Differentiate self-pollination and cross-pollination.",
+   "answer": "Pollination is the transfer of pollen grains from the anther to the stigma. Self-pollination occurs within the same flower, while cross-pollination occurs between different flowers, introducing genetic variation.",
+   "keywords": [
+    "introducing",
+    "transfer",
+    "flower"
+   ]
+  },
+  {
+   "id": "en-sci10-72",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 7,
+   "chapter": "Reproduction",
+   "question": "What happens after fertilisation in a flowering plant?",
+   "answer": "The ovule becomes a seed and develops a hard seed coat; the ovary enlarges and ripens into a fruit; other floral parts may fall off.",
+   "keywords": [
+    "enlarge",
+    "ripen",
+    "floral"
+   ]
+  },
+  {
+   "id": "en-sci10-73",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 7,
+   "chapter": "Reproduction",
+   "question": "What are the parts of an embryonal axis and their fates?",
+   "answer": "Plumule develops into the shoot, and radicle develops into the root.",
+   "keywords": [
+    "plumule",
+    "radicle",
+    "shoot"
+   ]
+  },
+  {
+   "id": "en-sci10-74",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 7,
+   "chapter": "Reproduction",
+   "question": "Describe the male reproductive system parts and their functions (mnemonic given).",
+   "answer": "Seminiferous tubules (produce sperm), Epididymis, Vas deferens (carries sperm to urethra), Ejaculatory duct, Urethra (common passage for sperm and urine), Penis. Mnemonic: 'SEVEn UP'. Testes also secrete testosterone.",
+   "keywords": [
+    "seminiferou",
+    "epididymi",
+    "ejaculatory"
+   ]
+  },
+  {
+   "id": "en-sci10-75",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 7,
+   "chapter": "Reproduction",
+   "question": "Describe the female reproductive system and the process of fertilisation.",
+   "answer": "Ovary produces eggs and secretes estrogen/progesterone; the oviduct (fallopian tube) is the site of fertilisation and transfers the egg to the uterus, where the embryo implants and develops until birth (parturition).",
+   "keywords": [
+    "progesterone",
+    "parturition",
+    "fallopian"
+   ]
+  },
+  {
+   "id": "en-sci10-76",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 7,
+   "chapter": "Reproduction",
+   "question": "What is menstruation?",
+   "answer": "The monthly breakdown and shedding of the thickened uterine lining (along with blood vessels) as vaginal bleeding, occurring when the released egg is not fertilised.",
+   "keywords": [
+    "fertilised",
+    "breakdown",
+    "thickened"
+   ]
+  },
+  {
+   "id": "en-sci10-77",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 7,
+   "chapter": "Reproduction",
+   "question": "Name the four categories of contraceptive methods with one example each (mnemonic given).",
+   "answer": "Physical barrier (condoms), chemical (oral pills), intrauterine devices (copper-T), surgical (vasectomy in males, tubectomy in females). Mnemonic: 'SON Is Born'.",
+   "keywords": [
+    "intrauterine",
+    "vasectomy",
+    "tubectomy"
+   ]
+  },
+  {
+   "id": "en-sci10-78",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 8,
+   "chapter": "Heredity and Evolution",
+   "question": "Why do variations arise mainly through sexual reproduction?",
+   "answer": "Because of slight inaccuracies during DNA copying and crossing over during meiosis, leading to genetic differences between offspring and parents, unlike asexual reproduction which produces identical copies.",
+   "keywords": [
+    "inaccuracie",
+    "difference",
+    "crossing"
+   ]
+  },
+  {
+   "id": "en-sci10-79",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 8,
+   "chapter": "Heredity and Evolution",
+   "question": "State Mendel's Law of Dominance.",
+   "answer": "When parents with pure contrasting characters are crossed, only one character (the dominant character) is expressed in the F1 generation, while the recessive character remains unexpressed.",
+   "keywords": [
+    "contrasting",
+    "generation",
+    "unexpressed"
+   ]
+  },
+  {
+   "id": "en-sci10-80",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 8,
+   "chapter": "Heredity and Evolution",
+   "question": "State Mendel's Law of Segregation.",
+   "answer": "Every individual possesses a pair of alleles for a trait, and during gamete formation, the alleles segregate so that each gamete receives only one allele for each trait.",
+   "keywords": [
+    "possesse",
+    "segregate",
+    "individual"
+   ]
+  },
+  {
+   "id": "en-sci10-81",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 8,
+   "chapter": "Heredity and Evolution",
+   "question": "State the Law of Independent Assortment.",
+   "answer": "Alleles of different characters/genes separate independently of one another during gamete formation.",
+   "keywords": [
+    "independently",
+    "character",
+    "separate"
+   ]
+  },
+  {
+   "id": "en-sci10-82",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 8,
+   "chapter": "Heredity and Evolution",
+   "question": "In a monohybrid cross between a tall (TT) and dwarf (tt) pea plant, what are the phenotypic and genotypic ratios in F2?",
+   "answer": "Phenotypic ratio (Tall:Dwarf) = 3:1; Genotypic ratio (Pure Tall : Hybrid Tall : Pure Dwarf) = 1:2:1.",
+   "keywords": [
+    "hybrid",
+    "pure",
+    "ratio"
+   ]
+  },
+  {
+   "id": "en-sci10-83",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 8,
+   "chapter": "Heredity and Evolution",
+   "question": "What phenotypic ratio is obtained in a dihybrid cross in the F2 generation?",
+   "answer": "9:3:3:1.",
+   "keywords": [
+    "9",
+    "3",
+    "1"
+   ]
+  },
+  {
+   "id": "en-sci10-84",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 8,
+   "chapter": "Heredity and Evolution",
+   "question": "How is the sex of a child determined in humans?",
+   "answer": "Humans have XX (female) and XY (male) sex chromosomes. The mother always contributes an X chromosome; the father contributes either an X (resulting in a girl) or a Y (resulting in a boy) chromosome, so the father's sperm determines the child's sex.",
+   "keywords": [
+    "chromosome",
+    "contribute",
+    "determine"
+   ]
+  },
+  {
+   "id": "en-sci10-85",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 8,
+   "chapter": "Heredity and Evolution",
+   "question": "Differentiate between autosomes and sex chromosomes.",
+   "answer": "Autosomes (22 pairs in humans) are identical in appearance and not involved in sex determination. Sex chromosomes (the 23rd pair, X and Y) determine the sex of the individual and are not identical in appearance.",
+   "keywords": [
+    "appearance",
+    "determination",
+    "determine"
+   ]
+  },
+  {
+   "id": "en-sci10-86",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 8,
+   "chapter": "Heredity and Evolution",
+   "question": "What is the importance of variation in a species?",
+   "answer": "Variations help different individuals survive differently under changing environmental conditions (e.g., heat-resistant bacteria survive a heat wave), increasing the chances of survival of the species over time — this forms the basis of evolution.",
+   "keywords": [
+    "variation",
+    "individual",
+    "differently"
+   ]
+  },
+  {
+   "id": "en-sci10-87",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 9,
+   "chapter": "Light – Reflection and Refraction (Mirrors)",
+   "question": "State the two laws of reflection of light.",
+   "answer": "(1) The incident ray, reflected ray and normal all lie in the same plane at the point of incidence. (2) The angle of incidence equals the angle of reflection.",
+   "keywords": [
+    "reflected",
+    "incidence",
+    "equal"
+   ]
+  },
+  {
+   "id": "en-sci10-88",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 9,
+   "chapter": "Light – Reflection and Refraction (Mirrors)",
+   "question": "Differentiate between real and virtual images.",
+   "answer": "A real image is formed when light rays actually meet after reflection/refraction and can be obtained on a screen. A virtual image forms when rays appear to meet when produced backward and cannot be obtained on a screen.",
+   "keywords": [
+    "actually",
+    "obtained",
+    "backward"
+   ]
+  },
+  {
+   "id": "en-sci10-89",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 9,
+   "chapter": "Light – Reflection and Refraction (Mirrors)",
+   "question": "List four characteristics of an image formed by a plane mirror.",
+   "answer": "Virtual and erect, same size as the object, formed as far behind the mirror as the object is in front, and laterally inverted.",
+   "keywords": [
+    "laterally",
+    "inverted",
+    "front"
+   ]
+  },
+  {
+   "id": "en-sci10-90",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 9,
+   "chapter": "Light – Reflection and Refraction (Mirrors)",
+   "question": "Differentiate between a concave mirror and a convex mirror.",
+   "answer": "A concave mirror has its reflecting surface curved inward and can form both real and virtual images. A convex mirror has its reflecting surface curved outward and always forms a virtual, diminished image.",
+   "keywords": [
+    "reflecting",
+    "diminished",
+    "outward"
+   ]
+  },
+  {
+   "id": "en-sci10-91",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 9,
+   "chapter": "Light – Reflection and Refraction (Mirrors)",
+   "question": "Write the mirror formula and the magnification formula for spherical mirrors.",
+   "answer": "Mirror formula: 1/v + 1/u = 1/f. Magnification: m = hi/ho = -v/u.",
+   "keywords": [
+    "magnification",
+    "formula",
+    "mirror"
+   ]
+  },
+  {
+   "id": "en-sci10-92",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 9,
+   "chapter": "Light – Reflection and Refraction (Mirrors)",
+   "question": "What is the sign convention for magnification of a concave mirror producing a real image?",
+   "answer": "The magnification (m) is negative, since the image is real and inverted.",
+   "keywords": [
+    "negative",
+    "since",
+    "inverted"
+   ]
+  },
+  {
+   "id": "en-sci10-93",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 9,
+   "chapter": "Light – Reflection and Refraction (Mirrors)",
+   "question": "For an object placed at the centre of curvature (C) of a concave mirror, describe the position, size and nature of the image.",
+   "answer": "Image is formed at C, is the same size as the object, and is real and inverted.",
+   "keywords": [
+    "inverted",
+    "real",
+    "object"
+   ]
+  },
+  {
+   "id": "en-sci10-94",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 9,
+   "chapter": "Light – Reflection and Refraction (Mirrors)",
+   "question": "For an object placed between the pole and focus of a concave mirror, describe the image.",
+   "answer": "The image is formed behind the mirror, is enlarged, and is virtual and erect.",
+   "keywords": [
+    "enlarged",
+    "virtual",
+    "behind"
+   ]
+  },
+  {
+   "id": "en-sci10-95",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 9,
+   "chapter": "Light – Reflection and Refraction (Mirrors)",
+   "question": "Where is the image formed by a convex mirror when the object is at infinity?",
+   "answer": "At the focus, behind the mirror; the image is highly diminished, point-sized, virtual and erect.",
+   "keywords": [
+    "point-sized",
+    "diminished",
+    "highly"
+   ]
+  },
+  {
+   "id": "en-sci10-96",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 10,
+   "chapter": "Light – Refraction, Lenses, Human Eye and Atmospheric Phenomena",
+   "question": "State the two laws of refraction of light.",
+   "answer": "(1) The incident ray, refracted ray and normal lie in the same plane. (2) The ratio of the sine of the angle of incidence to the sine of the angle of refraction is constant for a given pair of media (Snell's Law).",
+   "keywords": [
+    "refracted",
+    "incidence",
+    "incident"
+   ]
+  },
+  {
+   "id": "en-sci10-97",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 10,
+   "chapter": "Light – Refraction, Lenses, Human Eye and Atmospheric Phenomena",
+   "question": "What is refractive index and what does it depend on?",
+   "answer": "Refractive index is the ratio of the speed of light in one medium to that in another (or in vacuum for absolute refractive index); it depends on the nature of the media and indicates how much light bends.",
+   "keywords": [
+    "indicate",
+    "absolute",
+    "medium"
+   ]
+  },
+  {
+   "id": "en-sci10-98",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 10,
+   "chapter": "Light – Refraction, Lenses, Human Eye and Atmospheric Phenomena",
+   "question": "Write the lens formula and magnification formula.",
+   "answer": "Lens formula: 1/v - 1/u = 1/f. Magnification: m = hi/ho = v/u.",
+   "keywords": [
+    "magnification",
+    "formula",
+    "lens"
+   ]
+  },
+  {
+   "id": "en-sci10-99",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 10,
+   "chapter": "Light – Refraction, Lenses, Human Eye and Atmospheric Phenomena",
+   "question": "Define power of a lens and its SI unit.",
+   "answer": "Power is the reciprocal of the focal length in metres (P = 1/f); its SI unit is the dioptre (D). A convex lens has positive power, a concave lens has negative power.",
+   "keywords": [
+    "reciprocal",
+    "positive",
+    "dioptre"
+   ]
+  },
+  {
+   "id": "en-sci10-100",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 10,
+   "chapter": "Light – Refraction, Lenses, Human Eye and Atmospheric Phenomena",
+   "question": "Name the main parts of the human eye and their functions: cornea, iris, pupil, lens, retina.",
+   "answer": "Cornea: outermost transparent part causing maximum refraction. Iris: coloured muscular diaphragm controlling pupil size. Pupil: regulates light entering the eye. Lens: focuses light onto the retina. Retina: light-sensitive layer where the image is formed.",
+   "keywords": [
+    "transparent",
+    "controlling",
+    "light-sensitive"
+   ]
+  },
+  {
+   "id": "en-sci10-101",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 10,
+   "chapter": "Light – Refraction, Lenses, Human Eye and Atmospheric Phenomena",
+   "question": "What is accommodation of the eye?",
+   "answer": "The ability of the eye lens to adjust its focal length (with the help of ciliary muscles) to focus on objects at varying distances.",
+   "keywords": [
+    "distance",
+    "adjust",
+    "ciliary"
+   ]
+  },
+  {
+   "id": "en-sci10-102",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 10,
+   "chapter": "Light – Refraction, Lenses, Human Eye and Atmospheric Phenomena",
+   "question": "Differentiate between myopia and hypermetropia, including their causes and corrections.",
+   "answer": "Myopia (nearsightedness): distant objects are not seen clearly because the image forms in front of the retina; caused by elongation of the eyeball; corrected using a concave lens. Hypermetropia (farsightedness): nearby objects are not seen clearly because the image forms behind the retina; caused by a short eyeball; corrected using a convex lens.",
+   "keywords": [
+    "nearsightedness",
+    "farsightedness",
+    "elongation"
+   ]
+  },
+  {
+   "id": "en-sci10-103",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 10,
+   "chapter": "Light – Refraction, Lenses, Human Eye and Atmospheric Phenomena",
+   "question": "What is presbyopia and how is it corrected?",
+   "answer": "An old-age defect where the eye loses its power of accommodation due to weakening ciliary muscles, making it hard to see nearby objects; corrected using bifocal lenses (concave on top for distance, convex below for near vision).",
+   "keywords": [
+    "accommodation",
+    "weakening",
+    "old-age"
+   ]
+  },
+  {
+   "id": "en-sci10-104",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 10,
+   "chapter": "Light – Refraction, Lenses, Human Eye and Atmospheric Phenomena",
+   "question": "What causes the twinkling of stars?",
+   "answer": "Atmospheric refraction — light from stars bends as it passes through layers of air of varying density, causing the apparent position of the star to fluctuate.",
+   "keywords": [
+    "atmospheric",
+    "fluctuate",
+    "apparent"
+   ]
+  },
+  {
+   "id": "en-sci10-105",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 10,
+   "chapter": "Light – Refraction, Lenses, Human Eye and Atmospheric Phenomena",
+   "question": "Why does the sky appear blue?",
+   "answer": "Due to the scattering of light (Tyndall effect); shorter wavelengths (blue) are scattered more by the tiny particles in the atmosphere than longer wavelengths.",
+   "keywords": [
+    "scattering",
+    "wavelength",
+    "atmosphere"
+   ]
+  },
+  {
+   "id": "en-sci10-106",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 10,
+   "chapter": "Light – Refraction, Lenses, Human Eye and Atmospheric Phenomena",
+   "question": "Explain dispersion of light through a prism and why red light bends least.",
+   "answer": "Dispersion is the splitting of white light into its seven constituent colours (VIBGYOR) on passing through a prism because each colour has a different wavelength and hence bends by a different amount. Red light has the longest wavelength and bends the least.",
+   "keywords": [
+    "constituent",
+    "wavelength",
+    "colour"
+   ]
+  },
+  {
+   "id": "en-sci10-107",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 11,
+   "chapter": "Electricity",
+   "question": "Define electric current and its SI unit.",
+   "answer": "Electric current is the rate of flow of electric charge through a cross-section of a conductor (I = Q/t); its SI unit is the ampere (A).",
+   "keywords": [
+    "cross-section",
+    "ampere",
+    "charge"
+   ]
+  },
+  {
+   "id": "en-sci10-108",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 11,
+   "chapter": "Electricity",
+   "question": "Define potential difference and its SI unit.",
+   "answer": "Potential difference is the work done in moving a unit charge from one point to another (V = W/Q); its SI unit is the volt (V).",
+   "keywords": [
+    "moving",
+    "charge",
+    "work"
+   ]
+  },
+  {
+   "id": "en-sci10-109",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 11,
+   "chapter": "Electricity",
+   "question": "State Ohm's Law.",
+   "answer": "The current through a conductor is directly proportional to the potential difference across it, provided physical conditions (like temperature) remain constant: V = IR.",
+   "keywords": [
+    "provided",
+    "difference",
+    "condition"
+   ]
+  },
+  {
+   "id": "en-sci10-110",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 11,
+   "chapter": "Electricity",
+   "question": "What factors affect the resistance of a conductor?",
+   "answer": "Resistance is directly proportional to the length, inversely proportional to the area of cross-section, and depends on the nature of the material and its temperature (R = ρL/A).",
+   "keywords": [
+    "inversely",
+    "material",
+    "cross-section"
+   ]
+  },
+  {
+   "id": "en-sci10-111",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 11,
+   "chapter": "Electricity",
+   "question": "Define resistivity and its SI unit.",
+   "answer": "Resistivity is the resistance offered by a conductor of unit length and unit cross-sectional area; its SI unit is ohm-metre (Ω m).",
+   "keywords": [
+    "cross-sectional",
+    "ohm-metre",
+    "offered"
+   ]
+  },
+  {
+   "id": "en-sci10-112",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 11,
+   "chapter": "Electricity",
+   "question": "Write the formula for equivalent resistance in series and parallel combinations.",
+   "answer": "Series: Rs = R1 + R2 + R3 + ... Parallel: 1/Rp = 1/R1 + 1/R2 + 1/R3 + ...",
+   "keywords": [
+    "parallel",
+    "serie",
+    "1"
+   ]
+  },
+  {
+   "id": "en-sci10-113",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 11,
+   "chapter": "Electricity",
+   "question": "State Joule's law of heating.",
+   "answer": "The heat produced in a conductor is directly proportional to the square of the current, the resistance, and the time for which current flows: H = I²Rt.",
+   "keywords": [
+    "proportional",
+    "resistance",
+    "square"
+   ]
+  },
+  {
+   "id": "en-sci10-114",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 11,
+   "chapter": "Electricity",
+   "question": "Write the formulas for electric power.",
+   "answer": "P = VI = I²R = V²/R.",
+   "keywords": [
+    "vi",
+    [
+     "i²r",
+     "i2r"
+    ],
+    [
+     "v²/r",
+     "v2/r"
+    ]
+   ]
+  },
+  {
+   "id": "en-sci10-115",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 11,
+   "chapter": "Electricity",
+   "question": "What is the commercial unit of electrical energy and how is it related to joules?",
+   "answer": "The kilowatt-hour (kWh), also called a 'unit'; 1 kWh = 3.6 × 10⁶ J.",
+   "keywords": [
+    "kilowatt-hour",
+    "10⁶",
+    "6"
+   ]
+  },
+  {
+   "id": "en-sci10-116",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 11,
+   "chapter": "Electricity",
+   "question": "What is an electric fuse and how does it work?",
+   "answer": "A safety device made of a low-melting, high-resistance alloy connected in series with the live wire; it melts and breaks the circuit when current exceeds a safe limit, protecting appliances from short-circuits and overloading.",
+   "keywords": [
+    "low-melting",
+    "high-resistance",
+    "protecting"
+   ]
+  },
+  {
+   "id": "en-sci10-117",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 12,
+   "chapter": "Magnetic Effects of Electric Current",
+   "question": "What did Oersted's experiment demonstrate?",
+   "answer": "That an electric current produces a magnetic field, as a compass needle near a current-carrying wire showed deflection.",
+   "keywords": [
+    "deflection",
+    "current-carrying",
+    "compass"
+   ]
+  },
+  {
+   "id": "en-sci10-118",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 12,
+   "chapter": "Magnetic Effects of Electric Current",
+   "question": "State the right-hand thumb rule.",
+   "answer": "If a current-carrying conductor is held in the right hand with the thumb pointing in the direction of current, the direction in which the fingers curl gives the direction of the magnetic field.",
+   "keywords": [
+    "pointing",
+    "current-carrying",
+    "finger"
+   ]
+  },
+  {
+   "id": "en-sci10-119",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 12,
+   "chapter": "Magnetic Effects of Electric Current",
+   "question": "List three factors affecting the magnetic field due to a current-carrying circular loop/solenoid.",
+   "answer": "The magnitude of current flowing, the distance from the coil/solenoid, and the number of turns in the coil/solenoid.",
+   "keywords": [
+    "magnitude",
+    "flowing",
+    "distance"
+   ]
+  },
+  {
+   "id": "en-sci10-120",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 12,
+   "chapter": "Magnetic Effects of Electric Current",
+   "question": "What is a solenoid and how does it behave like a magnet?",
+   "answer": "A solenoid is a coil of many circular turns of insulated copper wire wrapped closely in the shape of a cylinder; when current flows through it, one end behaves like a north pole and the other like a south pole, just like a bar magnet.",
+   "keywords": [
+    "insulated",
+    "circular",
+    "cylinder"
+   ]
+  },
+  {
+   "id": "en-sci10-121",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 12,
+   "chapter": "Magnetic Effects of Electric Current",
+   "question": "State Fleming's left-hand rule.",
+   "answer": "Stretch the thumb, forefinger, and middle finger of the left hand mutually perpendicular; if the forefinger points in the direction of the magnetic field and the middle finger in the direction of current, the thumb gives the direction of the force (motion) on the conductor.",
+   "keywords": [
+    "forefinger",
+    "perpendicular",
+    "mutually"
+   ]
+  },
+  {
+   "id": "en-sci10-122",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 12,
+   "chapter": "Magnetic Effects of Electric Current",
+   "question": "Differentiate between alternating current (AC) and direct current (DC).",
+   "answer": "AC periodically reverses its direction (frequency 50 Hz in India); DC flows in one direction only. AC is easier and cheaper to generate/transmit and can be stepped up or down easily.",
+   "keywords": [
+    "periodically",
+    "frequency",
+    "reverse"
+   ]
+  },
+  {
+   "id": "en-sci10-123",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 12,
+   "chapter": "Magnetic Effects of Electric Current",
+   "question": "Name the three wires in a domestic electric circuit and their insulation colours.",
+   "answer": "Live wire (red/brown), neutral wire (black/blue), and earth wire (green) — mnemonic: 'Rare Lawn Beautiful Nature Green Earth'.",
+   "keywords": [
+    "beautiful",
+    "brown",
+    "black"
+   ]
+  },
+  {
+   "id": "en-sci10-124",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 12,
+   "chapter": "Magnetic Effects of Electric Current",
+   "question": "What is the purpose of an earth wire in domestic circuits?",
+   "answer": "It connects the metallic body of an appliance to the earth, providing a low-resistance path for leakage current and preventing electric shock to the user.",
+   "keywords": [
+    "low-resistance",
+    "preventing",
+    "appliance"
+   ]
+  },
+  {
+   "id": "en-sci10-125",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 12,
+   "chapter": "Magnetic Effects of Electric Current",
+   "question": "Differentiate between short-circuiting and overloading.",
+   "answer": "Short-circuiting occurs when the live and neutral wires touch directly, causing a sudden rise in current. Overloading occurs when too many high-power appliances are connected to a circuit, causing excessive current flow and overheating of wires.",
+   "keywords": [
+    "high-power",
+    "overheating",
+    "excessive"
+   ]
+  },
+  {
+   "id": "en-sci10-126",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 13,
+   "chapter": "Our Environment",
+   "question": "Define an ecosystem and give two examples.",
+   "answer": "All the interacting organisms in an area together with the non-living components of their environment; examples include a forest (natural) and an aquarium (artificial).",
+   "keywords": [
+    "interacting",
+    "non-living",
+    "component"
+   ]
+  },
+  {
+   "id": "en-sci10-127",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 13,
+   "chapter": "Our Environment",
+   "question": "What are producers, consumers, and decomposers?",
+   "answer": "Producers (green plants) make their own food via photosynthesis. Consumers (herbivores, carnivores, omnivores, parasites) depend on producers or other consumers for food. Decomposers (bacteria, fungi) break down dead organic matter into simple substances, recycling nutrients.",
+   "keywords": [
+    "herbivore",
+    "carnivore",
+    "omnivore"
+   ]
+  },
+  {
+   "id": "en-sci10-128",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 13,
+   "chapter": "Our Environment",
+   "question": "Define a food chain and a food web.",
+   "answer": "A food chain is a sequence of organisms through which food energy flows in an ecosystem. A food web is the network of interconnected food chains at various trophic levels.",
+   "keywords": [
+    "interconnected",
+    "ecosystem",
+    "sequence"
+   ]
+  },
+  {
+   "id": "en-sci10-129",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 13,
+   "chapter": "Our Environment",
+   "question": "State the 10 per cent law of energy flow.",
+   "answer": "Only about 10% of the food energy at one trophic level is transferred to the next trophic level; the remaining 90% is used up in life processes, which is why food chains are usually limited to 3–4 trophic levels.",
+   "keywords": [
+    "transferred",
+    "remaining",
+    "processe"
+   ]
+  },
+  {
+   "id": "en-sci10-130",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 13,
+   "chapter": "Our Environment",
+   "question": "What is biological magnification?",
+   "answer": "The increasing concentration of harmful chemicals (like pesticides) at each successive trophic level of a food chain, with the maximum concentration accumulating in the topmost consumer (often humans).",
+   "keywords": [
+    "pesticide",
+    "accumulating",
+    "consumer"
+   ]
+  },
+  {
+   "id": "en-sci10-131",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 13,
+   "chapter": "Our Environment",
+   "question": "Differentiate between biodegradable and non-biodegradable waste with examples.",
+   "answer": "Biodegradable waste can be broken down by microorganisms, e.g., fruit peels, paper, cow dung. Non-biodegradable waste cannot be broken down by microorganisms, e.g., plastic, metals, radioactive waste.",
+   "keywords": [
+    "microorganism",
+    "radioactive",
+    "plastic"
+   ]
+  },
+  {
+   "id": "en-sci10-132",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 13,
+   "chapter": "Our Environment",
+   "question": "Name four methods of waste disposal/management.",
+   "answer": "Biogas plants, sewage treatment plants, land filling, and composting (also reduce, reuse, and recycle).",
+   "keywords": [
+    "composting",
+    "treatment",
+    "filling"
+   ]
+  },
+  {
+   "id": "en-sci10-133",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 13,
+   "chapter": "Our Environment",
+   "question": "Why is the ozone layer important, and what causes its depletion?",
+   "answer": "Ozone (O3) shields the earth's surface from harmful ultraviolet radiation. Its depletion is mainly caused by chlorofluorocarbons (CFCs) and pollutant nitrogen monoxide (NO), which break down ozone molecules in the stratosphere.",
+   "keywords": [
+    "ultraviolet",
+    "chlorofluorocarbon",
+    "stratosphere"
+   ]
+  },
+  {
+   "id": "en-sci10-134",
+   "lang": "en",
+   "book": "Science Class 10",
+   "page": 13,
+   "chapter": "Our Environment",
+   "question": "What international treaty aims to protect the ozone layer, and what does it do?",
+   "answer": "The Montreal Protocol (signed in 1987) aims to control the emission of ozone-depleting substances; under it, the United Nations Environment Programme (UNEP) negotiated agreements to stop CFC production.",
+   "keywords": [
+    "ozone-depleting",
+    "negotiated",
+    "agreement"
+   ]
+  },
+  {
+   "id": "hi-hindib10-1",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 1,
+   "chapter": "अपठित गद्यांश",
+   "question": "अपठित का शाब्दिक अर्थ क्या है?",
+   "answer": "अपठित का शाब्दिक अर्थ है — जो पहले नहीं पढ़ा गया हो।",
+   "keywords": [
+    "पढ़ा",
+    "पहले",
+    "हो।"
+   ]
+  },
+  {
+   "id": "hi-hindib10-2",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 1,
+   "chapter": "अपठित गद्यांश",
+   "question": "अपठित गद्यांश को पाठ्यक्रम में रखने का उद्देश्य क्या है?",
+   "answer": "किसी भी गद्य खंड को पढ़कर स्वयं समझने और उससे संबंधित पूछे गए प्रश्नों के उत्तर स्वयं दे पाने की क्षमता का विकास करना, जिससे विद्यार्थियों की बौद्धिक व अभिव्यक्ति क्षमता का विकास होता है।",
+   "keywords": [
+    "अभिव्यक्ति",
+    "बौद्धिक",
+    "प्रश्नों"
+   ]
+  },
+  {
+   "id": "hi-hindib10-3",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 1,
+   "chapter": "अपठित गद्यांश",
+   "question": "अपठित गद्यांश हल करते समय किन बातों पर ध्यान देना आवश्यक है? (कोई चार बिंदु लिखिए)",
+   "answer": "1) गद्यांश को दो बार अवश्य पढ़ना चाहिए ताकि मूल अर्थ समझ में आ सके। 2) गद्यांश के विषय व भाव को समझना चाहिए। 3) पूछे गए प्रश्नों को समझकर दिए गए विकल्पों में से सही उत्तर चुनना चाहिए। 4) कठिन शब्दों का अर्थ समझने का प्रयास करना चाहिए।",
+   "keywords": [
+    "विकल्पों",
+    "प्रश्नों",
+    "प्रयास"
+   ]
+  },
+  {
+   "id": "hi-hindib10-4",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 1,
+   "chapter": "अपठित गद्यांश",
+   "question": "गद्यांश को दो बार पढ़ने से विद्यार्थियों को क्या लाभ होता है?",
+   "answer": "इससे गद्यांश के मूल अर्थ को भली-भाँति समझा जा सकता है और विद्यार्थियों की पढ़ने की क्षमता का भी विकास होता है।",
+   "keywords": [
+    "भली-भाँति",
+    "समझा",
+    "क्षमता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-5",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 1,
+   "chapter": "अपठित गद्यांश",
+   "question": "विकल्प का चुनाव किस आधार पर किया जाना चाहिए?",
+   "answer": "विकल्प का चुनाव सदैव गद्यांश में दिए गए तथ्यों पर आधारित होना चाहिए, अपनी कल्पना पर नहीं।",
+   "keywords": [
+    "कल्पना",
+    "नहीं।",
+    "तथ्यों"
+   ]
+  },
+  {
+   "id": "hi-hindib10-6",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 1,
+   "chapter": "अपठित गद्यांश",
+   "question": "गद्यांश में आए कठिन शब्दों का अर्थ समझने का प्रयास क्यों करना चाहिए?",
+   "answer": "इससे विद्यार्थियों के शब्दकोश (शब्द-भंडार) में वृद्धि होती है।",
+   "keywords": [
+    "शब्द-भंडार",
+    "शब्दकोश",
+    "वृद्धि"
+   ]
+  },
+  {
+   "id": "hi-hindib10-7",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 1,
+   "chapter": "अपठित गद्यांश",
+   "question": "गद्यांश के विषय व भाव को समझने से विद्यार्थियों में किस क्षमता का विकास होता है?",
+   "answer": "इससे विद्यार्थियों की विश्लेषण (विश्लेषणात्मक) क्षमता का विकास होता है।",
+   "keywords": [
+    "विश्लेषणात्मक",
+    "इससे",
+    "विद्यार्थियों"
+   ]
+  },
+  {
+   "id": "hi-hindib10-8",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 2,
+   "chapter": "पदबंध",
+   "question": "शब्द और पद में क्या अंतर है?",
+   "answer": "शब्द एक या एक से अधिक वर्णों का सार्थक व स्वतंत्र ध्वनि-समूह है, जैसे — लड़का, घर। जब कोई शब्द वाक्य में प्रयुक्त होता है तो वह 'पद' बनता है; जैसे — लड़का घर जाता है।",
+   "keywords": [
+    "ध्वनि-समूह",
+    "प्रयुक्त",
+    "वर्णों"
+   ]
+  },
+  {
+   "id": "hi-hindib10-9",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 2,
+   "chapter": "पदबंध",
+   "question": "पदबंध की परिभाषा दीजिए।",
+   "answer": "जब एक से अधिक पद मिलकर एक व्याकरणिक इकाई का काम करते हैं, तब उस बँधी हुई इकाई को पदबंध कहते हैं; जैसे — 'मेरा एक बड़ा लड़का' घर जाता है।",
+   "keywords": [
+    "व्याकरणिक",
+    "बँधी",
+    "मेरा"
+   ]
+  },
+  {
+   "id": "hi-hindib10-10",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 2,
+   "chapter": "पदबंध",
+   "question": "पदबंध के कितने भेद होते हैं? नाम लिखिए।",
+   "answer": "पदबंध के पाँच भेद होते हैं — (क) संज्ञा पदबंध, (ख) सर्वनाम पदबंध, (ग) विशेषण पदबंध, (घ) क्रिया पदबंध, (ङ) क्रियाविशेषण पदबंध।",
+   "keywords": [
+    "पदबंध।",
+    "क्रियाविशेषण",
+    "सर्वनाम"
+   ]
+  },
+  {
+   "id": "hi-hindib10-11",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 2,
+   "chapter": "पदबंध",
+   "question": "संज्ञा पदबंध किसे कहते हैं? उदाहरण दीजिए।",
+   "answer": "जो पदबंध वाक्य में वही प्रकार्य करते हैं जिसे अकेला संज्ञा पद करता है, उसे संज्ञा पदबंध कहते हैं; जैसे — 'मेहनत करने वाले छात्र' अवश्य सफल होंगे।",
+   "keywords": [
+    "प्रकार्य",
+    "होंगे।",
+    "मेहनत"
+   ]
+  },
+  {
+   "id": "hi-hindib10-12",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 2,
+   "chapter": "पदबंध",
+   "question": "सर्वनाम पदबंध किसे कहते हैं?",
+   "answer": "जिस पदबंध में शीर्ष के स्थान पर सर्वनाम शब्द हो, अर्थात् वाक्य में सर्वनाम पद का कार्य करने वाले पदबंध को सर्वनाम पदबंध कहते हैं; जैसे — 'शेर की तरह दहाड़ने वाले तुम' काँप क्यों रहे हो?",
+   "keywords": [
+    "दहाड़ने",
+    "शीर्ष",
+    "काँप"
+   ]
+  },
+  {
+   "id": "hi-hindib10-13",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 2,
+   "chapter": "पदबंध",
+   "question": "विशेषण पदबंध की रचना किससे होती है?",
+   "answer": "विशेषण पदबंध की रचना प्रायः विशेषणों के योग से होती है — जो पदबंध संज्ञा या सर्वनाम के विशेषण के रूप में कार्य करते हैं, उन्हें विशेषण पदबंध कहते हैं; जैसे — 'उसकी छोटी बहन' बहुत बीमार है।",
+   "keywords": [
+    "विशेषणों",
+    "बीमार",
+    "प्रायः"
+   ]
+  },
+  {
+   "id": "hi-hindib10-14",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 2,
+   "chapter": "पदबंध",
+   "question": "क्रिया पदबंध और क्रियाविशेषण पदबंध में क्या अंतर है?",
+   "answer": "क्रिया का कार्य करने वाले पदों को क्रिया पदबंध कहते हैं (जैसे — नौका नदी में डूबती चली गई)। जो पदबंध क्रियाविशेषण पद के स्थान पर आकर वही कार्य करता है जो अकेला क्रियाविशेषण करता है, उसे क्रियाविशेषण पदबंध कहते हैं (जैसे — वह बहुत तेज़ दौड़कर आती है — रीतिवाचक क्रियाविशेषण पदबंध)।",
+   "keywords": [
+    "रीतिवाचक",
+    "दौड़कर",
+    "डूबती"
+   ]
+  },
+  {
+   "id": "hi-hindib10-15",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 3,
+   "chapter": "रचना के आधार पर वाक्य-रूपांतरण",
+   "question": "वाक्य की परिभाषा दीजिए। वाक्य के कितने अंग होते हैं?",
+   "answer": "शब्दों का सार्थक समूह जो व्याकरणिक नियमों के अनुरूप हो, वाक्य कहलाता है। वाक्य के दो अंग होते हैं — (क) उद्देश्य और (ख) विधेय।",
+   "keywords": [
+    "व्याकरणिक",
+    "नियमों",
+    "अनुरूप"
+   ]
+  },
+  {
+   "id": "hi-hindib10-16",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 3,
+   "chapter": "रचना के आधार पर वाक्य-रूपांतरण",
+   "question": "उद्देश्य और विधेय में क्या अंतर है?",
+   "answer": "वाक्य का वह अंश जिसके बारे में शेष अंश में कुछ कहा गया हो, उद्देश्य कहलाता है (जैसे 'लड़का' गया)। वाक्य का वह अंश जो उद्देश्य के बारे में सूचना देता है, विधेय कहलाता है (जैसे लड़का 'गया')।",
+   "keywords": [
+    "बारे",
+    "कहलाता",
+    "लड़का"
+   ]
+  },
+  {
+   "id": "hi-hindib10-17",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 3,
+   "chapter": "रचना के आधार पर वाक्य-रूपांतरण",
+   "question": "रचना के आधार पर वाक्य कितने प्रकार के होते हैं?",
+   "answer": "रचना के आधार पर वाक्य तीन प्रकार के होते हैं — (1) सरल या साधारण वाक्य, (2) संयुक्त वाक्य, (3) मिश्र वाक्य।",
+   "keywords": [
+    "वाक्य।",
+    "संयुक्त",
+    "मिश्र"
+   ]
+  },
+  {
+   "id": "hi-hindib10-18",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 3,
+   "chapter": "रचना के आधार पर वाक्य-रूपांतरण",
+   "question": "सरल वाक्य किसे कहते हैं? उदाहरण दीजिए।",
+   "answer": "जिस वाक्य में एक उद्देश्य तथा एक विधेय होता है, वह साधारण (सरल) वाक्य कहलाता है; जैसे — सुधीर फुटबॉल खेलता है।",
+   "keywords": [
+    "फुटबॉल",
+    "सुधीर",
+    "खेलता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-19",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 3,
+   "chapter": "रचना के आधार पर वाक्य-रूपांतरण",
+   "question": "संयुक्त वाक्य किसे कहते हैं?",
+   "answer": "जिस वाक्य में दो या दो से अधिक स्वतंत्र वाक्य योजक शब्दों के द्वारा जुड़े होते हैं, उसे संयुक्त वाक्य कहते हैं; जैसे — राम आया और श्याम गया।",
+   "keywords": [
+    "श्याम",
+    "स्वतंत्र",
+    "जुड़े"
+   ]
+  },
+  {
+   "id": "hi-hindib10-20",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 3,
+   "chapter": "रचना के आधार पर वाक्य-रूपांतरण",
+   "question": "मिश्र वाक्य किसे कहते हैं?",
+   "answer": "जिस वाक्य में एक से अधिक उपवाक्य हों तथा वे किसी योजक से जुड़े हों और उनमें एक उपवाक्य मुख्य तथा अन्य उस पर आश्रित हों, उसे मिश्र वाक्य कहते हैं; जैसे — विनोद ने कहा कि वह दिल्ली जा रहा है।",
+   "keywords": [
+    "आश्रित",
+    "दिल्ली",
+    "उनमें"
+   ]
+  },
+  {
+   "id": "hi-hindib10-21",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 3,
+   "chapter": "रचना के आधार पर वाक्य-रूपांतरण",
+   "question": "मिश्र वाक्य में कितने प्रकार के आश्रित उपवाक्य होते हैं?",
+   "answer": "तीन प्रकार के — (1) संज्ञा उपवाक्य, (2) विशेषण उपवाक्य, (3) क्रियाविशेषण उपवाक्य।",
+   "keywords": [
+    "उपवाक्य।",
+    "क्रियाविशेषण",
+    "संज्ञा"
+   ]
+  },
+  {
+   "id": "hi-hindib10-22",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 3,
+   "chapter": "रचना के आधार पर वाक्य-रूपांतरण",
+   "question": "संज्ञा उपवाक्य किसे कहते हैं?",
+   "answer": "जो उपवाक्य प्रधान वाक्य की किसी संज्ञा के स्थान पर प्रयुक्त हो, उसे संज्ञा उपवाक्य कहते हैं; जैसे — उसने कहा कि मैं स्कूल जाऊँगा (यहाँ 'मैं स्कूल जाऊँगा' संज्ञा उपवाक्य है, जो प्रायः 'कि' योजक से जुड़ता है)।",
+   "keywords": [
+    "प्रयुक्त",
+    "जाऊँगा",
+    "जुड़ता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-23",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 4,
+   "chapter": "समास",
+   "question": "समास की परिभाषा दीजिए।",
+   "answer": "दो या दो से अधिक शब्दों (पदों) के मेल से जो नया सार्थक शब्द बनता है, उसे समस्त-पद कहते हैं; इस मेल की प्रक्रिया को समास कहते हैं। समास होने पर बीच की विभक्तियाँ आदि शब्दों का लोप हो जाता है (जैसे — 'देश का भक्त' का समास हुआ — देशभक्त)।",
+   "keywords": [
+    "विभक्तियाँ",
+    "समस्त-पद",
+    "देशभक्त"
+   ]
+  },
+  {
+   "id": "hi-hindib10-24",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 4,
+   "chapter": "समास",
+   "question": "समास रचना में पूर्वपद और उत्तरपद क्या होते हैं?",
+   "answer": "समास रचना में दो पद होते हैं — पहला पद 'पूर्वपद' और दूसरा 'उत्तरपद' कहलाता है; दोनों के संयोग से बना नया शब्द समस्त पद या समास कहलाता है (जैसे दश+आनन = दशानन)।",
+   "keywords": [
+    "दश+आनन",
+    "दूसरा",
+    "संयोग"
+   ]
+  },
+  {
+   "id": "hi-hindib10-25",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 4,
+   "chapter": "समास",
+   "question": "समास-विग्रह किसे कहते हैं?",
+   "answer": "जब समस्त पद के सभी पदों को अलग-अलग किया जाता है, तब उस प्रक्रिया को समास-विग्रह कहते हैं; जैसे — सीता-राम का विग्रह होगा — सीता और राम।",
+   "keywords": [
+    "सीता-राम",
+    "अलग-अलग",
+    "प्रक्रिया"
+   ]
+  },
+  {
+   "id": "hi-hindib10-26",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 4,
+   "chapter": "समास",
+   "question": "संधि और समास में क्या अंतर है?",
+   "answer": "संधि में वर्णों का मेल होता है, जबकि समास में शब्दों (पदों) का मेल होता है। संधि को अलग करने की प्रक्रिया 'संधि-विच्छेद' कहलाती है, जबकि समास के पदों को अलग करने की प्रक्रिया 'समास-विग्रह' कहलाती है।",
+   "keywords": [
+    "संधि-विच्छेद",
+    "समास-विग्रह",
+    "कहलाती"
+   ]
+  },
+  {
+   "id": "hi-hindib10-27",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 4,
+   "chapter": "समास",
+   "question": "समास के कितने भेद होते हैं? नाम लिखिए।",
+   "answer": "समास के छह प्रमुख भेद हैं — (1) तत्पुरुष समास, (2) कर्मधारय समास, (3) द्विगु समास, (4) द्वंद्व समास, (5) बहुव्रीहि समास, (6) अव्ययीभाव समास।",
+   "keywords": [
+    "बहुव्रीहि",
+    "अव्ययीभाव",
+    "तत्पुरुष"
+   ]
+  },
+  {
+   "id": "hi-hindib10-28",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 4,
+   "chapter": "समास",
+   "question": "तत्पुरुष समास किसे कहते हैं?",
+   "answer": "जब पूर्वपद विशेषण होने के कारण 'गौण' तथा उत्तरपद विशेष्य होने के कारण 'प्रधान' होता है, वहाँ तत्पुरुष समास होता है; समास होने पर विभक्ति का लोप हो जाता है — जैसे 'यशप्राप्त' का विग्रह है 'यश को प्राप्त'।",
+   "keywords": [
+    "यशप्राप्त",
+    "विभक्ति",
+    "विशेष्य"
+   ]
+  },
+  {
+   "id": "hi-hindib10-29",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 4,
+   "chapter": "समास",
+   "question": "कर्मधारय समास किसे कहते हैं? उदाहरण दीजिए।",
+   "answer": "जहाँ पूर्वपद विशेषण और उत्तरपद विशेष्य हो, या पूर्वपद तथा उत्तरपद में उपमेय-उपमान संबंध हो, वहाँ कर्मधारय समास होता है; जैसे — नीलकंठ = नीला है जो कंठ, घनश्याम = घन के समान श्याम।",
+   "keywords": [
+    "उपमेय-उपमान",
+    "घनश्याम",
+    "नीलकंठ"
+   ]
+  },
+  {
+   "id": "hi-hindib10-30",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 4,
+   "chapter": "समास",
+   "question": "द्विगु समास किसे कहते हैं? दो उदाहरण दीजिए।",
+   "answer": "जिस समस्त पद का पूर्वपद संख्यावाचक विशेषण हो और समूह/समाहार का बोध कराए, उसे द्विगु समास कहते हैं; जैसे — तिरंगा = तीन रंगों का समाहार, पंचवटी = पाँच वटों का समाहार।",
+   "keywords": [
+    "संख्यावाचक",
+    "समाहार।",
+    "तिरंगा"
+   ]
+  },
+  {
+   "id": "hi-hindib10-31",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 4,
+   "chapter": "समास",
+   "question": "द्वंद्व समास और बहुव्रीहि समास में अंतर स्पष्ट कीजिए।",
+   "answer": "द्वंद्व समास में दोनों पद प्रधान होते हैं तथा 'और/या/अथवा' का लोप होता है (जैसे रात-दिन = रात और दिन)। बहुव्रीहि समास में दोनों पद गौण होते हैं और मिलकर किसी तीसरे पद की प्रधानता की ओर संकेत करते हैं (जैसे चक्रधर = चक्र धारण किया है जिसने — विष्णु)।",
+   "keywords": [
+    "प्रधानता",
+    "रात-दिन",
+    "चक्रधर"
+   ]
+  },
+  {
+   "id": "hi-hindib10-32",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 4,
+   "chapter": "समास",
+   "question": "अव्ययीभाव समास किसे कहते हैं?",
+   "answer": "जिस समस्त पद का पूर्वपद प्रधान व अव्यय होता है और वह अव्यय क्रियाविशेषण का काम करता है, उसे अव्ययीभाव समास कहते हैं; जैसे — प्रतिदिन = हर दिन, यथाशक्ति = शक्ति के अनुसार।",
+   "keywords": [
+    "यथाशक्ति",
+    "अनुसार।",
+    "प्रतिदिन"
+   ]
+  },
+  {
+   "id": "hi-hindib10-33",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 5,
+   "chapter": "मुहावरे",
+   "question": "मुहावरा किसे कहते हैं?",
+   "answer": "जब कोई शब्द-समूह या वाक्यांश अपना साधारण अर्थ न देकर विशेष (रूढ़) अर्थ देता है, तो उसे मुहावरा कहते हैं; जैसे 'सिर हथेली पर रखना' का लाक्षणिक अर्थ है — बड़े-से-बड़े बलिदान के लिए प्रस्तुत होना।",
+   "keywords": [
+    "शब्द-समूह",
+    "वाक्यांश",
+    "लाक्षणिक"
+   ]
+  },
+  {
+   "id": "hi-hindib10-34",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 5,
+   "chapter": "मुहावरे",
+   "question": "लोकोक्ति किसे कहते हैं?",
+   "answer": "यह शब्द 'लोक + उक्ति' से बना है, जिसका अर्थ है — जनसाधारण में प्रचलित कथन। लोकोक्तियों का निर्माण जीवन के अनुभवों के आधार पर होता है।",
+   "keywords": [
+    "लोकोक्तियों",
+    "जनसाधारण",
+    "प्रचलित"
+   ]
+  },
+  {
+   "id": "hi-hindib10-35",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 5,
+   "chapter": "मुहावरे",
+   "question": "मुहावरे और लोकोक्ति में कोई दो अंतर स्पष्ट कीजिए।",
+   "answer": "1) लोकोक्ति एक पूर्ण वाक्य होती है, जबकि मुहावरा वाक्य का अंश होता है। 2) लोकोक्ति का प्रयोग स्वतंत्र एवं पूर्ण इकाई के रूप में होता है, जबकि मुहावरे में वाक्य के अनुसार परिवर्तन (रूप-परिवर्तन) होता है।",
+   "keywords": [
+    "रूप-परिवर्तन",
+    "प्रयोग",
+    "मुहावरा"
+   ]
+  },
+  {
+   "id": "hi-hindib10-36",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 5,
+   "chapter": "मुहावरे",
+   "question": "'अपने पैरों पर खड़े होना' मुहावरे का अर्थ बताते हुए वाक्य में प्रयोग कीजिए।",
+   "answer": "अर्थ — आत्मनिर्भर बनना। वाक्य — आजकल लड़कियाँ भी पढ़-लिखकर अपने पैरों पर खड़ी हैं।",
+   "keywords": [
+    "आत्मनिर्भर",
+    "पढ़-लिखकर",
+    "लड़कियाँ"
+   ]
+  },
+  {
+   "id": "hi-hindib10-37",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 5,
+   "chapter": "मुहावरे",
+   "question": "'आँखों का तारा' और 'आँखों में धूल झोंकना' मुहावरों के अर्थ लिखिए।",
+   "answer": "आँखों का तारा — बहुत प्यारा; वाक्य — राजीव सभी की आँखों का तारा है। आँखों में धूल झोंकना — धोखा देना; वाक्य — चोरों ने पुलिस की आँखों में धूल झोंक दी।",
+   "keywords": [
+    "प्यारा",
+    "राजीव",
+    "चोरों"
+   ]
+  },
+  {
+   "id": "hi-hindib10-38",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 5,
+   "chapter": "मुहावरे",
+   "question": "'एड़ी चोटी का ज़ोर लगाना' और 'आकाश-पाताल एक करना' मुहावरों का अर्थ व वाक्य-प्रयोग लिखिए।",
+   "answer": "एड़ी चोटी का ज़ोर लगाना — पूरा ज़ोर लगाना; वाक्य — चुनाव में जीतने के लिए नेता जी ने एड़ी चोटी का ज़ोर लगा दिया। आकाश-पाताल एक करना — बहुत परिश्रम करना; वाक्य — विजय ने कक्षा में प्रथम आने के लिए आकाश-पाताल एक कर दिया।",
+   "keywords": [
+    "परिश्रम",
+    "जीतने",
+    "पूरा"
+   ]
+  },
+  {
+   "id": "hi-hindib10-39",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 5,
+   "chapter": "मुहावरे",
+   "question": "'कोल्हू का बैल' और 'काला अक्षर भैंस बराबर' मुहावरों के अर्थ बताइए।",
+   "answer": "कोल्हू का बैल — बहुत अधिक मेहनती; वाक्य — राकेश ने अपनी बहन को उच्च शिक्षा दिलवाने के लिए कोल्हू के बैल की तरह काम किया। काला अक्षर भैंस बराबर — अनपढ़; वाक्य — ज़मींदार जानता है कि रामू के लिए काला अक्षर भैंस बराबर है।",
+   "keywords": [
+    "ज़मींदार",
+    "दिलवाने",
+    "मेहनती"
+   ]
+  },
+  {
+   "id": "hi-hindib10-40",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 5,
+   "chapter": "मुहावरे",
+   "question": "'तिल का ताड़ बनाना' और 'ढेर हो जाना' मुहावरों का अर्थ स्पष्ट कीजिए।",
+   "answer": "तिल का ताड़ बनाना — बहुत बढ़ा-चढ़ाकर बात कहना; वाक्य — रमेश ज़रा-सी बात पर तिल का ताड़ बना देता है। ढेर हो जाना — मर जाना; वाक्य — भारतीय सैनिकों ने चार आतंकवादियों को ढेर कर दिया।",
+   "keywords": [
+    "बढ़ा-चढ़ाकर",
+    "आतंकवादियों",
+    "ज़रा-सी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-41",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 6,
+   "chapter": "बड़े भाई साहब (प्रेमचंद)",
+   "question": "'बड़े भाई साहब' कहानी के लेखक कौन हैं?",
+   "answer": "'बड़े भाई साहब' कहानी के कथाकार प्रेमचंद हैं।",
+   "keywords": [
+    "प्रेमचंद",
+    "कथाकार",
+    "बड़े"
+   ]
+  },
+  {
+   "id": "hi-hindib10-42",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 6,
+   "chapter": "बड़े भाई साहब (प्रेमचंद)",
+   "question": "कहानी में बड़े भाई साहब और छोटे भाई की आयु व कक्षा क्या थी?",
+   "answer": "बड़े भाई साहब की आयु चौदह वर्ष थी और वे नौवीं कक्षा में पढ़ते थे; छोटे भाई की आयु नौ वर्ष थी और वह पाँचवीं कक्षा में पढ़ता था।",
+   "keywords": [
+    "पाँचवीं",
+    "पढ़ते",
+    "पढ़ता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-43",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 6,
+   "chapter": "बड़े भाई साहब (प्रेमचंद)",
+   "question": "छोटा भाई खेलकूद में समय क्यों बिताता था?",
+   "answer": "उसका मन पढ़ाई में कम और खेल में अधिक लगता था; मौका मिलते ही वह हॉस्टल से बाहर निकलकर मैदान में कंकरियाँ उछालता या कागज़ की तितलियाँ उड़ाता था।",
+   "keywords": [
+    "कंकरियाँ",
+    "तितलियाँ",
+    "हॉस्टल"
+   ]
+  },
+  {
+   "id": "hi-hindib10-44",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 6,
+   "chapter": "बड़े भाई साहब (प्रेमचंद)",
+   "question": "सालाना परीक्षा में दोनों भाइयों का क्या परिणाम रहा?",
+   "answer": "छोटा भाई प्रथम आया जबकि बड़े भाई साहब, अध्ययनशील होने के बावजूद, फेल हो गए।",
+   "keywords": [
+    "अध्ययनशील",
+    "बावजूद",
+    "छोटा"
+   ]
+  },
+  {
+   "id": "hi-hindib10-45",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 6,
+   "chapter": "बड़े भाई साहब (प्रेमचंद)",
+   "question": "बड़े भाई साहब अपने छोटे भाई को क्या समझाते हैं जब वह अपनी सफलता पर घमंड करने लगता है?",
+   "answer": "वे समझाते हैं कि केवल इम्तिहान पास कर लेने पर घमंड नहीं करना चाहिए; असल चीज़ बुद्धि का विकास है, और उन्हें दुनिया व ज़िंदगी का उससे कहीं अधिक अनुभव है।",
+   "keywords": [
+    "इम्तिहान",
+    "बुद्धि",
+    "दुनिया"
+   ]
+  },
+  {
+   "id": "hi-hindib10-46",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 6,
+   "chapter": "बड़े भाई साहब (प्रेमचंद)",
+   "question": "कहानी के अंत में बड़े भाई साहब की कौन-सी उदारता प्रकट होती है?",
+   "answer": "गुल्ली-डंडा खेलकर आए छोटे भाई को डाँटने के बजाय, बड़े भाई साहब स्वयं एक कटी पतंग की डोर पकड़ने के लिए दौड़ पड़ते हैं, जिससे उनका बालमन और स्नेह प्रकट होता है।",
+   "keywords": [
+    "गुल्ली-डंडा",
+    "डाँटने",
+    "पकड़ने"
+   ]
+  },
+  {
+   "id": "hi-hindib10-47",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 6,
+   "chapter": "बड़े भाई साहब (प्रेमचंद)",
+   "question": "इस कहानी से हमें क्या शिक्षा मिलती है?",
+   "answer": "यह कहानी सिखाती है कि केवल परीक्षा में सफलता ही जीवन में सब कुछ नहीं है; जीवन के अनुभव और बड़ों का मार्गदर्शन भी उतना ही महत्वपूर्ण है, तथा घमंड करने से बचना चाहिए।",
+   "keywords": [
+    "मार्गदर्शन",
+    "महत्वपूर्ण",
+    "परीक्षा"
+   ]
+  },
+  {
+   "id": "hi-hindib10-48",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 7,
+   "chapter": "डायरी का एक पन्ना (सीताराम सेकसरिया)",
+   "question": "यह पाठ किस विधा में लिखा गया है और इसके लेखक कौन हैं?",
+   "answer": "यह पाठ लेखक की डायरी के रूप में लिखा गया है; इसके लेखक सीताराम सेकसरिया हैं।",
+   "keywords": [
+    "सेकसरिया",
+    "सीताराम",
+    "डायरी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-49",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 7,
+   "chapter": "डायरी का एक पन्ना (सीताराम सेकसरिया)",
+   "question": "इस डायरी में किस दिन की घटनाओं का वर्णन है?",
+   "answer": "26 जनवरी, 1931 के दिन कलकत्ता में मनाए गए स्वतंत्रता दिवस की घटनाओं का वर्णन है।",
+   "keywords": [
+    "स्वतंत्रता",
+    "जनवरी",
+    "कलकत्ता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-50",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 7,
+   "chapter": "डायरी का एक पन्ना (सीताराम सेकसरिया)",
+   "question": "26 जनवरी, 1931 को कलकत्ता में स्वतंत्रता दिवस मनाने के लिए क्या तैयारियाँ की गई थीं?",
+   "answer": "मकानों पर राष्ट्रीय झंडे फहराए गए, घर-घर जाकर लोगों को समझाया गया, तथा प्रचार में दो हज़ार रुपए खर्च किए गए।",
+   "keywords": [
+    "राष्ट्रीय",
+    "मकानों",
+    "समझाया"
+   ]
+  },
+  {
+   "id": "hi-hindib10-51",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 7,
+   "chapter": "डायरी का एक पन्ना (सीताराम सेकसरिया)",
+   "question": "ब्रिटिश सरकार और कौंसिल के नोटिसों में क्या विरोधाभास था?",
+   "answer": "ब्रिटिश सरकार के नोटिस के अनुसार सभा करना अपराध माना गया था, जबकि कौंसिल की ओर से निकले नोटिस के अनुसार मॉन्युमेंट के नीचे ध्वजारोहण व सभा होने की घोषणा की गई थी।",
+   "keywords": [
+    "मॉन्युमेंट",
+    "ध्वजारोहण",
+    "नोटिस"
+   ]
+  },
+  {
+   "id": "hi-hindib10-52",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 7,
+   "chapter": "डायरी का एक पन्ना (सीताराम सेकसरिया)",
+   "question": "सुभाषचंद्र बोस जुलूस लेकर आए तब पुलिस ने क्या किया?",
+   "answer": "भीड़ की अधिकता के कारण पुलिस उन्हें रोक नहीं सकी, तो उसने लाठीचार्ज शुरू कर दिया, जिससे सुभाष बाबू व अन्य लोग घायल हो गए।",
+   "keywords": [
+    "लाठीचार्ज",
+    "अधिकता",
+    "सुभाष"
+   ]
+  },
+  {
+   "id": "hi-hindib10-53",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 7,
+   "chapter": "डायरी का एक पन्ना (सीताराम सेकसरिया)",
+   "question": "इस दिन कितनी स्त्रियों को गिरफ़्तार किया गया और उनके साथ क्या हुआ?",
+   "answer": "105 स्त्रियों को गिरफ़्तार किया गया, जिन्हें रात को छोड़ भी दिया गया; कलकत्ता में इससे पहले कभी इतनी स्त्रियाँ एक साथ गिरफ़्तार नहीं हुई थीं।",
+   "keywords": [
+    "स्त्रियाँ",
+    "जिन्हें",
+    "कलकत्ता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-54",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 7,
+   "chapter": "डायरी का एक पन्ना (सीताराम सेकसरिया)",
+   "question": "लेखक इस दिन के महत्व के बारे में क्या कहते हैं?",
+   "answer": "लेखक कहते हैं कि कलकत्ता में उस दिन जो हुआ, वह अपूर्व था, और बंगाल व कलकत्ता के नाम पर लगा कलंक भी बहुत हद तक धुल गया था।",
+   "keywords": [
+    "अपूर्व",
+    "बंगाल",
+    "कलकत्ता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-55",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 8,
+   "chapter": "तताँरा-वामीरो कथा (लीलाधर मंडलोई)",
+   "question": "यह कथा किस द्वीप-समूह पर केंद्रित है?",
+   "answer": "यह कथा अंडमान-निकोबार द्वीप समूह के एक छोटे से द्वीप पर केंद्रित है।",
+   "keywords": [
+    "अंडमान-निकोबार",
+    "द्वीप",
+    "समूह"
+   ]
+  },
+  {
+   "id": "hi-hindib10-56",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 8,
+   "chapter": "तताँरा-वामीरो कथा (लीलाधर मंडलोई)",
+   "question": "तताँरा का स्वभाव कैसा था?",
+   "answer": "तताँरा एक सुंदर, शक्तिशाली, परोपकारी और दयालु स्वभाव का युवक था, जो गाँव में सबकी सहायता के लिए हमेशा तैयार रहता था।",
+   "keywords": [
+    "परोपकारी",
+    "शक्तिशाली",
+    "सहायता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-57",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 8,
+   "chapter": "तताँरा-वामीरो कथा (लीलाधर मंडलोई)",
+   "question": "तताँरा और वामीरो की भेंट कैसे हुई?",
+   "answer": "एक शाम समुद्र किनारे टहलते हुए तताँरा को एक मधुर गीत सुनाई दिया; गीत की दिशा में जाने पर उसने वामीरो को गाते देखा और दोनों में परिचय हो गया।",
+   "keywords": [
+    "समुद्र",
+    "किनारे",
+    "टहलते"
+   ]
+  },
+  {
+   "id": "hi-hindib10-58",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 8,
+   "chapter": "तताँरा-वामीरो कथा (लीलाधर मंडलोई)",
+   "question": "गाँव वालों ने तताँरा-वामीरो के प्रेम का विरोध क्यों किया?",
+   "answer": "गाँव की परंपरा के अनुसार किसी युवती का दूसरे गाँव के युवक के साथ संबंध परंपरा के विरुद्ध था, इसलिए उनका विवाह नहीं हो सकता था।",
+   "keywords": [
+    "विरुद्ध",
+    "युवती",
+    "दूसरे"
+   ]
+  },
+  {
+   "id": "hi-hindib10-59",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 8,
+   "chapter": "तताँरा-वामीरो कथा (लीलाधर मंडलोई)",
+   "question": "विरोध के बाद तताँरा ने क्रोध में क्या किया, और उसका क्या परिणाम हुआ?",
+   "answer": "क्रोध में आकर तताँरा ने अपनी शक्तिशाली तलवार ज़मीन में गाड़ दी, जो धीरे-धीरे द्वीप को दो भागों में बाँटती चली गई; तताँरा स्वयं भी उस गड्ढे में धँसकर मृत्यु को प्राप्त हो गया।",
+   "keywords": [
+    "शक्तिशाली",
+    "बाँटती",
+    "मृत्यु"
+   ]
+  },
+  {
+   "id": "hi-hindib10-60",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 8,
+   "chapter": "तताँरा-वामीरो कथा (लीलाधर मंडलोई)",
+   "question": "इस बलिदान से समाज की परंपरा में क्या परिवर्तन आया?",
+   "answer": "दो प्रेमियों के बलिदान के बाद संपूर्ण निकोबारी द्वीप में किसी भी गाँव या स्थान के युवक-युवती से विवाह करने की नई परंपरा शुरू हो गई।",
+   "keywords": [
+    "युवक-युवती",
+    "प्रेमियों",
+    "निकोबारी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-61",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 8,
+   "chapter": "तताँरा-वामीरो कथा (लीलाधर मंडलोई)",
+   "question": "तताँरा-वामीरो की कथा से क्या संदेश मिलता है?",
+   "answer": "यह कथा बताती है कि प्रेम सबको जोड़ता है और घृणा दूरी बढ़ाती है; जो समाज के लिए अपना बलिदान करता है, समाज उसे व्यर्थ नहीं जाने देता।",
+   "keywords": [
+    "जोड़ता",
+    "बढ़ाती",
+    "व्यर्थ"
+   ]
+  },
+  {
+   "id": "hi-hindib10-62",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 9,
+   "chapter": "तीसरी कसम के शिल्पकार शैलेन्द्र (प्रहलाद अग्रवाल)",
+   "question": "शैलेन्द्र मूल रूप से किस क्षेत्र से जुड़े थे?",
+   "answer": "शैलेन्द्र एक गीतकार और कवि के रूप में कई दशकों तक फ़िल्म क्षेत्र से जुड़े रहे।",
+   "keywords": [
+    "गीतकार",
+    "दशकों",
+    "फ़िल्म"
+   ]
+  },
+  {
+   "id": "hi-hindib10-63",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 9,
+   "chapter": "तीसरी कसम के शिल्पकार शैलेन्द्र (प्रहलाद अग्रवाल)",
+   "question": "'तीसरी कसम' फ़िल्म किस साहित्यिक कृति पर आधारित थी?",
+   "answer": "यह फ़िल्म फणीश्वरनाथ रेणु की अमर कृति 'तीसरी कसम उर्फ मारे गए गुलफ़ाम' पर आधारित थी।",
+   "keywords": [
+    "फणीश्वरनाथ",
+    "गुलफ़ाम",
+    "रेणु"
+   ]
+  },
+  {
+   "id": "hi-hindib10-64",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 9,
+   "chapter": "तीसरी कसम के शिल्पकार शैलेन्द्र (प्रहलाद अग्रवाल)",
+   "question": "'तीसरी कसम' फ़िल्म में राजकपूर ने कौन-सा किरदार निभाया और उन्होंने पारिश्रमिक के रूप में क्या लिया?",
+   "answer": "राजकपूर ने गाड़ीवान 'हीरामन' का किरदार निभाया और शैलेन्द्र से केवल एक रुपया पारिश्रमिक के रूप में लिया।",
+   "keywords": [
+    "गाड़ीवान",
+    "हीरामन",
+    "रुपया"
+   ]
+  },
+  {
+   "id": "hi-hindib10-65",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 9,
+   "chapter": "तीसरी कसम के शिल्पकार शैलेन्द्र (प्रहलाद अग्रवाल)",
+   "question": "शैलेन्द्र ने फ़िल्म निर्माण में किस बात को वरीयता (महत्व) दी?",
+   "answer": "शैलेन्द्र ने अपनी फ़िल्म में लोकतत्व (लोक-संस्कृति) को महत्व दिया और ज़िंदगी की सच्चाई को दिखाया, न कि दुःख का विकृत या दिखावटी रूप।",
+   "keywords": [
+    "लोक-संस्कृति",
+    "लोकतत्व",
+    "दिखावटी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-66",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 9,
+   "chapter": "तीसरी कसम के शिल्पकार शैलेन्द्र (प्रहलाद अग्रवाल)",
+   "question": "शैलेन्द्र के अनुसार व्यथा (दुःख) का क्या महत्व है?",
+   "answer": "शैलेन्द्र मानते थे कि व्यथा आदमी को पराजित नहीं करती बल्कि आगे बढ़ने का संदेश देती है।",
+   "keywords": [
+    "पराजित",
+    "मानते",
+    "बढ़ने"
+   ]
+  },
+  {
+   "id": "hi-hindib10-67",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 9,
+   "chapter": "तीसरी कसम के शिल्पकार शैलेन्द्र (प्रहलाद अग्रवाल)",
+   "question": "फ़िल्म व्यावसायिक रूप से सफल क्यों नहीं हुई, फिर भी उसे क्यों याद किया जाता है?",
+   "answer": "यह फ़िल्म आर्थिक लाभ की दृष्टि से सफल नहीं रही क्योंकि इसमें व्यावसायिकता की कमी थी, परंतु अपनी संवेदनशीलता और सच्चाई के कारण यह एक यादगार फ़िल्म बनी और इसे कई अवार्ड्स मिले।",
+   "keywords": [
+    "व्यावसायिकता",
+    "अवार्ड्स",
+    "संवेदनशीलता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-68",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 10,
+   "chapter": "अब कहाँ दूसरों के दुःख से दुःखी होने वाले (निदा फ़ाज़ली)",
+   "question": "इस पाठ में लेखक ने किस विषय पर विचार व्यक्त किए हैं?",
+   "answer": "लेखक ने इस पाठ में यह दर्शाया है कि आज ऐसे लोग कहाँ हैं जो दूसरों के दुःख से दुःखी व द्रवित होते हों; मनुष्य ने धरती को अपनी संपत्ति बना लिया है और अन्य जीवधारियों को दर-बदर कर दिया है।",
+   "keywords": [
+    "जीवधारियों",
+    "दर्शाया",
+    "द्रवित"
+   ]
+  },
+  {
+   "id": "hi-hindib10-69",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 10,
+   "chapter": "अब कहाँ दूसरों के दुःख से दुःखी होने वाले (निदा फ़ाज़ली)",
+   "question": "लेखक ने सुलेमान (सोलोमन) का उदाहरण क्यों दिया है?",
+   "answer": "सुलेमान सभी जीव-जंतुओं की भाषा समझते थे और चींटियों को यह कहकर आश्वस्त किया कि खुदा ने उन्हें सबकी रक्षा के लिए ही बनाया है — वे मुसीबत नहीं, मुहब्बत हैं।",
+   "keywords": [
+    "जीव-जंतुओं",
+    "चींटियों",
+    "आश्वस्त"
+   ]
+  },
+  {
+   "id": "hi-hindib10-70",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 10,
+   "chapter": "अब कहाँ दूसरों के दुःख से दुःखी होने वाले (निदा फ़ाज़ली)",
+   "question": "शेख़-अयाज़ के पिता की कहानी से क्या सीख मिलती है?",
+   "answer": "खाना खाते समय अपनी बाँह पर रेंगते च्यूँटे को देखकर उन्होंने अपना खाना छोड़कर उसे उसके घर (बिल) तक छोड़ने के लिए यात्रा की — यह करुणा व संवेदनशीलता का उदाहरण है।",
+   "keywords": [
+    "संवेदनशीलता",
+    "च्यूँटे",
+    "उन्होंने"
+   ]
+  },
+  {
+   "id": "hi-hindib10-71",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 10,
+   "chapter": "अब कहाँ दूसरों के दुःख से दुःखी होने वाले (निदा फ़ाज़ली)",
+   "question": "लेखक की माँ की प्रकृति के प्रति क्या भावना थी?",
+   "answer": "लेखक की माँ बहुत दयालु थीं; वे कहती थीं कि फूल-पत्ते नहीं तोड़ने चाहिए, नदी को सलाम करना चाहिए, और कबूतरों व मुर्गों को परेशान नहीं करना चाहिए।",
+   "keywords": [
+    "फूल-पत्ते",
+    "मुर्गों",
+    "तोड़ने"
+   ]
+  },
+  {
+   "id": "hi-hindib10-72",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 10,
+   "chapter": "अब कहाँ दूसरों के दुःख से दुःखी होने वाले (निदा फ़ाज़ली)",
+   "question": "लेखक के बंबई के फ्लैट में कबूतरों के साथ क्या घटना हुई?",
+   "answer": "कबूतरों द्वारा घोंसला बनाने पर परेशानी होने के कारण लेखक की पत्नी ने घोंसले पर जाली लगवा दी, जिससे दोनों कबूतर रातभर खिड़की के बाहर खामोश और उदास बैठे रहे।",
+   "keywords": [
+    "परेशानी",
+    "घोंसला",
+    "घोंसले"
+   ]
+  },
+  {
+   "id": "hi-hindib10-73",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 10,
+   "chapter": "अब कहाँ दूसरों के दुःख से दुःखी होने वाले (निदा फ़ाज़ली)",
+   "question": "लेखक अंत में क्या संदेश देना चाहते हैं?",
+   "answer": "लेखक कहते हैं कि हमें नदी और सूरज की तरह दूसरों की भलाई के कार्य करने चाहिए, तभी संसार के सभी जीव सुखी व प्रसन्न हो पाएँगे।",
+   "keywords": [
+    "प्रसन्न",
+    "पाएँगे।",
+    "हमें"
+   ]
+  },
+  {
+   "id": "hi-hindib10-74",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 11,
+   "chapter": "पतझड़ में टूटी पत्तियाँ — (i) गिन्नी का सोना (ii) झेन की देन (रवीन्द्र केलेकर)",
+   "question": "'गिन्नी का सोना' शीर्षक के माध्यम से लेखक क्या समझाना चाहते हैं?",
+   "answer": "शुद्ध सोने में थोड़ा ताँबा मिलाने पर वह अधिक चमकता व मज़बूत बनता है; इसी प्रकार शुद्ध आदर्शों में थोड़ी-सी व्यावहारिकता मिलाने वाले लोगों को 'प्रैक्टिकल आइडियलिस्ट' कहा जाता है।",
+   "keywords": [
+    "व्यावहारिकता",
+    "प्रैक्टिकल",
+    "आइडियलिस्ट"
+   ]
+  },
+  {
+   "id": "hi-hindib10-75",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 11,
+   "chapter": "पतझड़ में टूटी पत्तियाँ — (i) गिन्नी का सोना (ii) झेन की देन (रवीन्द्र केलेकर)",
+   "question": "समाज के पास शाश्वत मूल्य किनकी देन हैं?",
+   "answer": "लेखक के अनुसार समाज के पास अगर शाश्वत मूल्यों जैसा कुछ है तो वह आदर्शवादी लोगों का ही दिया हुआ है।",
+   "keywords": [
+    "आदर्शवादी",
+    "मूल्यों",
+    "जैसा"
+   ]
+  },
+  {
+   "id": "hi-hindib10-76",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 11,
+   "chapter": "पतझड़ में टूटी पत्तियाँ — (i) गिन्नी का सोना (ii) झेन की देन (रवीन्द्र केलेकर)",
+   "question": "'झेन की देन' पाठ किस दर्शन से जुड़ा है?",
+   "answer": "यह पाठ बौद्ध दर्शन में वर्णित ध्यान (झेन परंपरा) से जुड़ा है, जिसके कारण जापान के लोग आज भी व्यस्त दिनचर्या के बीच कुछ चैन भरे पल पा लेते हैं।",
+   "keywords": [
+    "दिनचर्या",
+    "वर्णित",
+    "व्यस्त"
+   ]
+  },
+  {
+   "id": "hi-hindib10-77",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 11,
+   "chapter": "पतझड़ में टूटी पत्तियाँ — (i) गिन्नी का सोना (ii) झेन की देन (रवीन्द्र केलेकर)",
+   "question": "जापान में लोगों को सबसे अधिक कौन-सी बीमारी होती है, और उसका कारण क्या बताया गया?",
+   "answer": "लेखक के मित्र के अनुसार जापान में अस्सी प्रतिशत लोग 'मानसिक' रोगों से ग्रस्त हैं, क्योंकि जीवन की रफ़्तार बहुत बढ़ गई है और लोग एक-दूसरे से प्रतिस्पर्धा करने लगे हैं।",
+   "keywords": [
+    "प्रतिस्पर्धा",
+    "एक-दूसरे",
+    "प्रतिशत"
+   ]
+  },
+  {
+   "id": "hi-hindib10-78",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 11,
+   "chapter": "पतझड़ में टूटी पत्तियाँ — (i) गिन्नी का सोना (ii) झेन की देन (रवीन्द्र केलेकर)",
+   "question": "'टी-सेरेमनी' (चाय समारोह) में जाने पर लेखक को क्या अनुभूति हुई?",
+   "answer": "वहाँ का शांतिपूर्ण वातावरण देखकर व चाय पीने पर लेखक को शांति प्राप्त हुई; उन्हें ऐसा लगा जैसे वे अनंत काल में जी रहे हैं।",
+   "keywords": [
+    "शांतिपूर्ण",
+    "वातावरण",
+    "पीने"
+   ]
+  },
+  {
+   "id": "hi-hindib10-79",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 11,
+   "chapter": "पतझड़ में टूटी पत्तियाँ — (i) गिन्नी का सोना (ii) झेन की देन (रवीन्द्र केलेकर)",
+   "question": "'झेन की देन' पाठ का मूल संदेश क्या है?",
+   "answer": "यह पाठ सिखाता है कि तेज़ रफ़्तार भरे जीवन में भी ध्यान व शांति के क्षण खोजना आवश्यक है, ताकि मानसिक स्वास्थ्य बना रहे।",
+   "keywords": [
+    "स्वास्थ्य",
+    "सिखाता",
+    "आवश्यक"
+   ]
+  },
+  {
+   "id": "hi-hindib10-80",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 12,
+   "chapter": "कारतूस (हबीब तनवीर)",
+   "question": "'कारतूस' पाठ किस विधा में लिखा गया है और इसके लेखक कौन हैं?",
+   "answer": "'कारतूस' एक एकांकी है, जिसे हबीब तनवीर ने लिखा है।",
+   "keywords": [
+    "तनवीर",
+    "हबीब",
+    "एकांकी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-81",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 12,
+   "chapter": "कारतूस (हबीब तनवीर)",
+   "question": "एकांकी का नायक कौन है और उसका मुख्य लक्ष्य क्या था?",
+   "answer": "एकांकी का नायक वज़ीर अली है, जो अंग्रेज़ों को इस देश से बाहर निकालने के लक्ष्य से जाँबाज़ी से काम करता था।",
+   "keywords": [
+    "जाँबाज़ी",
+    "अंग्रेज़ों",
+    "निकालने"
+   ]
+  },
+  {
+   "id": "hi-hindib10-82",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 12,
+   "chapter": "कारतूस (हबीब तनवीर)",
+   "question": "वज़ीर अली अंग्रेज़ों के लिए सिरदर्द क्यों बना हुआ था?",
+   "answer": "वह अवध के तख़्त पर अंग्रेज़ों की हुकूमत को समाप्त करना चाहता था और उसने अफ़गानिस्तान के बादशाह शाहे-ज़मा को हिन्दुस्तान पर आक्रमण करने का आमंत्रण भी भेजा था।",
+   "keywords": [
+    "अफ़गानिस्तान",
+    "हिन्दुस्तान",
+    "शाहे-ज़मा"
+   ]
+  },
+  {
+   "id": "hi-hindib10-83",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 12,
+   "chapter": "कारतूस (हबीब तनवीर)",
+   "question": "वज़ीर अली ने कर्नल से कारतूस किस प्रकार प्राप्त किए?",
+   "answer": "एक घुड़सवार के वेश में आकर वज़ीर अली ने कर्नल से वज़ीर अली की गिरफ़्तारी में मदद करने के बहाने कारतूस माँगे, और कारतूस मिलने पर अपना असली परिचय देकर कर्नल को जीवनदान देकर चला गया।",
+   "keywords": [
+    "गिरफ़्तारी",
+    "घुड़सवार",
+    "जीवनदान"
+   ]
+  },
+  {
+   "id": "hi-hindib10-84",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 12,
+   "chapter": "कारतूस (हबीब तनवीर)",
+   "question": "एकांकी के अंत में कर्नल की क्या प्रतिक्रिया थी?",
+   "answer": "कर्नल यह दृश्य विस्मयपूर्वक देखता रह जाता है और अंत में वह वज़ीर अली को एक जाँबाज़ सिपाही के संबोधन से पुकारता है।",
+   "keywords": [
+    "विस्मयपूर्वक",
+    "जाँबाज़",
+    "पुकारता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-85",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 12,
+   "chapter": "कारतूस (हबीब तनवीर)",
+   "question": "इस एकांकी से क्या शिक्षा मिलती है?",
+   "answer": "यह एकांकी साहस, देशभक्ति और चतुराई की शिक्षा देती है — वज़ीर अली जैसे वीर अपनी सूझ-बूझ व निडरता से शत्रु को भी चकित कर देते हैं।",
+   "keywords": [
+    "सूझ-बूझ",
+    "देशभक्ति",
+    "चतुराई"
+   ]
+  },
+  {
+   "id": "hi-hindib10-86",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 13,
+   "chapter": "साखी (कबीर दास)",
+   "question": "'साखी' शब्द किससे बना है और इसका क्या अर्थ है?",
+   "answer": "'साखी' शब्द 'साक्षी' का ही तद्भव रूप है, जो 'साक्ष्य' से बना है, जिसका अर्थ है — प्रत्यक्ष ज्ञान।",
+   "keywords": [
+    "प्रत्यक्ष",
+    "साक्ष्य",
+    "साक्षी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-87",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 13,
+   "chapter": "साखी (कबीर दास)",
+   "question": "'साखी' वस्तुतः किस छंद में रचित है?",
+   "answer": "'साखी' वस्तुतः दोहा छंद में रचित है।",
+   "keywords": [
+    "दोहा",
+    "वस्तुतः",
+    "रचित"
+   ]
+  },
+  {
+   "id": "hi-hindib10-88",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 13,
+   "chapter": "साखी (कबीर दास)",
+   "question": "कबीर के अनुसार ऐसी वाणी कैसी बोलनी चाहिए?",
+   "answer": "कबीर कहते हैं ऐसी मीठी वाणी बोलनी चाहिए जिससे बोलने व सुनने वाले दोनों को शांति मिले।",
+   "keywords": [
+    "बोलने",
+    "सुनने",
+    "मीठी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-89",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 13,
+   "chapter": "साखी (कबीर दास)",
+   "question": "कबीर के अनुसार अहंकार और परमात्मा के संबंध में क्या कहा गया है?",
+   "answer": "अहंकार और परमात्मा इकट्ठे नहीं रह सकते; परमात्मा का बोध जगने पर अहंकार मिट जाता है।",
+   "keywords": [
+    "इकट्ठे",
+    "जगने",
+    "मिट"
+   ]
+  },
+  {
+   "id": "hi-hindib10-90",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 13,
+   "chapter": "साखी (कबीर दास)",
+   "question": "विरही आत्मा की स्थिति का वर्णन कबीर ने कैसे किया है?",
+   "answer": "प्रभु के विरह में तड़पने वाला मनुष्य दुःखी है, जबकि संसारी लोग सुखी हैं; विरह रूपी साँप के डँसने से विरहिणी आत्मा तड़पती है, उसे परमात्मा के बिना शांति नहीं मिलती।",
+   "keywords": [
+    "विरहिणी",
+    "तड़पने",
+    "संसारी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-91",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 13,
+   "chapter": "साखी (कबीर दास)",
+   "question": "कबीर ने निंदक के विषय में क्या विचार व्यक्त किए हैं?",
+   "answer": "कबीर कहते हैं कि निंदक को अपने पास ही रखना चाहिए, क्योंकि वह मनुष्य के स्वभाव को निर्मल करता है।",
+   "keywords": [
+    "निर्मल",
+    "क्योंकि",
+    "स्वभाव"
+   ]
+  },
+  {
+   "id": "hi-hindib10-92",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 13,
+   "chapter": "साखी (कबीर दास)",
+   "question": "ईश्वर की प्राप्ति के संबंध में कबीर का क्या मत है?",
+   "answer": "कबीर के अनुसार ईश्वर प्रेम के ढाई अक्षर से ही मिलते हैं; अपनी सांसारिक वासनाओं रूपी घर को जलाने पर ही प्रभु की प्राप्ति होती है।",
+   "keywords": [
+    "सांसारिक",
+    "वासनाओं",
+    "जलाने"
+   ]
+  },
+  {
+   "id": "hi-hindib10-93",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 14,
+   "chapter": "पद (मीरा)",
+   "question": "इस पाठ में संकलित 'पद' किस ग्रंथावली से लिए गए हैं?",
+   "answer": "ये पद मीरा ग्रंथावली से संकलित हैं, जिनमें कवयित्री मीराबाई ने अपने आराध्य श्रीकृष्ण को संबोधित किया है।",
+   "keywords": [
+    "कवयित्री",
+    "मीराबाई",
+    "संबोधित"
+   ]
+  },
+  {
+   "id": "hi-hindib10-94",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 14,
+   "chapter": "पद (मीरा)",
+   "question": "पहले पद में मीरा श्रीकृष्ण के किस गुण का वर्णन करती हैं?",
+   "answer": "मीरा कहती हैं कि श्रीकृष्ण अपने भक्तों के दुःख हरने वाले हैं — जैसे उन्होंने द्रौपदी की लाज रखी, प्रह्लाद की रक्षा की और ऐरावत हाथी को मगरमच्छ से बचाया।",
+   "keywords": [
+    "प्रह्लाद",
+    "द्रौपदी",
+    "मगरमच्छ"
+   ]
+  },
+  {
+   "id": "hi-hindib10-95",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 14,
+   "chapter": "पद (मीरा)",
+   "question": "पहले पद में मीरा अपने विषय में क्या प्रार्थना करती हैं?",
+   "answer": "मीरा प्रार्थना करती हैं कि जिस प्रकार श्रीकृष्ण ने अपने भक्तों के दुःख दूर किए, उसी प्रकार वे अपनी इस दासी अर्थात् भक्त के भी दुःखों का नाश कर दें।",
+   "keywords": [
+    "दुःखों",
+    "भक्तों",
+    "श्रीकृष्ण"
+   ]
+  },
+  {
+   "id": "hi-hindib10-96",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 14,
+   "chapter": "पद (मीरा)",
+   "question": "दूसरे पद में मीरा श्रीकृष्ण से क्या निवेदन करती हैं?",
+   "answer": "मीरा निवेदन करती हैं कि श्रीकृष्ण उन्हें अपनी नौकर (सेविका) बनाकर रख लें, ताकि वे सदा उनके समीप रह सकें।",
+   "keywords": [
+    "सेविका",
+    "सकें।",
+    "समीप"
+   ]
+  },
+  {
+   "id": "hi-hindib10-97",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 14,
+   "chapter": "पद (मीरा)",
+   "question": "दूसरे पद में मीरा नौकर बनकर क्या-क्या करना चाहती हैं?",
+   "answer": "वे नौकर बनकर बगीचा लगाएँगी ताकि प्रतिदिन प्रातः प्रभु के दर्शन कर सकें, तथा वृंदावन की गलियों में गोविंद की लीला का गुणगान करेंगी।",
+   "keywords": [
+    "लगाएँगी",
+    "वृंदावन",
+    "करेंगी।"
+   ]
+  },
+  {
+   "id": "hi-hindib10-98",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 14,
+   "chapter": "पद (मीरा)",
+   "question": "मीरा के अनुसार नौकर बनने से उन्हें कौन-से तीन फ़ायदे होंगे?",
+   "answer": "उन्हें हमेशा श्रीकृष्ण के दर्शन प्राप्त होंगे, उनकी याद नहीं सताएगी, और भक्ति रूपी भाव का साम्राज्य बढ़ता जाएगा।",
+   "keywords": [
+    "साम्राज्य",
+    "सताएगी",
+    "जाएगा।"
+   ]
+  },
+  {
+   "id": "hi-hindib10-99",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 14,
+   "chapter": "पद (मीरा)",
+   "question": "मीरा किस समय और स्थान पर श्रीकृष्ण के दर्शन करना चाहती हैं?",
+   "answer": "वे आधी रात को यमुना जी के तट पर अपने प्रभु गिरधर गोपाल के दर्शन करना चाहती हैं।",
+   "keywords": [
+    "यमुना",
+    "गिरधर",
+    "गोपाल"
+   ]
+  },
+  {
+   "id": "hi-hindib10-100",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 15,
+   "chapter": "मनुष्यता (मैथिलीशरण गुप्त)",
+   "question": "'मनुष्यता' कविता में मुख्य रूप से क्या प्रेरणा दी गई है?",
+   "answer": "इस कविता में देश-हित, परोपकार और उदारता को अपनाने की प्रेरणा दी गई है।",
+   "keywords": [
+    "देश-हित",
+    "परोपकार",
+    "उदारता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-101",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 15,
+   "chapter": "मनुष्यता (मैथिलीशरण गुप्त)",
+   "question": "कवि के अनुसार 'मनुष्यता' किसे कहा जाना चाहिए?",
+   "answer": "स्वयं के लिए जीना पशु-प्रवृत्ति है, जबकि मनुष्यों के लिए (दूसरों के हित में) जीना-मरना ही 'मनुष्यता' है।",
+   "keywords": [
+    "पशु-प्रवृत्ति",
+    "जीना-मरना",
+    "मनुष्यों"
+   ]
+  },
+  {
+   "id": "hi-hindib10-102",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 15,
+   "chapter": "मनुष्यता (मैथिलीशरण गुप्त)",
+   "question": "संसार में सदैव किसकी यशोगाथा गाई जाती है?",
+   "answer": "संसार में सदा उसी की यशोगाथा गाई जाती है जो सारे संसार में अपनापन देखता है और सबको अपना मानता है।",
+   "keywords": [
+    "अपनापन",
+    "मानता",
+    "सारे"
+   ]
+  },
+  {
+   "id": "hi-hindib10-103",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 15,
+   "chapter": "मनुष्यता (मैथिलीशरण गुप्त)",
+   "question": "कवि ने किन महान आत्माओं के त्याग का उदाहरण दिया है?",
+   "answer": "कवि ने रंतिदेव, दधीचि, उशीनर और कर्ण जैसी महान आत्माओं का उदाहरण दिया है, जिन्होंने संसार के हित में बढ़-चढ़कर त्याग किया।",
+   "keywords": [
+    "जिन्होंने",
+    "बढ़-चढ़कर",
+    "रंतिदेव"
+   ]
+  },
+  {
+   "id": "hi-hindib10-104",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 15,
+   "chapter": "मनुष्यता (मैथिलीशरण गुप्त)",
+   "question": "कवि मनुष्य को धन और सुरक्षा के विषय में क्या सीख देते हैं?",
+   "answer": "कवि कहते हैं कि कभी धन और सुरक्षा का घमंड नहीं करना चाहिए; इस संसार में कोई अनाथ नहीं है, सब पर परमात्मा का हाथ है।",
+   "keywords": [
+    "परमात्मा",
+    "अनाथ",
+    "संसार"
+   ]
+  },
+  {
+   "id": "hi-hindib10-105",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 15,
+   "chapter": "मनुष्यता (मैथिलीशरण गुप्त)",
+   "question": "कवि के अनुसार भाग्यहीन नर कौन है?",
+   "answer": "भाग्यहीन नर वह है जो अधीर होकर हाय-हाय करता है।",
+   "keywords": [
+    "हाय-हाय",
+    "अधीर",
+    "होकर"
+   ]
+  },
+  {
+   "id": "hi-hindib10-106",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 15,
+   "chapter": "मनुष्यता (मैथिलीशरण गुप्त)",
+   "question": "कविता के अंत में कवि मनुष्य से क्या आग्रह करते हैं?",
+   "answer": "कवि आग्रह करते हैं कि मनुष्य आपस में मेल-जोल बढ़ाते हुए, राह के रोड़ों को हटाते हुए और भिन्नता की जगह एकता को बढ़ाते हुए औरों का उद्धार करे।",
+   "keywords": [
+    "मेल-जोल",
+    "भिन्नता",
+    "बढ़ाते"
+   ]
+  },
+  {
+   "id": "hi-hindib10-107",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 16,
+   "chapter": "पर्वत प्रदेश में पावस (सुमित्रानंदन पंत)",
+   "question": "यह कविता किस संग्रह से संकलित है, और इसके कवि कौन हैं?",
+   "answer": "यह कविता 'वारिद' से संकलित सुमित्रानंदन पंत जी की रचना है।",
+   "keywords": [
+    "सुमित्रानंदन",
+    "वारिद",
+    "पंत"
+   ]
+  },
+  {
+   "id": "hi-hindib10-108",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 16,
+   "chapter": "पर्वत प्रदेश में पावस (सुमित्रानंदन पंत)",
+   "question": "कविता में किस ऋतु का वर्णन किया गया है?",
+   "answer": "इस कविता में वर्षा ऋतु का वर्णन किया गया है, जब पर्वतीय प्रदेश में प्रकृति क्षण-क्षण में अपना स्वरूप बदल रही थी।",
+   "keywords": [
+    "क्षण-क्षण",
+    "पर्वतीय",
+    "प्रकृति"
+   ]
+  },
+  {
+   "id": "hi-hindib10-109",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 16,
+   "chapter": "पर्वत प्रदेश में पावस (सुमित्रानंदन पंत)",
+   "question": "मेखलाकार पर्वत श्रेणियों के जल-प्रपात व झीलों की आवाज़ क्या प्रमाणित कर रही थी?",
+   "answer": "उनकी आवाज़ पर्वत के वहाँ विद्यमान होने का प्रमाण दे रही थी।",
+   "keywords": [
+    "विद्यमान",
+    "प्रमाण",
+    "थी।"
+   ]
+  },
+  {
+   "id": "hi-hindib10-110",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 16,
+   "chapter": "पर्वत प्रदेश में पावस (सुमित्रानंदन पंत)",
+   "question": "पर्वतों से गिरने वाले झरनों की क्या विशेषता बताई गई है?",
+   "answer": "पर्वतों से गिरने वाले झरने झागों से युक्त होकर बह रहे थे, और ऊँचे-ऊँचे वृक्ष नीचे पृथ्वी की ओर झाँक रहे थे।",
+   "keywords": [
+    "ऊँचे-ऊँचे",
+    "पृथ्वी",
+    "झागों"
+   ]
+  },
+  {
+   "id": "hi-hindib10-111",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 16,
+   "chapter": "पर्वत प्रदेश में पावस (सुमित्रानंदन पंत)",
+   "question": "वर्षा के दौरान पहाड़ों पर बादलों की क्या स्थिति वर्णित है?",
+   "answer": "अचानक पहाड़ों पर विशाल आकार के बादल बहुत भयानक स्वर में गर्जना करने लगते हैं, और गहरे कोहरे के कारण तालाब से धुआँ उठता हुआ प्रतीत होता है।",
+   "keywords": [
+    "गर्जना",
+    "प्रतीत",
+    "अचानक"
+   ]
+  },
+  {
+   "id": "hi-hindib10-112",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 16,
+   "chapter": "पर्वत प्रदेश में पावस (सुमित्रानंदन पंत)",
+   "question": "मूसलाधार वर्षा होने पर दृश्य का क्या प्रभाव पड़ता है?",
+   "answer": "मूसलाधार वर्षा होने के कारण दृश्य ओझल (अदृश्य) हो जाता है, केवल झरनों का स्वर ही सुनाई देता है।",
+   "keywords": [
+    "अदृश्य",
+    "झरनों",
+    "सुनाई"
+   ]
+  },
+  {
+   "id": "hi-hindib10-113",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 17,
+   "chapter": "तोप (वीरेन डंगवाल)",
+   "question": "इस कविता में कवि ने किन दो प्रतीकों का चित्रण किया है?",
+   "answer": "कवि श्री वीरेन डंगवाल ने 'तोप' और (कंपनी द्वारा बनवाए गए) 'बाग़' — इन दो प्रतीकों का चित्रण किया है।",
+   "keywords": [
+    "डंगवाल",
+    "वीरेन",
+    "बनवाए"
+   ]
+  },
+  {
+   "id": "hi-hindib10-114",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 17,
+   "chapter": "तोप (वीरेन डंगवाल)",
+   "question": "ईस्ट इंडिया कंपनी भारत में किस उद्देश्य से आई थी?",
+   "answer": "ईस्ट इंडिया कंपनी भारत में व्यापार करने के इरादे से आई थी, और भारत ने उसका स्वागत किया था।",
+   "keywords": [
+    "स्वागत",
+    "व्यापार",
+    "इरादे"
+   ]
+  },
+  {
+   "id": "hi-hindib10-115",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 17,
+   "chapter": "तोप (वीरेन डंगवाल)",
+   "question": "धीरे-धीरे कंपनी का चरित्र कैसे बदल गया?",
+   "answer": "धीरे-धीरे व्यापार करने आई कंपनी हमारी शासक बन बैठी और उसने अपनी सत्ता मज़बूत करने के लिए तोपें तैयार कीं।",
+   "keywords": [
+    "हमारी",
+    "सत्ता",
+    "तोपें"
+   ]
+  },
+  {
+   "id": "hi-hindib10-116",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 17,
+   "chapter": "तोप (वीरेन डंगवाल)",
+   "question": "तोपों का प्रयोग किसके विरुद्ध किया गया?",
+   "answer": "उन तोपों ने इस देश को फिर से आज़ाद कराने का सपना साकार करने निकले जाँबाज़ों (स्वतंत्रता सेनानियों) को मौत के घाट उतारा।",
+   "keywords": [
+    "जाँबाज़ों",
+    "सेनानियों",
+    "स्वतंत्रता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-117",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 17,
+   "chapter": "तोप (वीरेन डंगवाल)",
+   "question": "आज तोप की क्या स्थिति है, और कवि इससे क्या सीख देना चाहते हैं?",
+   "answer": "आज तोप निस्तेज (शक्तिहीन) पड़ी है, फिर भी कवि याद दिलाना चाहते हैं कि भविष्य में कोई भी ऐसी कंपनी यहाँ पाँव न जमाने पाए जिसके इरादे नेक न हों।",
+   "keywords": [
+    "शक्तिहीन",
+    "निस्तेज",
+    "दिलाना"
+   ]
+  },
+  {
+   "id": "hi-hindib10-118",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 18,
+   "chapter": "कर चले हम फ़िदा (कैफ़ी आज़मी)",
+   "question": "यह गीत किस फ़िल्म से लिया गया है और इसके रचयिता कौन हैं?",
+   "answer": "यह प्रसिद्ध गीत 'हकीकत' फ़िल्म से लिया गया है, जिसे कैफ़ी आज़मी ने रचा है।",
+   "keywords": [
+    "प्रसिद्ध",
+    "हकीकत",
+    "कैफ़ी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-119",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 18,
+   "chapter": "कर चले हम फ़िदा (कैफ़ी आज़मी)",
+   "question": "गीत में सैनिक अपने साथियों से क्या कहता है?",
+   "answer": "सैनिक कहता है कि हम तो देश की रक्षा करते हुए उस पर कुर्बान हो गए हैं; अब देश की रक्षा का दायित्व तुम्हारा है।",
+   "keywords": [
+    "तुम्हारा",
+    "कुर्बान",
+    "दायित्व"
+   ]
+  },
+  {
+   "id": "hi-hindib10-120",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 18,
+   "chapter": "कर चले हम फ़िदा (कैफ़ी आज़मी)",
+   "question": "सैनिक ने आखिरी सांस तक क्या नहीं होने दिया?",
+   "answer": "उसने आखिरी सांस तक हिमालय का सिर झुकने नहीं दिया।",
+   "keywords": [
+    "हिमालय",
+    "झुकने",
+    "दिया।"
+   ]
+  },
+  {
+   "id": "hi-hindib10-121",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 18,
+   "chapter": "कर चले हम फ़िदा (कैफ़ी आज़मी)",
+   "question": "गीत में सैनिक अपने साथियों को क्या प्रतिज्ञा कराता है?",
+   "answer": "वह कहता है कि तुम अपने खून से धरती पर लकीर खींचकर कह दो कि लकीर के पार कोई भी रावण नहीं आ पाएगा; यदि कोई हाथ तुम्हारे विरुद्ध उठे तो उसे काट डालना।",
+   "keywords": [
+    "तुम्हारे",
+    "खींचकर",
+    "डालना।"
+   ]
+  },
+  {
+   "id": "hi-hindib10-122",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 18,
+   "chapter": "कर चले हम फ़िदा (कैफ़ी आज़मी)",
+   "question": "सैनिक भारत माता और स्वयं की तुलना किससे करता है?",
+   "answer": "वह भारतमाता की तुलना सीता से करता है और साथियों से कहता है कि तुम ही देश रूपी सीता के लिए राम हो, तुम्हीं लक्ष्मण हो।",
+   "keywords": [
+    "भारतमाता",
+    "साथियों",
+    "तुम्हीं"
+   ]
+  },
+  {
+   "id": "hi-hindib10-123",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 18,
+   "chapter": "कर चले हम फ़िदा (कैफ़ी आज़मी)",
+   "question": "इस गीत से क्या संदेश मिलता है?",
+   "answer": "यह गीत देशभक्ति, बलिदान और कर्तव्य-पालन की प्रेरणा देता है, तथा सैनिकों के त्याग की गौरव-गाथा प्रस्तुत करता है।",
+   "keywords": [
+    "कर्तव्य-पालन",
+    "गौरव-गाथा",
+    "देशभक्ति"
+   ]
+  },
+  {
+   "id": "hi-hindib10-124",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 19,
+   "chapter": "आत्मत्राण (रवीन्द्रनाथ ठाकुर)",
+   "question": "'आत्मत्राण' कविता मूलतः किस भाषा में लिखी गई थी, और इसका हिंदी रूपांतरण किसने किया?",
+   "answer": "यह कविता मूलतः बांग्ला भाषा में गुरुदेव रवीन्द्रनाथ ठाकुर द्वारा लिखी गई थी; इसका हिंदी अनुवाद आचार्य हज़ारी प्रसाद द्विवेदी ने किया।",
+   "keywords": [
+    "रवीन्द्रनाथ",
+    "द्विवेदी",
+    "बांग्ला"
+   ]
+  },
+  {
+   "id": "hi-hindib10-125",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 19,
+   "chapter": "आत्मत्राण (रवीन्द्रनाथ ठाकुर)",
+   "question": "कवि प्रभु से संकटों के विषय में क्या प्रार्थना करते हैं?",
+   "answer": "कवि प्रार्थना करते हैं कि प्रभु उन्हें संकटों से न बचाएँ, बल्कि उन्हें संकटों का सामना करने के लिए निडर रहने व दुःख सहने की शक्ति दें।",
+   "keywords": [
+    "बचाएँ",
+    "निडर",
+    "सहने"
+   ]
+  },
+  {
+   "id": "hi-hindib10-126",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 19,
+   "chapter": "आत्मत्राण (रवीन्द्रनाथ ठाकुर)",
+   "question": "कवि अपनी रक्षा के बारे में क्या कहते हैं?",
+   "answer": "कवि कहते हैं कि प्रभु चाहे उनकी रक्षा न करें, परंतु उन्हें (जीवन-सागर में) तैरने की शक्ति अवश्य दें।",
+   "keywords": [
+    "जीवन-सागर",
+    "तैरने",
+    "चाहे"
+   ]
+  },
+  {
+   "id": "hi-hindib10-127",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 19,
+   "chapter": "आत्मत्राण (रवीन्द्रनाथ ठाकुर)",
+   "question": "कवि सुख और दुःख दोनों स्थितियों में क्या चाहते हैं?",
+   "answer": "कवि चाहते हैं कि सुख में भी वे प्रभु को याद रखें, और बड़े-से-बड़े दुःख में भी उन पर संशय (संदेह) न करें।",
+   "keywords": [
+    "बड़े-से-बड़े",
+    "संदेह",
+    "करें।"
+   ]
+  },
+  {
+   "id": "hi-hindib10-128",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 19,
+   "chapter": "आत्मत्राण (रवीन्द्रनाथ ठाकुर)",
+   "question": "कवि अपने मनोबल के विषय में क्या कहते हैं?",
+   "answer": "कवि कहते हैं कि हानि होने पर भी उनके मन की शक्ति का नाश नहीं होना चाहिए, तथा आत्मविश्वास से उनका मन हर स्थिति में भरा रहे।",
+   "keywords": [
+    "आत्मविश्वास",
+    "स्थिति",
+    "हानि"
+   ]
+  },
+  {
+   "id": "hi-hindib10-129",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 19,
+   "chapter": "आत्मत्राण (रवीन्द्रनाथ ठाकुर)",
+   "question": "इस कविता का मूल संदेश क्या है?",
+   "answer": "यह कविता सिखाती है कि संकटों से भागना नहीं चाहिए, बल्कि आत्मविश्वास और साहस के साथ उनका सामना करना चाहिए।",
+   "keywords": [
+    "आत्मविश्वास",
+    "भागना",
+    "सिखाती"
+   ]
+  },
+  {
+   "id": "hi-hindib10-130",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 20,
+   "chapter": "हरिहर काका (मिथिलेश्वर)",
+   "question": "हरिहर काका कौन थे और वे किस समस्या से जूझ रहे थे?",
+   "answer": "हरिहर काका एक वृद्ध व निःसंतान ग्रामीण थे, जिनका भरा-पूरा संयुक्त परिवार था; अपनी वृद्धावस्था व संतानहीनता के कारण वे अपने भाइयों व ठाकुरबारी दोनों पर निर्भर थे।",
+   "keywords": [
+    "वृद्धावस्था",
+    "संतानहीनता",
+    "भरा-पूरा"
+   ]
+  },
+  {
+   "id": "hi-hindib10-131",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 20,
+   "chapter": "हरिहर काका (मिथिलेश्वर)",
+   "question": "हरिहर काका के हिस्से में कितनी ज़मीन थी?",
+   "answer": "परिवार के पास कुल साठ बीघे खेत थे, जिसमें हरिहर काका के हिस्से में पंद्रह बीघे खेत आए।",
+   "keywords": [
+    "जिसमें",
+    "पंद्रह",
+    "बीघे"
+   ]
+  },
+  {
+   "id": "hi-hindib10-132",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 20,
+   "chapter": "हरिहर काका (मिथिलेश्वर)",
+   "question": "ठाकुरबारी के महंत जी हरिहर काका के प्रति इतने विनम्र क्यों थे?",
+   "answer": "महंत जी को हरिहर काका की ज़मीन के विषय में ज्ञात हो गया था, इसलिए वे उन्हें धर्म, दान व पुण्य की बातें समझाकर भूमि ठाकुरबारी के नाम करने का आग्रह करने लगे थे।",
+   "keywords": [
+    "समझाकर",
+    "ज्ञात",
+    "पुण्य"
+   ]
+  },
+  {
+   "id": "hi-hindib10-133",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 20,
+   "chapter": "हरिहर काका (मिथिलेश्वर)",
+   "question": "महंत जी ने हरिहर काका की ज़मीन हथियाने के लिए क्या किया?",
+   "answer": "'साम-दाम दंड भेद' की नीति अपनाकर महंत जी ने एक दिन काका को उनके घर से अपने आदमियों द्वारा उठवा लिया और ज़बरदस्ती काग़ज़ों पर उनके अँगूठे के निशान लगवा लिए।",
+   "keywords": [
+    "साम-दाम",
+    "आदमियों",
+    "ज़बरदस्ती"
+   ]
+  },
+  {
+   "id": "hi-hindib10-134",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 20,
+   "chapter": "हरिहर काका (मिथिलेश्वर)",
+   "question": "काका के भाइयों ने काका को कैसे बचाया?",
+   "answer": "खबर लगने पर काका के भाई पुलिस को लेकर ठाकुरबारी गए और वहाँ से बुरी हालत में काका की जान बचाकर अपने घर ले आए।",
+   "keywords": [
+    "ठाकुरबारी",
+    "बचाकर",
+    "लगने"
+   ]
+  },
+  {
+   "id": "hi-hindib10-135",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 20,
+   "chapter": "हरिहर काका (मिथिलेश्वर)",
+   "question": "वापस आने के बाद स्वयं काका के भाइयों का व्यवहार कैसे बदल गया?",
+   "answer": "काका के भाई भी महंत से ज़्यादा विकराल रूप धारण कर काका को यातनाएँ देने लगे और उनसे ज़बरदस्ती काग़ज़ों पर हस्ताक्षर करवाना चाहा, ताकि ज़मीन उनके नाम हो जाए।",
+   "keywords": [
+    "हस्ताक्षर",
+    "ज़्यादा",
+    "यातनाएँ"
+   ]
+  },
+  {
+   "id": "hi-hindib10-136",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 20,
+   "chapter": "हरिहर काका (मिथिलेश्वर)",
+   "question": "कहानी का अंत हरिहर काका की किस दशा से होता है?",
+   "answer": "मानसिक तनाव के कारण हरिहर काका गूँगेपन का शिकार हो गए और रिक्त आँखों से आसमान को ताकते रहते थे।",
+   "keywords": [
+    "गूँगेपन",
+    "शिकार",
+    "रिक्त"
+   ]
+  },
+  {
+   "id": "hi-hindib10-137",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 20,
+   "chapter": "हरिहर काका (मिथिलेश्वर)",
+   "question": "'हरिहर काका' कहानी से क्या सामाजिक संदेश मिलता है?",
+   "answer": "यह कहानी दिखाती है कि संपत्ति के लोभ में रिश्ते और धार्मिक संस्थाएँ भी स्वार्थी बन सकती हैं, तथा निःसंतान वृद्धों की सुरक्षा एक गंभीर सामाजिक समस्या है।",
+   "keywords": [
+    "संस्थाएँ",
+    "स्वार्थी",
+    "धार्मिक"
+   ]
+  },
+  {
+   "id": "hi-hindib10-138",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 21,
+   "chapter": "सपनों के से दिन (गुरदयाल सिंह)",
+   "question": "इस पाठ में लेखक ने किन दिनों की यादें साझा की हैं?",
+   "answer": "लेखक गुरदयाल सिंह ने अपने बचपन के दिनों की खट्टी-मीठी यादों का सजीव व मनोहारी वर्णन किया है।",
+   "keywords": [
+    "खट्टी-मीठी",
+    "गुरदयाल",
+    "मनोहारी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-139",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 21,
+   "chapter": "सपनों के से दिन (गुरदयाल सिंह)",
+   "question": "बचपन में लेखक और उनके दोस्त स्कूल के प्रति क्या धारणा रखते थे?",
+   "answer": "अधिकतर बच्चे स्कूल नहीं जाना चाहते थे; वे स्कूल व पढ़ाई को क़ैद के समान समझते थे।",
+   "keywords": [
+    "बच्चे",
+    "अधिकतर",
+    "क़ैद"
+   ]
+  },
+  {
+   "id": "hi-hindib10-140",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 21,
+   "chapter": "सपनों के से दिन (गुरदयाल सिंह)",
+   "question": "छुट्टियों के दौरान लेखक कहाँ जाते थे और वहाँ क्या करते थे?",
+   "answer": "लेखक अपने ननिहाल जाते थे, जहाँ नानी उन्हें खूब खिलाती-पिलाती व लाड़ करती थीं; वे दोपहर तक अपने दोस्तों के साथ पानी में कूदना, रेत के टीलों पर चढ़ना आदि खूब मस्ती करते थे।",
+   "keywords": [
+    "खिलाती-पिलाती",
+    "दोस्तों",
+    "ननिहाल"
+   ]
+  },
+  {
+   "id": "hi-hindib10-141",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 21,
+   "chapter": "सपनों के से दिन (गुरदयाल सिंह)",
+   "question": "लेखक के स्कूल में सुबह की प्रार्थना के समय क्या होता था?",
+   "answer": "सुबह प्रार्थना के समय सभी लड़के कतार में खड़े रहते थे; ज़रा भी कतार टेढ़ी होने पर पी.टी. के मास्टर प्रीतमचंद बाज़ की तरह लड़कों पर झपट पड़ते थे।",
+   "keywords": [
+    "प्रीतमचंद",
+    "मास्टर",
+    "लड़कों"
+   ]
+  },
+  {
+   "id": "hi-hindib10-142",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 21,
+   "chapter": "सपनों के से दिन (गुरदयाल सिंह)",
+   "question": "स्काउट परेड के दौरान मास्टर जी का व्यवहार कैसा था?",
+   "answer": "थोड़ा-सा हिलने पर वे दंड देते थे, परंतु अच्छा काम करने पर शाबाशी भी देते थे; इससे लेखक के मन में फ़ौजी बनने की इच्छा जाग्रत हुई।",
+   "keywords": [
+    "थोड़ा-सा",
+    "शाबाशी",
+    "हिलने"
+   ]
+  },
+  {
+   "id": "hi-hindib10-143",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 21,
+   "chapter": "सपनों के से दिन (गुरदयाल सिंह)",
+   "question": "हेडमास्टर मदन मोहन शर्मा का स्वभाव कैसा था?",
+   "answer": "हेडमास्टर मदन मोहन शर्मा स्वभाव से बहुत नरम और हँसमुख थे।",
+   "keywords": [
+    "हँसमुख",
+    "नरम",
+    "हेडमास्टर"
+   ]
+  },
+  {
+   "id": "hi-hindib10-144",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 21,
+   "chapter": "सपनों के से दिन (गुरदयाल सिंह)",
+   "question": "यह पाठ बचपन के विषय में क्या संदेश देता है?",
+   "answer": "यह पाठ दर्शाता है कि बचपन के निश्छल खेल-कूद और मस्ती की यादें जीवन भर सजीव व अनमोल बनी रहती हैं।",
+   "keywords": [
+    "दर्शाता",
+    "खेल-कूद",
+    "निश्छल"
+   ]
+  },
+  {
+   "id": "hi-hindib10-145",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 22,
+   "chapter": "टोपी शुक्ला (राही मासूम रज़ा)",
+   "question": "'टोपी शुक्ला' कहानी का नायक कौन है और उसका असली नाम क्या है?",
+   "answer": "कहानी का नायक टोपी है, जो अपनेपन की तलाश में भटकता नज़र आता है; उसका असली नाम टोपी शुक्ला है और वह डॉक्टर भृगु नारायण शुक्ला का बेटा है।",
+   "keywords": [
+    "डॉक्टर",
+    "नारायण",
+    "भटकता"
+   ]
+  },
+  {
+   "id": "hi-hindib10-146",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 22,
+   "chapter": "टोपी शुक्ला (राही मासूम रज़ा)",
+   "question": "टोपी का सबसे गहरा दोस्त कौन था?",
+   "answer": "टोपी का सबसे गहरा दोस्त इफ़्फ़न था, जो सैयद मुर्तज़ा हुसैन का पुत्र था।",
+   "keywords": [
+    "मुर्तज़ा",
+    "हुसैन",
+    "पुत्र"
+   ]
+  },
+  {
+   "id": "hi-hindib10-147",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 22,
+   "chapter": "टोपी शुक्ला (राही मासूम रज़ा)",
+   "question": "टोपी अपने घर के बजाय इफ़्फ़न की हवेली की ओर बार-बार क्यों खिंचा चला जाता था?",
+   "answer": "टोपी को इफ़्फ़न की दादी से बहुत स्नेह (लगाव) था — दादी उसे बहुत प्यार करतीं और कहानियाँ सुनातीं, जबकि टोपी के अपने घर में उसे कोई प्यार नहीं करता था।",
+   "keywords": [
+    "कहानियाँ",
+    "सुनातीं",
+    "प्यार"
+   ]
+  },
+  {
+   "id": "hi-hindib10-148",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 22,
+   "chapter": "टोपी शुक्ला (राही मासूम रज़ा)",
+   "question": "एक दिन टोपी के मुख से कौन-सा शब्द निकलने पर उसे डाँट पड़ी?",
+   "answer": "टोपी के मुख से भोजन के समय 'अम्मी' शब्द निकल गया, जिसके कारण घर में उसे बुरा-भला कहा गया और उसकी माँ ने उसकी बहुत पिटाई की।",
+   "keywords": [
+    "बुरा-भला",
+    "अम्मी",
+    "पिटाई"
+   ]
+  },
+  {
+   "id": "hi-hindib10-149",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 22,
+   "chapter": "टोपी शुक्ला (राही मासूम रज़ा)",
+   "question": "इफ़्फ़न की दादी की मृत्यु के बाद टोपी की क्या मनोदशा हुई?",
+   "answer": "इस घटना से टोपी अकेला और दुःखी रहने लगा; उसे दुःख था कि इफ़्फ़न की दादी क्यों मर गईं, उसकी जगह उसकी अपनी दादी क्यों नहीं मर गईं।",
+   "keywords": [
+    "गईं।",
+    "क्यों",
+    "दुःखी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-150",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 22,
+   "chapter": "टोपी शुक्ला (राही मासूम रज़ा)",
+   "question": "इफ़्फ़न के परिवार के मुरादाबाद जाने के बाद टोपी के जीवन में क्या बदलाव आया?",
+   "answer": "टोपी अकेला रह गया; धीरे-धीरे वह बड़ा होने लगा, परन्तु घर की ज़िम्मेदारियों व टाइफाइड बीमारी के कारण वह नौवीं कक्षा में तीन बार फेल हुआ।",
+   "keywords": [
+    "ज़िम्मेदारियों",
+    "टाइफाइड",
+    "परन्तु"
+   ]
+  },
+  {
+   "id": "hi-hindib10-151",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 22,
+   "chapter": "टोपी शुक्ला (राही मासूम रज़ा)",
+   "question": "यह कहानी किस सामाजिक मुद्दे की ओर संकेत करती है?",
+   "answer": "यह कहानी सांप्रदायिक भेदभाव व पारिवारिक स्नेह की कमी के प्रभाव को दर्शाती है, तथा यह बताती है कि अपनेपन व स्नेह की तलाश बच्चों के मन पर गहरा प्रभाव डालती है।",
+   "keywords": [
+    "सांप्रदायिक",
+    "दर्शाती",
+    "पारिवारिक"
+   ]
+  },
+  {
+   "id": "hi-hindib10-152",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 23,
+   "chapter": "अनुच्छेद-लेखन",
+   "question": "अनुच्छेद-लेखन किस प्रकार की लेखन-शैली है?",
+   "answer": "अनुच्छेद-लेखन एक प्रकार की संक्षिप्त लेखन-शैली है, अतः इसमें मुख्य विषय पर ही ध्यान रखना चाहिए।",
+   "keywords": [
+    "संक्षिप्त",
+    "इसमें",
+    "मुख्य"
+   ]
+  },
+  {
+   "id": "hi-hindib10-153",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 23,
+   "chapter": "अनुच्छेद-लेखन",
+   "question": "अनुच्छेद में उदाहरण या दृष्टांत देने के विषय में क्या नियम है?",
+   "answer": "अनुच्छेद-लेखन में उदाहरण अथवा दृष्टांत के लिए कोई स्थान नहीं है; आवश्यकता होने पर केवल उसकी ओर संकेत कर देना ही पर्याप्त है।",
+   "keywords": [
+    "आवश्यकता",
+    "पर्याप्त",
+    "अनुच्छेद-लेखन"
+   ]
+  },
+  {
+   "id": "hi-hindib10-154",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 23,
+   "chapter": "अनुच्छेद-लेखन",
+   "question": "अनुच्छेद के प्रथम और अंतिम वाक्य की क्या विशेषता होनी चाहिए?",
+   "answer": "अनुच्छेद का प्रथम वाक्य ऐसा होना चाहिए जो पाठक का कौतूहल जाग्रत करे, और अंतिम वाक्य सारगर्भित तथा प्रभावोत्पादक होना चाहिए।",
+   "keywords": [
+    "प्रभावोत्पादक",
+    "सारगर्भित",
+    "कौतूहल"
+   ]
+  },
+  {
+   "id": "hi-hindib10-155",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 23,
+   "chapter": "अनुच्छेद-लेखन",
+   "question": "अनुच्छेद के सभी वाक्यों में क्या गुण होना चाहिए?",
+   "answer": "अनुच्छेद के सभी वाक्यों में परस्पर घनिष्ठ संबंध होना चाहिए, और भाषा की शुद्धता व शब्दों के उचित चयन पर विशेष ध्यान देना चाहिए।",
+   "keywords": [
+    "शुद्धता",
+    "परस्पर",
+    "घनिष्ठ"
+   ]
+  },
+  {
+   "id": "hi-hindib10-156",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 23,
+   "chapter": "अनुच्छेद-लेखन",
+   "question": "परीक्षा में अनुच्छेद-लेखन के लिए विद्यार्थियों को क्या करना चाहिए?",
+   "answer": "परीक्षा में संकेत-बिंदुओं के आधार पर अनुच्छेद लिखने को कहा जाता है, अतः विद्यार्थियों को पहले उन संकेत-बिंदुओं के भाव को समझकर, मन ही मन एक क्रम व लय बनाकर अनुच्छेद लिखना चाहिए।",
+   "keywords": [
+    "संकेत-बिंदुओं",
+    "अनुच्छेद",
+    "क्रम"
+   ]
+  },
+  {
+   "id": "hi-hindib10-157",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 24,
+   "chapter": "पत्र-लेखन (औपचारिक)",
+   "question": "पत्र को 'मन का आईना' क्यों कहा जाता है?",
+   "answer": "पत्र वह संदेश-वाहक दूत है, जो हमारे संदेश दूर बैठे परिचितों-अपरिचितों तक पहुँचाता है और मन की बात लिखकर विस्तार से प्रकट की जा सकती है, इसलिए इसे 'मन का आईना' कहा जाता है।",
+   "keywords": [
+    "संदेश-वाहक",
+    "परिचितों-अपरिचितों",
+    "विस्तार"
+   ]
+  },
+  {
+   "id": "hi-hindib10-158",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 24,
+   "chapter": "पत्र-लेखन (औपचारिक)",
+   "question": "एक अच्छे पत्र की तीन विशेषताएँ बताइए।",
+   "answer": "1) पत्र की भाषा-शैली सरल हो, 2) पत्र में संक्षिप्तता, क्रमबद्धता तथा प्रभावान्विति हो, 3) पत्र में विनम्रता एवं बाह्य आकर्षण हो।",
+   "keywords": [
+    "संक्षिप्तता",
+    "क्रमबद्धता",
+    "प्रभावान्विति"
+   ]
+  },
+  {
+   "id": "hi-hindib10-159",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 24,
+   "chapter": "पत्र-लेखन (औपचारिक)",
+   "question": "पत्रों को कितने वर्गों में विभाजित किया जाता है?",
+   "answer": "पत्रों को दो वर्गों में विभाजित किया जाता है — (1) अनौपचारिक अथवा पारिवारिक पत्र, (2) औपचारिक अथवा कार्यालयी पत्र।",
+   "keywords": [
+    "अनौपचारिक",
+    "औपचारिक",
+    "पारिवारिक"
+   ]
+  },
+  {
+   "id": "hi-hindib10-160",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 24,
+   "chapter": "पत्र-लेखन (औपचारिक)",
+   "question": "अनौपचारिक पत्र के अंतर्गत किस प्रकार के पत्र आते हैं?",
+   "answer": "इसके अंतर्गत परिवार के लोगों, मित्रों व निकट संबंधियों को लिखे जाने वाले पत्र आते हैं।",
+   "keywords": [
+    "संबंधियों",
+    "मित्रों",
+    "निकट"
+   ]
+  },
+  {
+   "id": "hi-hindib10-161",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 24,
+   "chapter": "पत्र-लेखन (औपचारिक)",
+   "question": "औपचारिक पत्र के अंतर्गत किस प्रकार के पत्र आते हैं?",
+   "answer": "इसके अंतर्गत आवेदन पत्र, कार्यालयी पत्र, संपादकीय पत्र, प्रार्थना पत्र तथा व्यावसायिक पत्र आते हैं।",
+   "keywords": [
+    "व्यावसायिक",
+    "संपादकीय",
+    "कार्यालयी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-162",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 25,
+   "chapter": "सूचना-लेखन",
+   "question": "'सूचना-लेखन' से क्या अभिप्राय है?",
+   "answer": "'सूचना-लेखन' से अभिप्राय है किसी घटना अथवा कार्य-योजना का पूर्ण विवरण, जिसके अंतर्गत सभा, बैठक, गोष्ठी, कार्यशाला आदि से संबंधित विवरण आता है।",
+   "keywords": [
+    "कार्य-योजना",
+    "कार्यशाला",
+    "गोष्ठी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-163",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 25,
+   "chapter": "सूचना-लेखन",
+   "question": "सूचना-लेखन कैसा होना चाहिए? (कोई तीन बिंदु)",
+   "answer": "1) सूचना अति संक्षिप्त हो, 2) सभी प्रमुख बातें समाहित हों, 3) सूचना तथ्यों से युक्त एवं स्पष्ट हो।",
+   "keywords": [
+    "समाहित",
+    "संक्षिप्त",
+    "प्रमुख"
+   ]
+  },
+  {
+   "id": "hi-hindib10-164",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 25,
+   "chapter": "सूचना-लेखन",
+   "question": "सूचना-लेखन में किस प्रकार के वाक्यों से बचना चाहिए?",
+   "answer": "भ्रमित करने वाले वाक्यों से बचना चाहिए; सूचना क्रमबद्ध और सरल भाषा में होनी चाहिए।",
+   "keywords": [
+    "क्रमबद्ध",
+    "भ्रमित",
+    "सूचना"
+   ]
+  },
+  {
+   "id": "hi-hindib10-165",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 25,
+   "chapter": "सूचना-लेखन",
+   "question": "सूचना-लेखन में शीर्षक व तिथि से संबंधित क्या नियम है?",
+   "answer": "सूचना-लेखन से पूर्व उसका एक संक्षिप्त शीर्षक देना चाहिए, और शीर्षक की बाईं ओर तिथि अवश्य लिखनी चाहिए।",
+   "keywords": [
+    "संक्षिप्त",
+    "लिखनी",
+    "बाईं"
+   ]
+  },
+  {
+   "id": "hi-hindib10-166",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 26,
+   "chapter": "विज्ञापन-लेखन",
+   "question": "विज्ञापन-लेखन लगभग कितने शब्दों में लिखना चाहिए?",
+   "answer": "विज्ञापन-लेखन लगभग 60 शब्दों में लिखना चाहिए।",
+   "keywords": [
+    "60",
+    "विज्ञापन-लेखन",
+    "चाहिए।"
+   ]
+  },
+  {
+   "id": "hi-hindib10-167",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 26,
+   "chapter": "विज्ञापन-लेखन",
+   "question": "विज्ञापन के वाक्यों व भाषा की क्या विशेषता होनी चाहिए?",
+   "answer": "वाक्य छोटे-छोटे तथा आपस में जुड़े होने चाहिए, और भाषा सरल तथा सार्थक होनी चाहिए।",
+   "keywords": [
+    "छोटे-छोटे",
+    "सार्थक",
+    "जुड़े"
+   ]
+  },
+  {
+   "id": "hi-hindib10-168",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 26,
+   "chapter": "विज्ञापन-लेखन",
+   "question": "आज के युग को 'विज्ञापनों का युग' क्यों कहा जाता है?",
+   "answer": "रेडियो, दूरदर्शन, समाचार-पत्र तथा पत्रिकाएँ आदि इसके मुख्य साधन हैं, और आज अधिकतर व्यापार विज्ञापनों द्वारा ही चलता है।",
+   "keywords": [
+    "समाचार-पत्र",
+    "पत्रिकाएँ",
+    "दूरदर्शन"
+   ]
+  },
+  {
+   "id": "hi-hindib10-169",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 26,
+   "chapter": "विज्ञापन-लेखन",
+   "question": "विज्ञापन का मुख्य उद्देश्य क्या है?",
+   "answer": "विज्ञापन के द्वारा उत्पादक अपने सामान की सूचना, जानकारी और प्रसिद्धि को जन-जन तक पहुँचाता है, जिससे बाज़ार में आने वाली नई वस्तुओं की जानकारी घर बैठे ही प्राप्त हो जाती है।",
+   "keywords": [
+    "प्रसिद्धि",
+    "उत्पादक",
+    "जानकारी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-170",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 27,
+   "chapter": "लघु कथा-लेखन",
+   "question": "कथा-लेखन को गद्य साहित्य की सबसे रोचक विधा क्यों कहा गया है?",
+   "answer": "इसमें जीवन की किसी एक घटना का वर्णन किया जाता है; यह एक ऐसी विधा है जो अपने सीमित क्षेत्र में पूर्ण, स्वतंत्र और प्रभावशाली होती है।",
+   "keywords": [
+    "प्रभावशाली",
+    "क्षेत्र",
+    "सीमित"
+   ]
+  },
+  {
+   "id": "hi-hindib10-171",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 27,
+   "chapter": "लघु कथा-लेखन",
+   "question": "कहानीकार का मुख्य उद्देश्य क्या होता है?",
+   "answer": "जीवन के किसी एक अंग या किसी एक मनोभाव को प्रदर्शित करना ही कहानीकार का उद्देश्य होता है; उसके पात्र, भाषा-शैली व कथा-विन्यास सभी उसी एक भाव को पुष्ट करते हैं।",
+   "keywords": [
+    "कथा-विन्यास",
+    "प्रदर्शित",
+    "मनोभाव"
+   ]
+  },
+  {
+   "id": "hi-hindib10-172",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 27,
+   "chapter": "लघु कथा-लेखन",
+   "question": "कहानी लिखते समय किन बातों का ध्यान रखना चाहिए? (कोई चार बिंदु)",
+   "answer": "1) कहानी लिखने से पूर्व उसकी रूपरेखा तैयार कर लेनी चाहिए। 2) कहानी का शीर्षक सुंदर व आकर्षित होना चाहिए। 3) कहानी की भाषा-शैली सरल व स्पष्ट होनी चाहिए। 4) कहानी में न तो बहुत छोटे वाक्य और न ही अति विस्तृत बड़े-बड़े वाक्य होने चाहिए।",
+   "keywords": [
+    "बड़े-बड़े",
+    "रूपरेखा",
+    "आकर्षित"
+   ]
+  },
+  {
+   "id": "hi-hindib10-173",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 27,
+   "chapter": "लघु कथा-लेखन",
+   "question": "कहानी-लेखन में सबसे ज़रूरी बात क्या मानी गई है?",
+   "answer": "सबसे ज़रूरी बात यह है कि कहानी से पाठक को कोई-न-कोई उपदेश या शिक्षा अवश्य मिलनी चाहिए।",
+   "keywords": [
+    "कोई-न-कोई",
+    "उपदेश",
+    "मिलनी"
+   ]
+  },
+  {
+   "id": "hi-hindib10-174",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 27,
+   "chapter": "लघु कथा-लेखन",
+   "question": "कथा-लेखन किस काल में किया जाना चाहिए?",
+   "answer": "कथा-लेखन भूतकाल में लिखा जाना चाहिए।",
+   "keywords": [
+    "भूतकाल",
+    "लिखा",
+    "चाहिए।"
+   ]
+  },
+  {
+   "id": "hi-hindib10-175",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 28,
+   "chapter": "ई-मेल लेखन",
+   "question": "ई-मेल क्या है?",
+   "answer": "ई-मेल या इलेक्ट्रॉनिक मेल, इंटरनेट के माध्यम से पत्र भेजने का एक तरीक़ा है; जब संदेश या चिट्ठी को इलेक्ट्रॉनिक माध्यम से भेजा जाता है तो उसे ई-मेल (e-mail) कहते हैं।",
+   "keywords": [
+    "इलेक्ट्रॉनिक",
+    "इंटरनेट",
+    "माध्यम"
+   ]
+  },
+  {
+   "id": "hi-hindib10-176",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 28,
+   "chapter": "ई-मेल लेखन",
+   "question": "ई-मेल के द्वारा संदेश भेजने का क्या लाभ है?",
+   "answer": "ई-मेल के द्वारा हम विश्व के किसी भी कोने में बैठे इंसान तक सिर्फ़ कुछ सेकंड में ही अपना संदेश भेज सकते हैं, और अन्य इंसान द्वारा भेजा संदेश इलेक्ट्रॉनिक रूप में पा सकते हैं।",
+   "keywords": [
+    "इलेक्ट्रॉनिक",
+    "विश्व",
+    "इंसान"
+   ]
+  },
+  {
+   "id": "hi-hindib10-177",
+   "lang": "hi",
+   "book": "हिन्दी 'ब' कक्षा 10",
+   "page": 28,
+   "chapter": "ई-मेल लेखन",
+   "question": "ई-मेल के साथ और क्या-क्या भेजा जा सकता है?",
+   "answer": "ई-मेल के साथ हम अन्य फ़ाइलें, जैसे — फ़ोटो या डॉक्यूमेंट्स भी जोड़कर भेज सकते हैं।",
+   "keywords": [
+    "डॉक्यूमेंट्स",
+    "फ़ाइलें",
+    "जोड़कर"
+   ]
+  },
+  {
+   "id": "ta-tasci10-1",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 1,
+   "chapter": "வேதியியல் வினைகள் மற்றும் சமன்பாடுகள்",
+   "question": "வேதியியல் வினை என்றால் என்ன?",
+   "answer": "வேதியியல் பிணைப்புகள் உடைந்து புதிய பிணைப்புகள் உருவாகுவதன் மூலம் புதிய பண்புகளைக் கொண்ட பொருட்கள் உருவாகும் செயல்முறையே வேதியியல் வினை.",
+   "keywords": [
+    "உருவாகுவத",
+    "செயல்முறை",
+    "பிணைப்புக"
+   ]
+  },
+  {
+   "id": "ta-tasci10-2",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 1,
+   "chapter": "வேதியியல் வினைகள் மற்றும் சமன்பாடுகள்",
+   "question": "வேதியியல் வினை நிகழ்ந்ததை உணர்த்தும் ஐந்து மாற்றங்கள் யாவை?",
+   "answer": "நிலை மாற்றம், நிற மாற்றம், வாயு வெளியேற்றம், வெப்பநிலை மாற்றம், வீழ்படிவு உருவாதல்.",
+   "keywords": [
+    "வெளியேற்ற",
+    "வீழ்படி",
+    "உருவாத"
+   ]
+  },
+  {
+   "id": "ta-tasci10-3",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 1,
+   "chapter": "வேதியியல் வினைகள் மற்றும் சமன்பாடுகள்",
+   "question": "சமநிலை வேதியியல் சமன்பாடு என்றால் என்ன?",
+   "answer": "சமன்பாட்டின் இருபுறங்களிலும் ஒவ்வொரு தனிமத்தின் அணுக்களின் எண்ணிக்கையும் சமமாக இருக்கும் சமன்பாடு.",
+   "keywords": [
+    "சமன்பாட்டி",
+    "இருபுறங்களிலு",
+    "தனிமத்தி"
+   ]
+  },
+  {
+   "id": "ta-tasci10-4",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 1,
+   "chapter": "வேதியியல் வினைகள் மற்றும் சமன்பாடுகள்",
+   "question": "கூட்டுவினை, சிதைவு, இடப்பெயர்ச்சி, இரட்டை இடப்பெயர்ச்சி வினைகளை எடுத்துக்காட்டுடன் கூறுக.",
+   "answer": "கூட்டுவினை: CaO + H₂O → Ca(OH)₂. சிதைவு: CaCO₃ → CaO + CO₂. இடப்பெயர்ச்சி: Fe + CuSO₄ → FeSO₄ + Cu. இரட்டை இடப்பெயர்ச்சி: Na₂SO₄ + BaCl₂ → BaSO₄ + 2NaCl.",
+   "keywords": [
+    "na₂so₄",
+    "caco₃",
+    "cuso₄"
+   ]
+  },
+  {
+   "id": "ta-tasci10-5",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 1,
+   "chapter": "வேதியியல் வினைகள் மற்றும் சமன்பாடுகள்",
+   "question": "ஆக்சிஜனேற்றம் மற்றும் ஒடுக்கம் என்றால் என்ன?",
+   "answer": "ஆக்சிஜனேற்றம் — ஆக்சிஜனைப் பெறுதல் அல்லது எலக்ட்ரானை இழத்தல். ஒடுக்கம் — ஆக்சிஜனை இழத்தல் அல்லது எலக்ட்ரானைப் பெறுதல். நினைவுக்குறிப்பு: OIL RIG.",
+   "keywords": [
+    "ஆக்சிஜனை",
+    "எலக்ட்ரா",
+    "நினைவுக்குறிப்"
+   ]
+  },
+  {
+   "id": "ta-tasci10-6",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 2,
+   "chapter": "அமிலங்கள், காரங்கள் மற்றும் உப்புகள்",
+   "question": "அமிலங்களும் காரங்களும் நீரில் எந்த அயனிகளை வழங்குகின்றன?",
+   "answer": "அமிலங்கள் H⁺ அயனிகளையும், காரங்கள் OH⁻ அயனிகளையும் வழங்குகின்றன.",
+   "keywords": [
+    "அயனிகளையு",
+    "அமிலங்க",
+    "காரங்க"
+   ]
+  },
+  {
+   "id": "ta-tasci10-7",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 2,
+   "chapter": "அமிலங்கள், காரங்கள் மற்றும் உப்புகள்",
+   "question": "வலிமையான மற்றும் வலிமை குறைந்த அமிலங்கள்/காரங்களை வேறுபடுத்துக.",
+   "answer": "வலிமையானவை நீரில் முழுமையாக அயனியாக்கம் அடையும்; வலிமை குறைந்தவை பகுதியளவில் மட்டுமே அயனியாக்கம் அடையும்.",
+   "keywords": [
+    "வலிமையான",
+    "அயனியாக்க",
+    "பகுதியளவி"
+   ]
+  },
+  {
+   "id": "ta-tasci10-8",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 2,
+   "chapter": "அமிலங்கள், காரங்கள் மற்றும் உப்புகள்",
+   "question": "நடுநிலையாக்கல் வினை என்றால் என்ன?",
+   "answer": "அமிலமும் காரமும் வினைபுரிந்து உப்பும் நீரும் உருவாகும் வினை. NaOH + HCl → NaCl + H₂O.",
+   "keywords": [
+    "வினைபுரிந்",
+    "காரமு",
+    "உப்பு"
+   ]
+  },
+  {
+   "id": "ta-tasci10-9",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 2,
+   "chapter": "அமிலங்கள், காரங்கள் மற்றும் உப்புகள்",
+   "question": "pH என்றால் என்ன?",
+   "answer": "கரைசலில் உள்ள H⁺ அயனிகளின் செறிவை அளக்கும் 0–14 அளவுகோல். pH < 7 அமிலம், 7 நடுநிலை, >7 காரம்.",
+   "keywords": [
+    "அயனிகளி",
+    "கரைசலி",
+    "அளக்கு"
+   ]
+  },
+  {
+   "id": "ta-tasci10-10",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 2,
+   "chapter": "அமிலங்கள், காரங்கள் மற்றும் உப்புகள்",
+   "question": "குளோர்-ஆல்கலி செயல்முறையின் மூன்று விளைபொருட்கள் யாவை?",
+   "answer": "NaOH, குளோரின் வாயு மற்றும் ஹைட்ரஜன் வாயு.",
+   "keywords": [
+    "குளோரி",
+    "ஹைட்ரஜ",
+    "naoh"
+   ]
+  },
+  {
+   "id": "ta-tasci10-11",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 3,
+   "chapter": "உலோகங்கள் மற்றும் அலோகங்கள்",
+   "question": "உலோகங்களையும் அலோகங்களையும் வேறுபடுத்துக.",
+   "answer": "உலோகங்கள் பொதுவாக பளபளப்பானவை, தகடாக்கக்கூடியவை, கம்பியாக இழுக்கக்கூடியவை மற்றும் மின்சாரத்தை நன்கு கடத்துபவை. அலோகங்கள் பொதுவாக உடையக்கூடியவை மற்றும் மோசமான கடத்திகள்.",
+   "keywords": [
+    "பளபளப்பான",
+    "தகடாக்கக்கூடிய",
+    "இழுக்கக்கூடிய"
+   ]
+  },
+  {
+   "id": "ta-tasci10-12",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 3,
+   "chapter": "உலோகங்கள் மற்றும் அலோகங்கள்",
+   "question": "சோடியமும் பொட்டாசியமும் எவ்வாறு சேமிக்கப்படுகின்றன?",
+   "answer": "அவை காற்றுடன் தீவிரமாக வினைபுரிவதால் மண்ணெண்ணெயில் மூழ்கிய நிலையில் சேமிக்கப்படுகின்றன.",
+   "keywords": [
+    "மண்ணெண்ணெயி",
+    "காற்றுட",
+    "தீவிரம"
+   ]
+  },
+  {
+   "id": "ta-tasci10-13",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 3,
+   "chapter": "உலோகங்கள் மற்றும் அலோகங்கள்",
+   "question": "ஆம்போடெரிக் ஆக்சைடு என்றால் என்ன?",
+   "answer": "அமிலங்களுடனும் காரங்களுடனும் வினைபுரியும் உலோக ஆக்சைடு. உதாரணம் Al₂O₃.",
+   "keywords": [
+    "அமிலங்களுடனு",
+    "காரங்களுடனு",
+    "வினைபுரியு"
+   ]
+  },
+  {
+   "id": "ta-tasci10-14",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 3,
+   "chapter": "உலோகங்கள் மற்றும் அலோகங்கள்",
+   "question": "அரிமானம் என்றால் என்ன?",
+   "answer": "சுற்றுச்சூழலுடன் வினைபுரிவதால் உலோகம் சிதைவடைவது அரிமானம். பூச்சு அல்லது galvanisation மூலம் தடுக்கலாம்.",
+   "keywords": [
+    "சுற்றுச்சூழலுட",
+    "சிதைவடைவ",
+    "galvanisati"
+   ]
+  },
+  {
+   "id": "ta-tasci10-15",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 3,
+   "chapter": "உலோகங்கள் மற்றும் அலோகங்கள்",
+   "question": "Galvanisation என்றால் என்ன?",
+   "answer": "இரும்பை துருப்பிடிப்பிலிருந்து பாதுகாக்க அதன் மேல் துத்தநாகப் பூச்சு இடும் செயல்முறை.",
+   "keywords": [
+    "துருப்பிடிப்பிலிருந்",
+    "துத்தநாக",
+    "பாதுகாக"
+   ]
+  },
+  {
+   "id": "ta-tasci10-16",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 4,
+   "chapter": "கார்பன் மற்றும் அதன் சேர்மங்கள்",
+   "question": "கார்பன் ஏன் சகப்பிணைப்புகளை உருவாக்குகிறது?",
+   "answer": "கார்பன் நான்கு இணைதிறன் எலக்ட்ரான்களைக் கொண்டது. நான்கு எலக்ட்ரான்களை இழக்கவோ பெறவோ அதிக ஆற்றல் தேவைப்படுவதால் எலக்ட்ரான்களைப் பகிர்ந்து சகப்பிணைப்புகளை உருவாக்குகிறது.",
+   "keywords": [
+    "எலக்ட்ரான்களை",
+    "தேவைப்படுவதா",
+    "பகிர்ந்"
+   ]
+  },
+  {
+   "id": "ta-tasci10-17",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 4,
+   "chapter": "கார்பன் மற்றும் அதன் சேர்மங்கள்",
+   "question": "கார்பனின் இரண்டு முக்கிய பண்புகள் யாவை?",
+   "answer": "Catenation மற்றும் tetravalency.",
+   "keywords": [
+    "catenati",
+    "tetravalen"
+   ]
+  },
+  {
+   "id": "ta-tasci10-18",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 4,
+   "chapter": "கார்பன் மற்றும் அதன் சேர்மங்கள்",
+   "question": "நிறைவுற்ற மற்றும் நிறைவுறா ஹைட்ரோகார்பன்களை வேறுபடுத்துக.",
+   "answer": "நிறைவுற்றவற்றில் ஒற்றைப் பிணைப்புகள் மட்டுமே உள்ளன; நிறைவுறா ஹைட்ரோகார்பன்களில் இரட்டை அல்லது முப்பிணைப்புகள் உள்ளன.",
+   "keywords": [
+    "நிறைவுற்றவற்றி",
+    "ஹைட்ரோகார்பன்களி",
+    "முப்பிணைப்புக"
+   ]
+  },
+  {
+   "id": "ta-tasci10-19",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 4,
+   "chapter": "கார்பன் மற்றும் அதன் சேர்மங்கள்",
+   "question": "Esterification என்றால் என்ன?",
+   "answer": "அமிலமும் ஆல்கஹாலும் செறிவூட்டப்பட்ட H₂SO₄ முன்னிலையில் வினைபுரிந்து எஸ்டர் உருவாக்கும் வினை. CH₃COOH + C₂H₅OH → CH₃COOC₂H₅ + H₂O.",
+   "keywords": [
+    "ஆல்கஹாலு",
+    "செறிவூட்டப்பட",
+    "ch₃cooc₂"
+   ]
+  },
+  {
+   "id": "ta-tasci10-20",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 4,
+   "chapter": "கார்பன் மற்றும் அதன் சேர்மங்கள்",
+   "question": "சோப்பு அழுக்கை எவ்வாறு நீக்குகிறது?",
+   "answer": "சோப்பின் நீருடன் ஈர்ப்புடைய தலைப்பகுதி மற்றும் எண்ணெயுடன் ஈர்ப்புடைய வால் பகுதி சேர்ந்து micelle உருவாக்கி எண்ணெய் அழுக்கை நீக்குகின்றன.",
+   "keywords": [
+    "ஈர்ப்புட",
+    "தலைப்பகு",
+    "எண்ணெயுட"
+   ]
+  },
+  {
+   "id": "ta-tasci10-21",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 5,
+   "chapter": "உயிர் செயல்பாடுகள்",
+   "question": "Autotrophic மற்றும் heterotrophic ஊட்டச்சத்து என்றால் என்ன?",
+   "answer": "தாவரங்கள் ஒளிச்சேர்க்கை மூலம் தாமே உணவைத் தயாரிப்பது autotrophic. பிற உயிரினங்களிடமிருந்து உணவைப் பெறுவது heterotrophic.",
+   "keywords": [
+    "ஒளிச்சேர்க்",
+    "தயாரிப்ப",
+    "உயிரினங்களிடமிருந்"
+   ]
+  },
+  {
+   "id": "ta-tasci10-22",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 5,
+   "chapter": "உயிர் செயல்பாடுகள்",
+   "question": "ஒளிச்சேர்க்கையின் முக்கிய நிகழ்வுகள் யாவை?",
+   "answer": "ஒளியை குளோரோபில் உறிஞ்சுதல், ஒளி ஆற்றலை வேதியியல் ஆற்றலாக மாற்றுதல், நீரைப் பிரித்தல் மற்றும் CO₂-ஐ கார்போஹைட்ரேட்டாக மாற்றுதல்.",
+   "keywords": [
+    "குளோரோபி",
+    "உறிஞ்சுத",
+    "கார்போஹைட்ரேட்ட"
+   ]
+  },
+  {
+   "id": "ta-tasci10-23",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 5,
+   "chapter": "உயிர் செயல்பாடுகள்",
+   "question": "மனித செரிமானப் பாதையை எழுதுக.",
+   "answer": "வாய் → உணவுக்குழாய் → இரைப்பை → சிறுகுடல் → பெருங்குடல் → மலவாய்.",
+   "keywords": [
+    "உணவுக்குழா",
+    "பெருங்குட",
+    "சிறுகுட"
+   ]
+  },
+  {
+   "id": "ta-tasci10-24",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 5,
+   "chapter": "உயிர் செயல்பாடுகள்",
+   "question": "காற்றுப்புகு மற்றும் காற்றில்லா சுவாசத்தை வேறுபடுத்துக.",
+   "answer": "காற்றுப்புகு சுவாசம் ஆக்சிஜன் முன்னிலையில் நடைபெற்று அதிக ஆற்றலைத் தருகிறது. காற்றில்லா சுவாசம் ஆக்சிஜன் இல்லாமல் நடைபெற்று குறைந்த ஆற்றலைத் தருகிறது.",
+   "keywords": [
+    "நடைபெற்",
+    "ஆக்சிஜ",
+    "ஆற்றலை"
+   ]
+  },
+  {
+   "id": "ta-tasci10-25",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 5,
+   "chapter": "உயிர் செயல்பாடுகள்",
+   "question": "Nephron-ன் பணிகள் யாவை?",
+   "answer": "Glomerular filtration, tubular reabsorption மற்றும் secretion மூலம் சிறுநீர் உருவாக்கப்படுகிறது.",
+   "keywords": [
+    "glomerul",
+    "filtrati",
+    "reabsorpti"
+   ]
+  },
+  {
+   "id": "ta-tasci10-26",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 6,
+   "chapter": "விலங்குகள் மற்றும் தாவரங்களில் கட்டுப்பாடும் ஒருங்கிணைப்பும்",
+   "question": "Reflex action என்றால் என்ன?",
+   "answer": "தூண்டுதலுக்கான விரைவான, தன்னிச்சையான பதில் reflex action. உதாரணம் சூடான பொருளிலிருந்து கையை இழுத்தல்.",
+   "keywords": [
+    "தூண்டுதலுக்க",
+    "பொருளிலிருந்",
+    "இழுத்த"
+   ]
+  },
+  {
+   "id": "ta-tasci10-27",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 6,
+   "chapter": "விலங்குகள் மற்றும் தாவரங்களில் கட்டுப்பாடும் ஒருங்கிணைப்பும்",
+   "question": "Reflex arc என்றால் என்ன?",
+   "answer": "Receptor → sensory neuron → spinal cord → motor neuron → effector என்ற தூண்டுதல் செல்லும் பாதை reflex arc.",
+   "keywords": [
+    "தூண்டுத",
+    "recept",
+    "effect"
+   ]
+  },
+  {
+   "id": "ta-tasci10-28",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 6,
+   "chapter": "விலங்குகள் மற்றும் தாவரங்களில் கட்டுப்பாடும் ஒருங்கிணைப்பும்",
+   "question": "Voluntary, involuntary, reflex செயல்களை வேறுபடுத்துக.",
+   "answer": "Voluntary செயல்கள் நமது கட்டுப்பாட்டில் நடைபெறும்; involuntary செயல்கள் தன்னிச்சையாக நடைபெறும்; reflex செயல்கள் மிக விரைவான தன்னிச்சையான பதில்கள்.",
+   "keywords": [
+    "கட்டுப்பாட்டி",
+    "தன்னிச்சைய",
+    "நடைபெறு"
+   ]
+  },
+  {
+   "id": "ta-tasci10-29",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 6,
+   "chapter": "விலங்குகள் மற்றும் தாவரங்களில் கட்டுப்பாடும் ஒருங்கிணைப்பும்",
+   "question": "மனித மூளையின் மூன்று முக்கிய பகுதிகள் யாவை?",
+   "answer": "முன்மூளை, நடுமூளை, பின்மூளை. இவை முறையே சிந்தனை/உணர்வு, சில தன்னிச்சைச் செயல்கள், சமநிலை மற்றும் முக்கிய உடல் செயல்களை கட்டுப்படுத்துகின்றன.",
+   "keywords": [
+    "தன்னிச்சை",
+    "கட்டுப்படுத்துகின்",
+    "முன்மூ"
+   ]
+  },
+  {
+   "id": "ta-tasci10-30",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 6,
+   "chapter": "விலங்குகள் மற்றும் தாவரங்களில் கட்டுப்பாடும் ஒருங்கிணைப்பும்",
+   "question": "முக்கிய தாவர ஹார்மோன்கள் யாவை?",
+   "answer": "Auxins, Gibberellins, Cytokinins, Abscisic acid, Ethylene.",
+   "keywords": [
+    "gibberelli",
+    "cytokini",
+    "abscis"
+   ]
+  },
+  {
+   "id": "ta-tasci10-31",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 7,
+   "chapter": "இனப்பெருக்கம்",
+   "question": "பாலிலா மற்றும் பாலின இனப்பெருக்கத்தை வேறுபடுத்துக.",
+   "answer": "பாலிலா இனப்பெருக்கத்தில் ஒரு பெற்றோர் மற்றும் கேமீட்டுகள் இல்லை; பாலின இனப்பெருக்கத்தில் ஆண், பெண் கேமீட்டுகள் பங்கேற்று மரபியல் மாறுபாடுகள் உருவாகும்.",
+   "keywords": [
+    "இனப்பெருக்கத்தி",
+    "பங்கேற்",
+    "பெற்றோ"
+   ]
+  },
+  {
+   "id": "ta-tasci10-32",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 7,
+   "chapter": "இனப்பெருக்கம்",
+   "question": "பாலிலா இனப்பெருக்கத்தின் ஆறு முறைகள் யாவை?",
+   "answer": "இருபிளவு, பலபிளவு, துண்டாதல், மீளுருவாக்கம், மொட்டுவிடுதல், வித்து உருவாக்கம்.",
+   "keywords": [
+    "மீளுருவாக்க",
+    "மொட்டுவிடுத",
+    "உருவாக்க"
+   ]
+  },
+  {
+   "id": "ta-tasci10-33",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 7,
+   "chapter": "இனப்பெருக்கம்",
+   "question": "மகரந்தச் சேர்க்கை என்றால் என்ன?",
+   "answer": "மகரந்தத் துகள்கள் மகரந்தப்பையிலிருந்து சூலகமுடிக்கு மாற்றப்படுவது மகரந்தச் சேர்க்கை.",
+   "keywords": [
+    "மகரந்தப்பையிலிருந்",
+    "சூலகமுடிக்",
+    "மாற்றப்படுவ"
+   ]
+  },
+  {
+   "id": "ta-tasci10-34",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 7,
+   "chapter": "இனப்பெருக்கம்",
+   "question": "கருவுறுதலுக்குப் பிறகு என்ன நிகழ்கிறது?",
+   "answer": "கருமுட்டை விதையாகவும், சூலகம் பழமாகவும் மாறுகிறது.",
+   "keywords": [
+    "விதையாகவு",
+    "கருமுட்",
+    "பழமாகவு"
+   ]
+  },
+  {
+   "id": "ta-tasci10-35",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 7,
+   "chapter": "இனப்பெருக்கம்",
+   "question": "மாதவிடாய் என்றால் என்ன?",
+   "answer": "கருவுறுதல் நடைபெறாதபோது தடித்த கருப்பை உள்சுவர் இரத்தத்துடன் வெளியேறும் மாதாந்திர நிகழ்வு.",
+   "keywords": [
+    "கருவுறுத",
+    "நடைபெறாதபோ",
+    "இரத்தத்துட"
+   ]
+  },
+  {
+   "id": "ta-tasci10-36",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 8,
+   "chapter": "மரபியல் மற்றும் பரிணாமம்",
+   "question": "மரபியல் மாறுபாடுகள் ஏன் உருவாகின்றன?",
+   "answer": "DNA நகலெடுப்பின் சிறிய பிழைகள் மற்றும் meiosis-இல் crossing over போன்ற காரணங்களால் மரபியல் மாறுபாடுகள் உருவாகின்றன.",
+   "keywords": [
+    "நகலெடுப்பி",
+    "meiosis-இ",
+    "காரணங்களா"
+   ]
+  },
+  {
+   "id": "ta-tasci10-37",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 8,
+   "chapter": "மரபியல் மற்றும் பரிணாமம்",
+   "question": "Mendel-ன் ஆதிக்க விதி என்றால் என்ன?",
+   "answer": "மாறுபட்ட தூய பண்புகளைக் கொண்ட பெற்றோர்களின் F1 தலைமுறையில் ஆதிக்கப் பண்பு மட்டும் வெளிப்படும்.",
+   "keywords": [
+    "பெற்றோர்களி",
+    "தலைமுறையி",
+    "வெளிப்படு"
+   ]
+  },
+  {
+   "id": "ta-tasci10-38",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 8,
+   "chapter": "மரபியல் மற்றும் பரிணாமம்",
+   "question": "Mendel-ன் பிரிவினை விதி என்றால் என்ன?",
+   "answer": "கேமீட்டுகள் உருவாகும்போது ஒரு பண்பிற்கான allele-கள் பிரிந்து ஒவ்வொரு கேமீட்டிலும் ஒரு allele செல்கிறது.",
+   "keywords": [
+    "உருவாகும்போ",
+    "பண்பிற்க",
+    "allele-க"
+   ]
+  },
+  {
+   "id": "ta-tasci10-39",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 8,
+   "chapter": "மரபியல் மற்றும் பரிணாமம்",
+   "question": "Monohybrid cross-ன் F2 விகிதங்கள் யாவை?",
+   "answer": "Phenotypic ratio = 3:1; Genotypic ratio = 1:2:1.",
+   "keywords": [
+    "phenotyp",
+    "genotyp",
+    "ratio"
+   ]
+  },
+  {
+   "id": "ta-tasci10-40",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 8,
+   "chapter": "மரபியல் மற்றும் பரிணாமம்",
+   "question": "மனிதர்களில் குழந்தையின் பாலினம் எவ்வாறு தீர்மானிக்கப்படுகிறது?",
+   "answer": "தாய் X குரோமோசோமையே வழங்குகிறார்; தந்தை X அல்லது Y வழங்குகிறார். X வந்தால் XX பெண்; Y வந்தால் XY ஆண்.",
+   "keywords": [
+    "குரோமோசோமை",
+    "வழங்குகிறா",
+    "வந்தா"
+   ]
+  },
+  {
+   "id": "ta-tasci10-41",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 9,
+   "chapter": "ஒளி – எதிரொளிப்பு மற்றும் விலக்கம் (கண்ணாடிகள்)",
+   "question": "ஒளி எதிரொளிப்பின் இரண்டு விதிகள் யாவை?",
+   "answer": "படுகதிர், எதிரொளித்த கதிர், செங்குத்துக்கோடு ஒரே தளத்தில் இருக்கும்; படுகோணம் எதிரொளிப்புக் கோணத்திற்கு சமம்.",
+   "keywords": [
+    "எதிரொளித",
+    "எதிரொளிப்பு",
+    "கோணத்திற்"
+   ]
+  },
+  {
+   "id": "ta-tasci10-42",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 9,
+   "chapter": "ஒளி – எதிரொளிப்பு மற்றும் விலக்கம் (கண்ணாடிகள்)",
+   "question": "உண்மைப் பிம்பம் மற்றும் மாயப் பிம்பத்தை வேறுபடுத்துக.",
+   "answer": "உண்மைப் பிம்பத்தை திரையில் பெறலாம்; மாயப் பிம்பத்தை திரையில் பெற முடியாது.",
+   "keywords": [
+    "திரையி",
+    "முடியா",
+    "பெறலா"
+   ]
+  },
+  {
+   "id": "ta-tasci10-43",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 9,
+   "chapter": "ஒளி – எதிரொளிப்பு மற்றும் விலக்கம் (கண்ணாடிகள்)",
+   "question": "சமதளக் கண்ணாடிப் பிம்பத்தின் பண்புகள் யாவை?",
+   "answer": "மாயமானது, நேரானது, அதே அளவு, கண்ணாடிக்குப் பின்னால் சம தூரத்தில் உருவாகும்; பக்கவாட்டுத் தலைகீழாக்கம் ஏற்படும்.",
+   "keywords": [
+    "கண்ணாடிக்கு",
+    "பக்கவாட்டு",
+    "தலைகீழாக்க"
+   ]
+  },
+  {
+   "id": "ta-tasci10-44",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 9,
+   "chapter": "ஒளி – எதிரொளிப்பு மற்றும் விலக்கம் (கண்ணாடிகள்)",
+   "question": "குழி மற்றும் குவி கண்ணாடிகளை வேறுபடுத்துக.",
+   "answer": "குழி கண்ணாடி உள்நோக்கி வளைந்தது; உண்மை/மாயப் பிம்பங்களை உருவாக்கலாம். குவி கண்ணாடி வெளிநோக்கி வளைந்தது; மாயமான சிறிய பிம்பத்தை உருவாக்கும்.",
+   "keywords": [
+    "பிம்பங்க",
+    "உருவாக்கலா",
+    "வெளிநோக்"
+   ]
+  },
+  {
+   "id": "ta-tasci10-45",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 9,
+   "chapter": "ஒளி – எதிரொளிப்பு மற்றும் விலக்கம் (கண்ணாடிகள்)",
+   "question": "கண்ணாடிச் சமன்பாடு மற்றும் பெருக்கச் சமன்பாடு எழுதுக.",
+   "answer": "1/v + 1/u = 1/f; m = hᵢ/hₒ = –v/u.",
+   "keywords": [
+    "1/v",
+    [
+     "1/u",
+     "u"
+    ],
+    "1/f"
+   ]
+  },
+  {
+   "id": "ta-tasci10-46",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 10,
+   "chapter": "ஒளி – விலக்கம், லென்ஸ்கள், மனிதக் கண் மற்றும் வளிமண்டல நிகழ்வுகள்",
+   "question": "ஒளி விலக்கத்தின் விதிகள் யாவை?",
+   "answer": "படுகதிர், விலகிய கதிர், செங்குத்துக்கோடு ஒரே தளத்தில் இருக்கும்; sin i / sin r ஒரு குறிப்பிட்ட இரு ஊடகங்களுக்கு மாறிலி.",
+   "keywords": [
+    "குறிப்பிட",
+    "ஊடகங்களுக்",
+    "செங்குத்துக்கோ"
+   ]
+  },
+  {
+   "id": "ta-tasci10-47",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 10,
+   "chapter": "ஒளி – விலக்கம், லென்ஸ்கள், மனிதக் கண் மற்றும் வளிமண்டல நிகழ்வுகள்",
+   "question": "லென்ஸ் சமன்பாடு எழுதுக.",
+   "answer": "1/v – 1/u = 1/f.",
+   "keywords": [
+    "1/v",
+    "1/u",
+    "1/f"
+   ]
+  },
+  {
+   "id": "ta-tasci10-48",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 10,
+   "chapter": "ஒளி – விலக்கம், லென்ஸ்கள், மனிதக் கண் மற்றும் வளிமண்டல நிகழ்வுகள்",
+   "question": "லென்ஸின் திறன் என்றால் என்ன?",
+   "answer": "குவியத் தொலைவின் மீள்மதிப்பு P = 1/f. SI அலகு dioptre (D).",
+   "keywords": [
+    "மீள்மதிப்",
+    "தொலைவி",
+    "குவிய"
+   ]
+  },
+  {
+   "id": "ta-tasci10-49",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 10,
+   "chapter": "ஒளி – விலக்கம், லென்ஸ்கள், மனிதக் கண் மற்றும் வளிமண்டல நிகழ்வுகள்",
+   "question": "Myopia மற்றும் hypermetropia-வை வேறுபடுத்துக.",
+   "answer": "Myopia-வில் தொலைதூரப் பொருட்கள் தெளிவாகத் தெரியாது; குழி லென்ஸால் திருத்தப்படும். Hypermetropia-வில் அருகிலுள்ள பொருட்கள் தெளிவாகத் தெரியாது; குவி லென்ஸால் திருத்தப்படும்.",
+   "keywords": [
+    "myopia-வி",
+    "திருத்தப்படு",
+    "hypermetropia-வி"
+   ]
+  },
+  {
+   "id": "ta-tasci10-50",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 10,
+   "chapter": "ஒளி – விலக்கம், லென்ஸ்கள், மனிதக் கண் மற்றும் வளிமண்டல நிகழ்வுகள்",
+   "question": "வானம் ஏன் நீலமாகத் தெரிகிறது?",
+   "answer": "வளிமண்டலத்தில் குறுகிய அலைநீளமான நீல ஒளி அதிகமாகச் சிதறுவதால் வானம் நீலமாகத் தெரிகிறது.",
+   "keywords": [
+    "வளிமண்டலத்தி",
+    "சிதறுவதா",
+    "அலைநீளம"
+   ]
+  },
+  {
+   "id": "ta-tasci10-51",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 11,
+   "chapter": "மின்சாரம்",
+   "question": "மின்சாரம் மற்றும் அதன் SI அலகு என்ன?",
+   "answer": "மின்கட்டணம் பாயும் வீதமே மின்சாரம். I = Q/t; SI அலகு ஆம்பியர்.",
+   "keywords": [
+    "மின்கட்டண",
+    "ஆம்பிய",
+    "வீதமே"
+   ]
+  },
+  {
+   "id": "ta-tasci10-52",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 11,
+   "chapter": "மின்சாரம்",
+   "question": "மின்னழுத்த வேறுபாடு என்றால் என்ன?",
+   "answer": "ஒரு அலகு மின்னூட்டத்தை நகர்த்தச் செய்யப்படும் வேலை. V = W/Q; SI அலகு வோல்ட்.",
+   "keywords": [
+    "மின்னூட்டத்",
+    "செய்யப்படு",
+    "நகர்த்த"
+   ]
+  },
+  {
+   "id": "ta-tasci10-53",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 11,
+   "chapter": "மின்சாரம்",
+   "question": "Ohm-ன் விதி என்ன?",
+   "answer": "V = IR; வெப்பநிலை போன்ற நிலைகள் மாறாமல் இருந்தால் மின்னோட்டம் மின்னழுத்தத்திற்கு நேர்விகிதம்.",
+   "keywords": [
+    "மின்னழுத்தத்திற்",
+    "நேர்விகித",
+    "இருந்தா"
+   ]
+  },
+  {
+   "id": "ta-tasci10-54",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 11,
+   "chapter": "மின்சாரம்",
+   "question": "மின்தடையைப் பாதிக்கும் காரணிகள் யாவை?",
+   "answer": "நீளம், குறுக்குவெட்டுப் பரப்பு, பொருளின் தன்மை, வெப்பநிலை. R = ρL/A.",
+   "keywords": [
+    "குறுக்குவெட்டு",
+    "பொருளி",
+    "பரப்பு"
+   ]
+  },
+  {
+   "id": "ta-tasci10-55",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 11,
+   "chapter": "மின்சாரம்",
+   "question": "மின்திறனுக்கான சமன்பாடுகள் யாவை?",
+   "answer": "P = VI = I²R = V²/R.",
+   "keywords": [
+    "vi",
+    [
+     "i²r",
+     "i2r"
+    ],
+    [
+     "v²/r",
+     "v2/r"
+    ]
+   ]
+  },
+  {
+   "id": "ta-tasci10-56",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 12,
+   "chapter": "மின்னோட்டத்தின் காந்த விளைவுகள்",
+   "question": "Oersted-ன் பரிசோதனை என்ன நிரூபித்தது?",
+   "answer": "மின்னோட்டம் பாயும் கம்பி காந்தப்புலத்தை உருவாக்குகிறது என்பதை நிரூபித்தது.",
+   "keywords": [
+    "காந்தப்புலத்",
+    "உருவாக்குகிற",
+    "என்பதை"
+   ]
+  },
+  {
+   "id": "ta-tasci10-57",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 12,
+   "chapter": "மின்னோட்டத்தின் காந்த விளைவுகள்",
+   "question": "வலக்கை பெருவிரல் விதி என்ன?",
+   "answer": "பெருவிரல் மின்னோட்டத் திசையைச் சுட்டினால் விரல்கள் காட்டும் வளைவு காந்தப்புலத் திசையைக் காட்டும்.",
+   "keywords": [
+    "மின்னோட்ட",
+    "சுட்டினா",
+    "காந்தப்புல"
+   ]
+  },
+  {
+   "id": "ta-tasci10-58",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 12,
+   "chapter": "மின்னோட்டத்தின் காந்த விளைவுகள்",
+   "question": "Solenoid என்றால் என்ன?",
+   "answer": "பல சுற்றுகளைக் கொண்ட காப்பிடப்பட்ட செம்புக் கம்பி உருளை வடிவில் சுற்றப்பட்ட அமைப்பு; மின்னோட்டம் பாயும்போது காந்தம் போல் செயல்படும்.",
+   "keywords": [
+    "சுற்றுகளை",
+    "காப்பிடப்பட",
+    "சுற்றப்பட"
+   ]
+  },
+  {
+   "id": "ta-tasci10-59",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 12,
+   "chapter": "மின்னோட்டத்தின் காந்த விளைவுகள்",
+   "question": "AC மற்றும் DC-ஐ வேறுபடுத்துக.",
+   "answer": "AC திசையை காலந்தோறும் மாற்றும்; DC ஒரே திசையில் பாயும்.",
+   "keywords": [
+    "காலந்தோறு",
+    "மாற்று",
+    "திசையி"
+   ]
+  },
+  {
+   "id": "ta-tasci10-60",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 12,
+   "chapter": "மின்னோட்டத்தின் காந்த விளைவுகள்",
+   "question": "Earth wire-ன் நோக்கம் என்ன?",
+   "answer": "கசிவு மின்னோட்டத்திற்கு குறைந்த மின்தடை பாதையை வழங்கி மின்சார அதிர்ச்சியிலிருந்து பாதுகாக்கிறது.",
+   "keywords": [
+    "மின்னோட்டத்திற்",
+    "அதிர்ச்சியிலிருந்",
+    "பாதுகாக்கிற"
+   ]
+  },
+  {
+   "id": "ta-tasci10-61",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 13,
+   "chapter": "நமது சுற்றுச்சூழல்",
+   "question": "சுற்றுச்சூழல் மண்டலம் என்றால் என்ன?",
+   "answer": "ஒரு பகுதியில் உள்ள உயிரினங்களும் உயிரற்ற கூறுகளும் ஒன்றுடன் ஒன்று தொடர்பு கொண்டு உருவாக்கும் அமைப்பு.",
+   "keywords": [
+    "உயிரினங்களு",
+    "பகுதியி",
+    "கூறுகளு"
+   ]
+  },
+  {
+   "id": "ta-tasci10-62",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 13,
+   "chapter": "நமது சுற்றுச்சூழல்",
+   "question": "உற்பத்தியாளர்கள், நுகர்வோர்கள், சிதைப்பவர்கள் யார்?",
+   "answer": "உற்பத்தியாளர்கள் உணவைத் தயாரிக்கும் பச்சைத் தாவரங்கள்; நுகர்வோர்கள் பிற உயிரினங்களைச் சார்ந்தவை; சிதைப்பவர்கள் இறந்த கரிமப் பொருட்களைச் சிதைப்பவை.",
+   "keywords": [
+    "தயாரிக்கு",
+    "உயிரினங்களை",
+    "பொருட்களை"
+   ]
+  },
+  {
+   "id": "ta-tasci10-63",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 13,
+   "chapter": "நமது சுற்றுச்சூழல்",
+   "question": "Food chain மற்றும் food web என்றால் என்ன?",
+   "answer": "உணவு ஆற்றல் செல்லும் உயிரின வரிசை food chain; ஒன்றோடொன்று இணைந்த பல food chains-ன் வலைப்பின்னல் food web.",
+   "keywords": [
+    "ஒன்றோடொன்",
+    "வலைப்பின்ன",
+    "chains-"
+   ]
+  },
+  {
+   "id": "ta-tasci10-64",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 13,
+   "chapter": "நமது சுற்றுச்சூழல்",
+   "question": "10 சதவீத விதி என்றால் என்ன?",
+   "answer": "ஒரு trophic level-ன் உணவு ஆற்றலில் சுமார் 10% மட்டுமே அடுத்த trophic level-க்கு செல்கிறது.",
+   "keywords": [
+    "level-க்",
+    "ஆற்றலி",
+    "செல்கிற"
+   ]
+  },
+  {
+   "id": "ta-tasci10-65",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 13,
+   "chapter": "நமது சுற்றுச்சூழல்",
+   "question": "Biological magnification என்றால் என்ன?",
+   "answer": "தீங்கு விளைவிக்கும் வேதிப்பொருட்களின் செறிவு ஒவ்வொரு trophic level-லும் அதிகரித்து உச்ச நுகர்வோரில் அதிகமாகக் குவியும் நிகழ்வு.",
+   "keywords": [
+    "வேதிப்பொருட்களி",
+    "level-லு",
+    "அதிகரித்"
+   ]
+  },
+  {
+   "id": "ta-tasci10-66",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 13,
+   "chapter": "நமது சுற்றுச்சூழல்",
+   "question": "மக்கும் மற்றும் மக்காத கழிவுகளை வேறுபடுத்துக.",
+   "answer": "நுண்ணுயிரிகளால் சிதைக்கக்கூடியவை மக்கும் கழிவுகள்; சிதைக்க முடியாதவை மக்காத கழிவுகள்.",
+   "keywords": [
+    "நுண்ணுயிரிகளா",
+    "சிதைக்கக்கூடிய",
+    "முடியாத"
+   ]
+  },
+  {
+   "id": "ta-tasci10-67",
+   "lang": "ta",
+   "book": "அறிவியல் 10-ஆம் வகுப்பு",
+   "page": 13,
+   "chapter": "நமது சுற்றுச்சூழல்",
+   "question": "ஓசோன் அடுக்கு ஏன் முக்கியம்?",
+   "answer": "தீங்கு விளைவிக்கும் புற ஊதாக் கதிர்வீச்சிலிருந்து பூமியைப் பாதுகாக்கிறது.",
+   "keywords": [
+    "கதிர்வீச்சிலிருந்",
+    "பூமியை",
+    "விளைவிக்கு"
+   ]
+  }
+ ]
+}
