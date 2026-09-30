@@ -35,6 +35,29 @@ edubuddy-online/
     └── books/manifest.json       optional textbooks bundled with the site
 ```
 
+## Two AI services, so the demo never dies
+
+EduBuddy can use **Groq** and **Gemini** together. Each request goes to one and switches to the
+other automatically if it errors, hits a quota limit, or takes longer than 5 seconds.
+
+| Task                | First choice                     | Backup                          |
+|---------------------|----------------------------------|---------------------------------|
+| Answers (en, hi)    | Groq `llama-3.3-70b-versatile`   | Gemini                          |
+| Answers (ta)        | Gemini (better Tamil)            | Groq                            |
+| Voice → text        | Groq `whisper-large-v3`          | Gemini                          |
+| Text → voice        | Browser voice                    | Gemini TTS                      |
+
+If **both** services fail, Ask still answers from the textbook. It shows the closest passage with
+its citation, labelled *From the textbook*. Library and Study never need the internet AI at all.
+
+Keys (set either one, or both for the backup):
+
+- `GROQ_API_KEY`: free at https://console.groq.com/keys
+- `GEMINI_API_KEY`: free at https://aistudio.google.com/apikey
+
+Before a demo, open **/api/health** on your site. `"backupReady": true` means both services work.
+Set `PROVIDER_ORDER=gemini,groq` (or `groq,gemini`) to force one order for every language.
+
 ## Deploy (about 5 minutes)
 
 1. **Get a Gemini API key** at https://aistudio.google.com/apikey.
@@ -42,7 +65,7 @@ edubuddy-online/
 3. On **Netlify**: *Add new project → Import from Git* → choose the repo.
    The settings come from `netlify.toml`, so you can leave the build fields as they are.
    (If the project is in a subfolder, set **Base directory** to that folder.)
-4. **Site configuration → Environment variables** → add `GEMINI_API_KEY` = your key.
+4. **Site configuration → Environment variables** → add `GROQ_API_KEY` and `GEMINI_API_KEY`.
 5. **Deploys → Trigger deploy**. Then open the site, allow the microphone, and ask a question.
 
 To deploy without Git: `npm i -g netlify-cli`, then `netlify login`, then `netlify deploy --prod` from this folder.

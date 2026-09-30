@@ -2,11 +2,20 @@
 cd /d "%~dp0"
 where node >nul 2>nul
 if errorlevel 1 goto nonode
-if exist .env goto run
+
+if exist .env goto checkgroq
 set KEY=
 set /p KEY="Paste your Gemini API key (or press Enter to skip): "
-if "%KEY%"=="" goto run
->.env echo GEMINI_API_KEY=%KEY%
+if not "%KEY%"=="" >>.env echo GEMINI_API_KEY=%KEY%
+
+:checkgroq
+findstr /b /c:"GROQ_API_KEY=" .env >nul 2>nul
+if not errorlevel 1 goto run
+set GKEY=
+set /p GKEY="Paste your Groq API key for the backup AI (or press Enter to skip): "
+if "%GKEY%"=="" goto run
+>>.env echo.
+>>.env echo GROQ_API_KEY=%GKEY%
 
 :run
 start "" http://localhost:8888

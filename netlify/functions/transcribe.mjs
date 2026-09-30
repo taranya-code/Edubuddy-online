@@ -2,10 +2,11 @@
 // { audio: <base64>, mimeType: "audio/webm" | "audio/mp4" | ..., lang: "auto"|"en"|"hi"|"ta" }
 // → { text, lang }
 //
-// Replaces the offline Whisper step. Gemini hears the clip and returns the
+// Replaces the offline Whisper step. Whisper (Groq) or Gemini hears the clip and returns the
 // transcript in its native script plus the language, which is folded onto
 // en/hi/ta exactly as config.normalise_lang() does offline.
-import { generate, textOf, json, fail, readJson, TEXT_MODELS, HttpError } from "../lib/gemini.mjs";
+import { json, fail, readJson, HttpError } from "../lib/gemini.mjs";
+import { transcribe } from "../lib/providers.mjs";
 
 const NEIGHBOURS = {
   ur: "hi", mr: "hi", ne: "hi", sa: "hi", bh: "hi", pa: "hi",
@@ -48,21 +49,8 @@ export default async (req) => {
       ' Reply with JSON only: {"text": "<transcript>", "lang": "<ISO 639-1 code>"}.' +
       ' If there is no intelligible speech, reply {"text": "", "lang": ""}.';
 
-    const { data } = await generate(TEXT_MODELS, {
-      contents: [{
-        role: "user",
-        parts: [
-          { inlineData: { mimeType, data: audio } },
-          { text: instruction },
-        ],
-      }],
-      generationConfig: { temperature: 0, responseMimeType: "application/json", maxOutputTokens: 400 },
-    });
-
-    let out = { text: "", lang: "" };
-    const raw = textOf(data);
-    try { out = JSON.parse(raw); }
-    catch { out = { text: raw.replace(/^[{"\s]+|["}\s]+$/g, ""), lang: "" }; }
+    // Whisper on Groq first (made for speech), Gemini as the fallback.
+    const out = await transcribe({ audioB64: audio, mimeType, lang: forced, instruction });
 
     const text = String(out.text || "").trim();
     const lang = forced || (text ? (scriptLang(text) !== "en" ? scriptLang(text) : normaliseLang(out.lang)) : "en");

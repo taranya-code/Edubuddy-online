@@ -30,12 +30,36 @@ export class HttpError extends Error {
 const cooldown = new Map();   // model → time it may be tried again
 const COOLDOWN_MS = 10 * 60 * 1000;
 
+/** The key as pasted, minus the stray spaces, line breaks and quotes that
+ *  copy-paste into Netlify's settings often adds. */
+export function apiKey() {
+  return String(process.env.GEMINI_API_KEY || "").trim().replace(/^["']+|["']+$/g, "").trim();
+}
+
+/** Turn Google's JSON error into one readable sentence. */
+function friendly(model, status, text) {
+  let msg = text, reason = "";
+  try {
+    const e = JSON.parse(text).error || {};
+    msg = e.message || text;
+    reason = (e.details || []).map(d => d.reason).find(Boolean) || e.status || "";
+  } catch {}
+  if (reason === "API_KEY_INVALID" || /API key not valid/i.test(msg))
+    return "The Gemini API key is not valid. Paste a fresh key into GEMINI_API_KEY " +
+           "(Netlify: Site configuration → Environment variables), then trigger a new deploy.";
+  if (status === 403 && /referer|referrer|restricted|blocked/i.test(msg))
+    return "This API key is restricted and blocks server requests. In Google AI Studio / Cloud Console " +
+           "remove the HTTP-referrer restriction on the key, or create a new unrestricted key.";
+  if (status === 429) return `Gemini ${model} is over its free quota right now. Try again in a minute.`;
+  return `Gemini ${model} → HTTP ${status}: ${String(msg).slice(0, 200)}`;
+}
+
 export async function generate(models, body, opts = {}) {
   const firstTimeout = opts.firstTimeoutMs || FIRST_TIMEOUT_MS;
   const now = Date.now();
   const usable = models.filter(m => !(cooldown.get(m) > now));
   if (usable.length) models = usable;          // if every model is cooling down, try them all anyway
-  const key = process.env.GEMINI_API_KEY;
+  const key = apiKey();
   if (!key) throw new HttpError(500, "GEMINI_API_KEY is not set (add it to .env locally, or to Netlify environment variables).");
 
   let lastErr;
@@ -62,7 +86,7 @@ export async function generate(models, body, opts = {}) {
     if (res.ok) return { model, data: await res.json() };
 
     const text = await res.text();
-    lastErr = new HttpError(res.status, `Gemini ${model} → HTTP ${res.status}: ${text.slice(0, 300)}`);
+    lastErr = new HttpError(res.status, friendly(model, res.status, text));
     if (res.status === 429) cooldown.set(model, Date.now() + COOLDOWN_MS);
     // Only fall through to the next model when a different model could plausibly work.
     if (![404, 429, 500, 503].includes(res.status)) break;

@@ -24,6 +24,7 @@ const ROUTES = {
   "/api/chat": "chat.mjs",
   "/api/transcribe": "transcribe.mjs",
   "/api/speak": "speak.mjs",
+  "/api/health": "health.mjs",
 };
 const handlers = {};
 for (const [route, file] of Object.entries(ROUTES)) {

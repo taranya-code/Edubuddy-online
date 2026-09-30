@@ -40,7 +40,7 @@ function bubble(role, text, opts = {}) {
   else {
     const who = document.createElement("div");
     who.className = "who";
-    who.textContent = role === "user" ? "You" : "EduBuddy";
+    who.textContent = role === "user" ? "You" : (opts.source === "textbook" ? "From the textbook" : "EduBuddy");
     el.appendChild(who);
     el.appendChild(document.createTextNode(text));
     if (opts.citations && opts.citations.length) {
@@ -98,6 +98,7 @@ function readyStatus() {
 async function api(path, body) {
   const r = await fetch(path, {
     method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),
+    signal: AbortSignal.timeout ? AbortSignal.timeout(30000) : undefined,
   });
   let data = {};
   try { data = await r.json(); } catch {}
@@ -127,8 +128,9 @@ async function ask(message, lang) {
   busy = true;
   $("send").disabled = true;
   const thinking = bubble("sys", "searching the textbooks…");
+  let excerpts = [];
   try {
-    const excerpts = RAG.search(message);
+    excerpts = RAG.search(message);
     if (excerpts.length) {
       const cites = [...new Set(excerpts.filter(e => !e.context).map(e => e.cite))];
       thinking.textContent = "found " + cites.slice(0, 3).join(" · ") + " — writing the answer…";
@@ -153,7 +155,23 @@ async function ask(message, lang) {
     if ($("speakBack").checked) await speak(data.reply, data.lang || lang);
   } catch (e) {
     thinking.remove();
-    bubble("sys", "Error: " + e.message);
+    console.warn("AI answer failed:", e.message);
+    /* Safety net: if every AI service is down, still answer from the book.
+       The best-matching passage is shown as the textbook's own words, with its
+       citation — the same honest labelling as the offline "question packs". */
+    const best = excerpts.find(x => !x.context);
+    if (best) {
+      const m = best.text.match(/\nA:\s*([\s\S]+)$/);
+      const text = (m ? m[1] : best.text).trim();
+      bubble("bot", text, {
+        source: "textbook",
+        citations: [best.cite],
+        notInBook: "The AI service is busy, so this is the closest passage from the textbook.",
+      });
+      if ($("speakBack").checked) await speak(text, lang);
+    } else {
+      bubble("sys", "The AI service is busy right now. Please try again in a moment. (" + e.message.slice(0, 140) + ")");
+    }
   } finally {
     busy = false;
     $("send").disabled = false;

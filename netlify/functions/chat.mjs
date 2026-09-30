@@ -7,7 +7,8 @@
 // them, and must emit [NOTINBOOK] when they do not answer the question. The
 // marker is stripped here and the citations dropped, so an ungrounded answer can
 // never be displayed as if it were sourced.
-import { generate, textOf, json, fail, readJson, TEXT_MODELS, HttpError } from "../lib/gemini.mjs";
+import { json, fail, readJson, HttpError } from "../lib/gemini.mjs";
+import { chatComplete } from "../lib/providers.mjs";
 
 const LANGS = ["en", "hi", "ta"];
 const MARKER = "[NOTINBOOK]";
@@ -105,11 +106,8 @@ export default async (req) => {
 
     const history = (Array.isArray(body.history) ? body.history : [])
       .slice(-12)
-      .map(h => ({
-        role: h.role === "model" ? "model" : "user",
-        parts: [{ text: String(h.text || "").slice(0, 1000) }],
-      }))
-      .filter(h => h.parts[0].text);
+      .map(h => ({ role: h.role === "model" ? "model" : "user", text: String(h.text || "").slice(0, 1000) }))
+      .filter(h => h.text);
 
     let system = SYSTEM[lang];
     let userText = message;
@@ -121,14 +119,11 @@ export default async (req) => {
         `\n\nQuestion: ${message}`;
     }
 
-    const { model, data } = await generate(TEXT_MODELS, {
-      systemInstruction: { parts: [{ text: system }] },
-      contents: [...history, { role: "user", parts: [{ text: userText }] }],
-      generationConfig: { temperature: 0.2, maxOutputTokens: 400 },
-    });
-
-    let reply = textOf(data);
-    if (!reply) throw new HttpError(502, "The model returned no text (it may have been blocked by safety filters).");
+    // Groq first (fast) then Gemini, or the other way round for Tamil —
+    // whichever answers first wins. See lib/providers.mjs.
+    const result = await chatComplete({ system, history, user: userText, temperature: 0.2, maxTokens: 400, lang });
+    const model = `${result.provider}:${result.model}`;
+    let reply = result.text;
 
     let notInBook = false;
     if (reply.includes(MARKER)) {
